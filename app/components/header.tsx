@@ -9,7 +9,7 @@ export default function Header () {
             {
                 
                 headerTextArray.map((content, index) => {
-                    return <span className="hover:text-white"> {content} </span>
+                    return <span key={index} className="hover:text-white"> {content} </span>
                 })
             }
             <p>
