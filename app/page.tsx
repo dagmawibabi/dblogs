@@ -1,8 +1,10 @@
+import Script from "next/script";
 import Blogs from "./components/blogs";
 import Footer from "./components/footer";
 import Header from "./components/header";
 import Navigation from "./components/navigations";
-<script src="https://kit.fontawesome.com/15ff0af56e.js" crossOrigin="anonymous"></script>
+{/* <script src="https://kit.fontawesome.com/15ff0af56e.js" crossOrigin="anonymous"></script> */}
+<Script src="https://kit.fontawesome.com/15ff0af56e.js" crossOrigin="anonymous"/>
 
 export default function Home() {
   return (
