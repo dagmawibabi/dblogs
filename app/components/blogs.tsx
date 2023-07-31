@@ -80,7 +80,7 @@ export default function Blogs () {
             <div className="grid grid-cols-2 gap-y-12 gap-x-10 ml-6">
                 {
                     latestBlogs.map((content, index) => {
-                        return <EachBlog blogIntro={content} />
+                        return <EachBlog key={index} blogIntro={content} />
                     })
                 }
             </div>
@@ -92,7 +92,7 @@ export default function Blogs () {
             <div className="grid grid-cols-2 gap-y-12 gap-x-10 ml-6">
                 {
                     spiritualBlogs.map((content, index) => {
-                        return <EachBlog blogIntro={content} />
+                        return <EachBlog key={index} blogIntro={content} />
                     })
                 }
             </div>
@@ -104,7 +104,7 @@ export default function Blogs () {
             <div className="grid grid-cols-2 gap-y-12 gap-x-10 ml-6">
                 {
                     techBlogs.map((content, index) => {
-                        return <EachBlog blogIntro={content} />
+                        return <EachBlog key={index} blogIntro={content} />
                     })
                 }
             </div>
