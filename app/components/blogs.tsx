@@ -1,6 +1,6 @@
 import EachBlog from "./eachBlog";
 
-export default function Blogs () {
+export default function Blogs() {
     let latestBlogs: Array<blogIntro> = [
         {
             "date": "July 12, 2023",
@@ -70,7 +70,7 @@ export default function Blogs () {
             <div className="grid grid-cols-2 gap-y-12 gap-x-10 ml-6">
                 {
                     latestBlogs.map((content, index) => {
-                        return <EachBlog {...content} />
+                        return <EachBlog key={index} {...content} />
                     })
                 }
             </div>
@@ -82,7 +82,7 @@ export default function Blogs () {
             <div className="grid grid-cols-2 gap-y-12 gap-x-10 ml-6">
                 {
                     spiritualBlogs.map((content, index) => {
-                        return <EachBlog {...content} />
+                        return <EachBlog key={index} {...content} />
                     })
                 }
             </div>
@@ -94,12 +94,12 @@ export default function Blogs () {
             <div className="grid grid-cols-2 gap-y-12 gap-x-10 ml-6">
                 {
                     techBlogs.map((content, index) => {
-                        return <EachBlog {...content} />
+                        return <EachBlog key={index} {...content} />
                     })
                 }
             </div>
 
-            
+
         </div>
     )
 }
