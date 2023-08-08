@@ -1,0 +1,1383 @@
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Chapter 1</title>
+	<style>
+		/* cspell:disable-file */
+		/* webkit printing magic: print all background colors */
+		html {
+			-webkit-print-color-adjust: exact;
+		}
+
+		* {
+			box-sizing: border-box;
+			-webkit-print-color-adjust: exact;
+		}
+
+		html,
+		body {
+			margin: 0;
+			padding: 0;
+		}
+
+		@media only screen {
+			body {
+				margin: 2em auto;
+				max-width: 900px;
+				color: rgb(55, 53, 47);
+			}
+		}
+
+		body {
+			line-height: 1.5;
+			white-space: pre-wrap;
+		}
+
+		a,
+		a.visited {
+			color: inherit;
+			text-decoration: underline;
+		}
+
+		.pdf-relative-link-path {
+			font-size: 80%;
+			color: #444;
+		}
+
+		h1,
+		h2,
+		h3 {
+			letter-spacing: -0.01em;
+			line-height: 1.2;
+			font-weight: 600;
+			margin-bottom: 0;
+		}
+
+		.page-title {
+			font-size: 2.5rem;
+			font-weight: 700;
+			margin-top: 0;
+			margin-bottom: 0.75em;
+		}
+
+		h1 {
+			font-size: 1.875rem;
+			margin-top: 1.875rem;
+		}
+
+		h2 {
+			font-size: 1.5rem;
+			margin-top: 1.5rem;
+		}
+
+		h3 {
+			font-size: 1.25rem;
+			margin-top: 1.25rem;
+		}
+
+		.source {
+			border: 1px solid #ddd;
+			border-radius: 3px;
+			padding: 1.5em;
+			word-break: break-all;
+		}
+
+		.callout {
+			border-radius: 3px;
+			padding: 1rem;
+		}
+
+		figure {
+			margin: 1.25em 0;
+			page-break-inside: avoid;
+		}
+
+		figcaption {
+			opacity: 0.5;
+			font-size: 85%;
+			margin-top: 0.5em;
+		}
+
+		mark {
+			background-color: transparent;
+		}
+
+		.indented {
+			padding-left: 1.5em;
+		}
+
+		hr {
+			background: transparent;
+			display: block;
+			width: 100%;
+			height: 1px;
+			visibility: visible;
+			border: none;
+			border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+		}
+
+		img {
+			max-width: 100%;
+		}
+
+		@media only print {
+			img {
+				max-height: 100vh;
+				object-fit: contain;
+			}
+		}
+
+		@page {
+			margin: 1in;
+		}
+
+		.collection-content {
+			font-size: 0.875rem;
+		}
+
+		.column-list {
+			display: flex;
+			justify-content: space-between;
+		}
+
+		.column {
+			padding: 0 1em;
+		}
+
+		.column:first-child {
+			padding-left: 0;
+		}
+
+		.column:last-child {
+			padding-right: 0;
+		}
+
+		.table_of_contents-item {
+			display: block;
+			font-size: 0.875rem;
+			line-height: 1.3;
+			padding: 0.125rem;
+		}
+
+		.table_of_contents-indent-1 {
+			margin-left: 1.5rem;
+		}
+
+		.table_of_contents-indent-2 {
+			margin-left: 3rem;
+		}
+
+		.table_of_contents-indent-3 {
+			margin-left: 4.5rem;
+		}
+
+		.table_of_contents-link {
+			text-decoration: none;
+			opacity: 0.7;
+			border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+		}
+
+		table,
+		th,
+		td {
+			border: 1px solid rgba(55, 53, 47, 0.09);
+			border-collapse: collapse;
+		}
+
+		table {
+			border-left: none;
+			border-right: none;
+		}
+
+		th,
+		td {
+			font-weight: normal;
+			padding: 0.25em 0.5em;
+			line-height: 1.5;
+			min-height: 1.5em;
+			text-align: left;
+		}
+
+		th {
+			color: rgba(55, 53, 47, 0.6);
+		}
+
+		ol,
+		ul {
+			margin: 0;
+			margin-block-start: 0.6em;
+			margin-block-end: 0.6em;
+		}
+
+		li>ol:first-child,
+		li>ul:first-child {
+			margin-block-start: 0.6em;
+		}
+
+		ul>li {
+			list-style: disc;
+		}
+
+		ul.to-do-list {
+			padding-inline-start: 0;
+		}
+
+		ul.to-do-list>li {
+			list-style: none;
+		}
+
+		.to-do-children-checked {
+			text-decoration: line-through;
+			opacity: 0.375;
+		}
+
+		ul.toggle>li {
+			list-style: none;
+		}
+
+		ul {
+			padding-inline-start: 1.7em;
+		}
+
+		ul>li {
+			padding-left: 0.1em;
+		}
+
+		ol {
+			padding-inline-start: 1.6em;
+		}
+
+		ol>li {
+			padding-left: 0.2em;
+		}
+
+		.mono ol {
+			padding-inline-start: 2em;
+		}
+
+		.mono ol>li {
+			text-indent: -0.4em;
+		}
+
+		.toggle {
+			padding-inline-start: 0em;
+			list-style-type: none;
+		}
+
+		/* Indent toggle children */
+		.toggle>li>details {
+			padding-left: 1.7em;
+		}
+
+		.toggle>li>details>summary {
+			margin-left: -1.1em;
+		}
+
+		.selected-value {
+			display: inline-block;
+			padding: 0 0.5em;
+			background: rgba(206, 205, 202, 0.5);
+			border-radius: 3px;
+			margin-right: 0.5em;
+			margin-top: 0.3em;
+			margin-bottom: 0.3em;
+			white-space: nowrap;
+		}
+
+		.collection-title {
+			display: inline-block;
+			margin-right: 1em;
+		}
+
+		.page-description {
+			margin-bottom: 2em;
+		}
+
+		.simple-table {
+			margin-top: 1em;
+			font-size: 0.875rem;
+			empty-cells: show;
+		}
+
+		.simple-table td {
+			height: 29px;
+			min-width: 120px;
+		}
+
+		.simple-table th {
+			height: 29px;
+			min-width: 120px;
+		}
+
+		.simple-table-header-color {
+			background: rgb(247, 246, 243);
+			color: black;
+		}
+
+		.simple-table-header {
+			font-weight: 500;
+		}
+
+		time {
+			opacity: 0.5;
+		}
+
+		.icon {
+			display: inline-block;
+			max-width: 1.2em;
+			max-height: 1.2em;
+			text-decoration: none;
+			vertical-align: text-bottom;
+			margin-right: 0.5em;
+		}
+
+		img.icon {
+			border-radius: 3px;
+		}
+
+		.user-icon {
+			width: 1.5em;
+			height: 1.5em;
+			border-radius: 100%;
+			margin-right: 0.5rem;
+		}
+
+		.user-icon-inner {
+			font-size: 0.8em;
+		}
+
+		.text-icon {
+			border: 1px solid #000;
+			text-align: center;
+		}
+
+		.page-cover-image {
+			display: block;
+			object-fit: cover;
+			width: 100%;
+			max-height: 30vh;
+		}
+
+		.page-header-icon {
+			font-size: 3rem;
+			margin-bottom: 1rem;
+		}
+
+		.page-header-icon-with-cover {
+			margin-top: -0.72em;
+			margin-left: 0.07em;
+		}
+
+		.page-header-icon img {
+			border-radius: 3px;
+		}
+
+		.link-to-page {
+			margin: 1em 0;
+			padding: 0;
+			border: none;
+			font-weight: 500;
+		}
+
+		p>.user {
+			opacity: 0.5;
+		}
+
+		td>.user,
+		td>time {
+			white-space: nowrap;
+		}
+
+		input[type="checkbox"] {
+			transform: scale(1.5);
+			margin-right: 0.6em;
+			vertical-align: middle;
+		}
+
+		p {
+			margin-top: 0.5em;
+			margin-bottom: 0.5em;
+		}
+
+		.image {
+			border: none;
+			margin: 1.5em 0;
+			padding: 0;
+			border-radius: 0;
+			text-align: center;
+		}
+
+		.code,
+		code {
+			background: rgba(135, 131, 120, 0.15);
+			border-radius: 3px;
+			padding: 0.2em 0.4em;
+			border-radius: 3px;
+			font-size: 85%;
+			tab-size: 2;
+		}
+
+		code {
+			color: #eb5757;
+		}
+
+		.code {
+			padding: 1.5em 1em;
+		}
+
+		.code-wrap {
+			white-space: pre-wrap;
+			word-break: break-all;
+		}
+
+		.code>code {
+			background: none;
+			padding: 0;
+			font-size: 100%;
+			color: inherit;
+		}
+
+		blockquote {
+			font-size: 1.25em;
+			margin: 1em 0;
+			padding-left: 1em;
+			border-left: 3px solid rgb(55, 53, 47);
+		}
+
+		.bookmark {
+			text-decoration: none;
+			max-height: 8em;
+			padding: 0;
+			display: flex;
+			width: 100%;
+			align-items: stretch;
+		}
+
+		.bookmark-title {
+			font-size: 0.85em;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			height: 1.75em;
+			white-space: nowrap;
+		}
+
+		.bookmark-text {
+			display: flex;
+			flex-direction: column;
+		}
+
+		.bookmark-info {
+			flex: 4 1 180px;
+			padding: 12px 14px 14px;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+		}
+
+		.bookmark-image {
+			width: 33%;
+			flex: 1 1 180px;
+			display: block;
+			position: relative;
+			object-fit: cover;
+			border-radius: 1px;
+		}
+
+		.bookmark-description {
+			color: rgba(55, 53, 47, 0.6);
+			font-size: 0.75em;
+			overflow: hidden;
+			max-height: 4.5em;
+			word-break: break-word;
+		}
+
+		.bookmark-href {
+			font-size: 0.75em;
+			margin-top: 0.25em;
+		}
+
+		.sans {
+			font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+		}
+
+		.code {
+			font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace;
+		}
+
+		.serif {
+			font-family: Lyon-Text, Georgia, ui-serif, serif;
+		}
+
+		.mono {
+			font-family: iawriter-mono, Nitti, Menlo, Courier, monospace;
+		}
+
+		.pdf .sans {
+			font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP';
+		}
+
+		.pdf:lang(zh-CN) .sans {
+			font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC';
+		}
+
+		.pdf:lang(zh-TW) .sans {
+			font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC';
+		}
+
+		.pdf:lang(ko-KR) .sans {
+			font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR';
+		}
+
+		.pdf .code {
+			font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP';
+		}
+
+		.pdf:lang(zh-CN) .code {
+			font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC';
+		}
+
+		.pdf:lang(zh-TW) .code {
+			font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC';
+		}
+
+		.pdf:lang(ko-KR) .code {
+			font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR';
+		}
+
+		.pdf .serif {
+			font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP';
+		}
+
+		.pdf:lang(zh-CN) .serif {
+			font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC';
+		}
+
+		.pdf:lang(zh-TW) .serif {
+			font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC';
+		}
+
+		.pdf:lang(ko-KR) .serif {
+			font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR';
+		}
+
+		.pdf .mono {
+			font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP';
+		}
+
+		.pdf:lang(zh-CN) .mono {
+			font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC';
+		}
+
+		.pdf:lang(zh-TW) .mono {
+			font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC';
+		}
+
+		.pdf:lang(ko-KR) .mono {
+			font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR';
+		}
+
+		.highlight-default {
+			color: rgba(55, 53, 47, 1);
+		}
+
+		.highlight-gray {
+			color: rgba(120, 119, 116, 1);
+			fill: rgba(120, 119, 116, 1);
+		}
+
+		.highlight-brown {
+			color: rgba(159, 107, 83, 1);
+			fill: rgba(159, 107, 83, 1);
+		}
+
+		.highlight-orange {
+			color: rgba(217, 115, 13, 1);
+			fill: rgba(217, 115, 13, 1);
+		}
+
+		.highlight-yellow {
+			color: rgba(203, 145, 47, 1);
+			fill: rgba(203, 145, 47, 1);
+		}
+
+		.highlight-teal {
+			color: rgba(68, 131, 97, 1);
+			fill: rgba(68, 131, 97, 1);
+		}
+
+		.highlight-blue {
+			color: rgba(51, 126, 169, 1);
+			fill: rgba(51, 126, 169, 1);
+		}
+
+		.highlight-purple {
+			color: rgba(144, 101, 176, 1);
+			fill: rgba(144, 101, 176, 1);
+		}
+
+		.highlight-pink {
+			color: rgba(193, 76, 138, 1);
+			fill: rgba(193, 76, 138, 1);
+		}
+
+		.highlight-red {
+			color: rgba(212, 76, 71, 1);
+			fill: rgba(212, 76, 71, 1);
+		}
+
+		.highlight-gray_background {
+			background: rgba(241, 241, 239, 1);
+		}
+
+		.highlight-brown_background {
+			background: rgba(244, 238, 238, 1);
+		}
+
+		.highlight-orange_background {
+			background: rgba(251, 236, 221, 1);
+		}
+
+		.highlight-yellow_background {
+			background: rgba(251, 243, 219, 1);
+		}
+
+		.highlight-teal_background {
+			background: rgba(237, 243, 236, 1);
+		}
+
+		.highlight-blue_background {
+			background: rgba(231, 243, 248, 1);
+		}
+
+		.highlight-purple_background {
+			background: rgba(244, 240, 247, 0.8);
+		}
+
+		.highlight-pink_background {
+			background: rgba(249, 238, 243, 0.8);
+		}
+
+		.highlight-red_background {
+			background: rgba(253, 235, 236, 1);
+		}
+
+		.block-color-default {
+			color: inherit;
+			fill: inherit;
+		}
+
+		.block-color-gray {
+			color: rgba(120, 119, 116, 1);
+			fill: rgba(120, 119, 116, 1);
+		}
+
+		.block-color-brown {
+			color: rgba(159, 107, 83, 1);
+			fill: rgba(159, 107, 83, 1);
+		}
+
+		.block-color-orange {
+			color: rgba(217, 115, 13, 1);
+			fill: rgba(217, 115, 13, 1);
+		}
+
+		.block-color-yellow {
+			color: rgba(203, 145, 47, 1);
+			fill: rgba(203, 145, 47, 1);
+		}
+
+		.block-color-teal {
+			color: rgba(68, 131, 97, 1);
+			fill: rgba(68, 131, 97, 1);
+		}
+
+		.block-color-blue {
+			color: rgba(51, 126, 169, 1);
+			fill: rgba(51, 126, 169, 1);
+		}
+
+		.block-color-purple {
+			color: rgba(144, 101, 176, 1);
+			fill: rgba(144, 101, 176, 1);
+		}
+
+		.block-color-pink {
+			color: rgba(193, 76, 138, 1);
+			fill: rgba(193, 76, 138, 1);
+		}
+
+		.block-color-red {
+			color: rgba(212, 76, 71, 1);
+			fill: rgba(212, 76, 71, 1);
+		}
+
+		.block-color-gray_background {
+			background: rgba(241, 241, 239, 1);
+		}
+
+		.block-color-brown_background {
+			background: rgba(244, 238, 238, 1);
+		}
+
+		.block-color-orange_background {
+			background: rgba(251, 236, 221, 1);
+		}
+
+		.block-color-yellow_background {
+			background: rgba(251, 243, 219, 1);
+		}
+
+		.block-color-teal_background {
+			background: rgba(237, 243, 236, 1);
+		}
+
+		.block-color-blue_background {
+			background: rgba(231, 243, 248, 1);
+		}
+
+		.block-color-purple_background {
+			background: rgba(244, 240, 247, 0.8);
+		}
+
+		.block-color-pink_background {
+			background: rgba(249, 238, 243, 0.8);
+		}
+
+		.block-color-red_background {
+			background: rgba(253, 235, 236, 1);
+		}
+
+		.select-value-color-interactiveBlue {
+			background-color: rgba(35, 131, 226, .07);
+		}
+
+		.select-value-color-pink {
+			background-color: rgba(245, 224, 233, 1);
+		}
+
+		.select-value-color-purple {
+			background-color: rgba(232, 222, 238, 1);
+		}
+
+		.select-value-color-green {
+			background-color: rgba(219, 237, 219, 1);
+		}
+
+		.select-value-color-gray {
+			background-color: rgba(227, 226, 224, 1);
+		}
+
+		.select-value-color-translucentGray {
+			background-color: rgba(255, 255, 255, 0.0375);
+		}
+
+		.select-value-color-orange {
+			background-color: rgba(250, 222, 201, 1);
+		}
+
+		.select-value-color-brown {
+			background-color: rgba(238, 224, 218, 1);
+		}
+
+		.select-value-color-red {
+			background-color: rgba(255, 226, 221, 1);
+		}
+
+		.select-value-color-yellow {
+			background-color: rgba(253, 236, 200, 1);
+		}
+
+		.select-value-color-blue {
+			background-color: rgba(211, 229, 239, 1);
+		}
+
+		.select-value-color-pageGlass {
+			background-color: undefined;
+		}
+
+		.select-value-color-washGlass {
+			background-color: undefined;
+		}
+
+		.checkbox {
+			display: inline-flex;
+			vertical-align: text-bottom;
+			width: 16;
+			height: 16;
+			background-size: 16px;
+			margin-left: 2px;
+			margin-right: 5px;
+		}
+
+		.checkbox-on {
+			background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+		}
+
+		.checkbox-off {
+			background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+		}
+	</style>
+</head>
+
+<body>
+	<article id="bf0fcd08-50d3-49cb-909b-a0eaa61aac90" class="page sans">
+		<header>
+			<h1 class="page-title">Chapter 1</h1>
+			<p class="page-description"></p>
+		</header>
+		<div class="page-body">
+			<p id="5ae2cc9d-e447-48d1-acf7-f730c48416a9" class="">Subtle note on the beginning of the book is that tho
+				James is Jesus’ brother he calls himself a servant of him. It’s beautiful tho we are all brother’s of
+				Christ we ought to be calling ourselves servants of him also.</p>
+			<p id="b8f58bdf-7c20-4c4c-adf5-8ce2d0248931" class=""><strong>James 1:1</strong></p>
+			<figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex"
+				id="b21734cf-5551-4c46-87f8-e91a0b37bc31">
+				<div style="font-size:1.5em"><span class="icon">💡</span></div>
+				<div style="width:100%">የእግዚአብሔርና የጌታ የኢየሱስ ክርስቶስ አገልጋይ ያዕቆብ ለተበተኑ ለዐሥራ ሁለቱ ነገዶች፤ ሰላም ለእናንተ ይሁን።</div>
+			</figure>
+			<figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex"
+				id="f089148b-580c-438d-b4a0-b3f35c0b11ef">
+				<div style="font-size:1.5em"><span class="icon">💡</span></div>
+				<div style="width:100%">James, a servant of God and of the Lord Jesus Christ, To the twelve tribes
+					scattered among the nations: Greetings.</div>
+			</figure>
+			<p id="3618de77-4115-4a74-a53b-3a2fb1d376aa" class="">
+			</p>
+			<h1 id="0034e645-069b-4358-babd-20c7106da9f4" class="">Trials and Temptations</h1>
+			<p id="2d7f5860-591d-4a10-ad82-3ac9c70c7545" class="">Temptations allure towards sin or disobedience to
+				God&#x27;s commands. It is the internal or external force that seeks to draw a person away from
+				righteousness and into sinful thoughts, words, or actions. It’s the provoking of lawlessness. </p>
+			<p id="4fa5777c-644a-435a-bde8-9ef6c9607d00" class="">Temptations are opportunities for Joy and of-course
+				Sadness. If you pass through your temptations you will mature and become a stronger person but if you
+				fail (as I usually do) you’ll feel guilty, unworthy and incapable. </p>
+			<p id="db922896-b4c6-4ff9-ac55-e411ddb08a62" class="">During temptation, it is your faith that is tempted.
+				Trials test and refine our faith in God, they question if the unseen things we believed are true or not.
+				Trials are here to make you doubt. To doubt that what God told you to be true is actually false. And it
+				is persisting through this, meaning staying faithful when opportunities to doubt rise, that will produce
+				perseverance which will lead to maturity and completeness.</p>
+			<p id="77541769-3289-46f1-8300-326dcbf3826f" class=""><strong>James 1:2-4</strong></p>
+			<figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex"
+				id="243fa08f-2305-4231-8b27-811d1b77fdc9">
+				<div style="font-size:1.5em"><span class="icon">💡</span></div>
+				<div style="width:100%">ወንድሞቼ ሆይ! ልዩ ልዩ ፈተና ሲደርስባችሁ እንደ ደስታ አድርጋችሁ ቁጠሩት፤ ምክንያቱም የእምነታችሁ መፈተን እንደሚያጸናችሁ
+					ታውቃላችሁ፥ ምንም የሚጎድላችሁ ሳይኖር ፍጹማንና ምሉዓን እንድትሆኑ ጽናትም ሥራውን ይፈጽም።</div>
+			</figure>
+			<figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex"
+				id="94b81623-728e-47ce-984f-80467015c3b8">
+				<div style="font-size:1.5em"><span class="icon">💡</span></div>
+				<div style="width:100%">Consider it pure joy, my brothers and sisters, whenever you face trials of many
+					kinds, because you know that the testing of your faith produces perseverance. Let perseverance
+					finish its work so that you may be mature and complete, not lacking anything.</div>
+			</figure>
+			<p id="a8552bfa-0e26-4513-bf4e-2b837fcee6b4" class="">A person who perseveres is a blessed person as that
+				leads to receiving the Crown of Life</p>
+			<p id="35566f9b-b0d1-4647-ae73-cb6da977c7eb" class=""><strong>James 1:12</strong></p>
+			<figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex"
+				id="fcc11a78-3296-480c-850b-d00430898f81">
+				<div style="font-size:1.5em"><span class="icon">💡</span></div>
+				<div style="width:100%">ጌታ ለሚወዱት ተስፋ የሰጣቸውን የሕይወትን አክሊል ተፈትኖ ይቀበላልና፥ በፈተና የሚጸና ሰው የተባረከ ነው። </div>
+			</figure>
+			<figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex"
+				id="5eb59a3d-5b83-4115-9ee9-03aafd92a075">
+				<div style="font-size:1.5em"><span class="icon">💡</span></div>
+				<div style="width:100%">Blessed is the one who perseveres under trial because, having stood the test,
+					that person will receive the crown of life that the Lord has promised to those who love him. </div>
+			</figure>
+			<p id="44a925eb-7270-40a5-bcf1-f238040b091d" class="">
+				<strong><strong><strong><strong><strong><strong><strong><strong><strong>Side Note:
+												</strong></strong></strong></strong></strong></strong></strong></strong></strong>I
+				was thinking that if a person doubts that he’ll go to heaven would he not? So that got me thinking and
+				if a person does doubt that he will fail all temptations before hand which will lead to the growth of
+				sin and inevitably the cause of spiritual death.
+			</p>
+			<h3 id="4441adac-2a77-48cf-b077-8f92f05bb2a4" class="">
+				<strong><strong><strong><strong><strong><strong><strong><strong><strong>What is the Crown of
+													Life?</strong></strong></strong></strong></strong></strong></strong></strong></strong>
+			</h3>
+			<p id="ef680306-c155-447c-b27d-acf90291d3ba" class="">The crown of life symbolizes eternal life, it is not
+				that halo that floats on the heads of angels and holy people in movies and shows. It is eternal life
+				with God.</p>
+			<p id="18f80a4a-35f1-4491-866d-46907ce6fc90" class=""><strong>Revelations 2:10</strong></p>
+			<figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex"
+				id="ac808040-b79e-4eb6-9010-1fcc8482a4b0">
+				<div style="font-size:1.5em"><span class="icon">💡</span></div>
+				<div style="width:100%">እስከ ሞት ድረስ ታማኝ ሁን፤ እኔም የሕይወትን አክሊል እሰጥሃለሁ።</div>
+			</figure>
+			<figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex"
+				id="0f4e257d-95e9-49e3-a6fd-67708408e14d">
+				<div style="font-size:1.5em"><span class="icon">💡</span></div>
+				<div style="width:100%">Be faithful, even to the point of death, and I will give you life as your
+					victor’s crown.</div>
+			</figure>
+			<p id="626dbdf4-d484-4696-b8d1-54604cb3b284" class="">A simple summary of the above would be:</p>
+			<blockquote id="6f560ea6-b61b-4eff-a988-516984234a1d" class="">Temptations → Test your Faith → If You
+				Persevere → You Mature &amp; Complete → Then Receive the Crown of Life</blockquote>
+			<h3 id="34223c59-69ed-47d9-b5e8-64890724eb76" class="">God and Temptations</h3>
+			<p id="02dfd47f-6b50-4a26-a16f-0e65fa9d1d98" class="">God doesn’t tempt and God cannot be tempted. Here
+				something needs to be clarified; God doesn’t tempt you to sin, he doesn’t allure or entice you to do
+				evil or to doubt BUT he does allow you to be in tempting circumstances and environments. </p>
+			<p id="78be51ef-a80f-4927-810f-94b9dcbc9c33" class="">Another thing to be noted is that God doesn’t tempt
+				but He tests. So a simple example to compare would be the story of Eve in the Garden and Abraham on the
+				mountain. Satan <em><em><em><em><em><em><em><em>tempted </em></em></em></em></em></em></em></em>Eve,
+				meaning he allured her to doubt. But during Abraham’s interaction with God about asking Abraham to
+				sacrifice his son, God <em><em><em><em><em><em><em>tested </em></em></em></em></em></em></em>Abraham
+				whether he loves him more than his son or not. </p>
+			<blockquote id="da543bbf-df01-43db-b5a8-b5bd4ae3c6a0" class="">God doesn’t tempt but He tests.</blockquote>
+			<p id="ff2c0ddb-857f-41fa-8ff2-53a7ca4ab2a1" class=""><strong>James 1:13</strong></p>
+			<figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex"
+				id="0ff1901b-5cd4-4d6a-9b5f-8c08de02d6ba">
+				<div style="font-size:1.5em"><span class="icon">💡</span></div>
+				<div style="width:100%">ማንም ሲፈተን “እግዚአብሔር ፈተነኝ፤” አይበል፤ እግዚአብሔር በክፉ አይፈተንምና፤ እርሱስ ማንንም አይፈትንም።</div>
+			</figure>
+			<figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex"
+				id="70fc5ff2-dc2c-447a-af64-da6423a18d53">
+				<div style="font-size:1.5em"><span class="icon">💡</span></div>
+				<div style="width:100%">When tempted, no one should say, “God is tempting me.” For God cannot be tempted
+					by evil, nor does he tempt anyone</div>
+			</figure>
+			<p id="09e0d360-c556-4a1d-8d75-d8954d236da8" class="">But then we are shown how we are tempted. Here the
+				devil doesn’t spontaneously create a new passion or attraction to sin instead he uses what we already
+				possess. That evil desire and lust in our heart. He uses that to tempt us. Meaning even as a christian
+				he will use this evil lust you have to make you doubt your faith on God. Then you can either take the
+				perseverance path of resisting temptation or you can give in to temptation and sin. </p>
+			<p id="ab9b9420-0830-4bd0-95c9-cd854730bf60" class="">Note here that Sin it self didn’t give birth to death,
+				he specifically said that full grown Sin leads to death. And full grown sin suggests a progression or a
+				series of choices and actions that lead to a state of complete disobedience and separation from God. It
+				is this that leads to spiritual death. </p>
+			<p id="cb09059a-cd51-4954-b293-58f871bccd6f" class="">This is why it’s better to repent and be back to God
+				as soon as possible instead of running away from God as soon as we sin. Because when avoiding God and
+				repentance we are allowing sin to flourish and mature. And this prolonged state of unrepentant and
+				habitual sinful behavior is what ultimately causes spiritual death.</p>
+			<p id="2212475c-f896-4119-af22-8d87db2a3e22" class=""><strong>James 1:14-15</strong></p>
+			<figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex"
+				id="3715f16c-89f4-457b-94fe-f5ec3a4ffacd">
+				<div style="font-size:1.5em"><span class="icon">💡</span></div>
+				<div style="width:100%">ነገር ግን እያንዳንዱ የሚፈተነው በራሱ ምኞት ሲሳብና ሲታለል ነው። ምኞት ከፀነሰች በኋላ ኃጢአትን ትወልዳለች፤ ኃጢአትም
+					ካደገች በኋላ ሞትን ትወልዳለች።</div>
+			</figure>
+			<figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex"
+				id="90221524-80d0-42a0-8770-45c66d7be110">
+				<div style="font-size:1.5em"><span class="icon">💡</span></div>
+				<div style="width:100%">But each person is tempted when they are dragged away by their own evil desire
+					and enticed. Then, after desire has conceived, it gives birth to sin; and sin, when it is
+					full-grown, gives birth to death.</div>
+			</figure>
+			<blockquote id="880c7cb0-300b-4b85-92e1-6391d6e10a9a" class="">Our Own Evil Desire → Leads to Sin → Sin
+				Persists → Causes Death</blockquote>
+			<blockquote id="481dbf63-2bbd-41ec-8202-b77d7cdf6662" class="">To be tempted is one thing, to sin another
+				but to persist in sin is completely damaging. </blockquote>
+			<h3 id="fc5258ff-87b0-4337-a6bb-892f665cd2b1" class="">So what is to be done?</h3>
+			<ul id="a99d6aff-4805-4d41-9479-f69dcc91c7bb" class="bulleted-list">
+				<li style="list-style-type:disc">Recognize the source of temptation</li>
+			</ul>
+			<p id="56943988-6f19-4be0-834f-5c540c659455" class="">James 1:14-15</p>
+			<figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex"
+				id="620759b5-c130-46d6-99fd-2850b77ad6f3">
+				<div style="font-size:1.5em"><span class="icon">💡</span></div>
+				<div style="width:100%">ነገር ግን እያንዳንዱ የሚፈተነው በራሱ ምኞት ሲሳብና ሲታለል ነው። ምኞት ከፀነሰች በኋላ ኃጢአትን ትወልዳለች፤ ኃጢአትም
+					ካደገች በኋላ ሞትን ትወልዳለች።</div>
+			</figure>
+			<figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex"
+				id="133a9f0f-1914-451f-8099-afac2f561945">
+				<div style="font-size:1.5em"><span class="icon">💡</span></div>
+				<div style="width:100%">But each person is tempted when they are dragged away by their own evil desire
+					and enticed. Then, after desire has conceived, it gives birth to sin; and sin, when it is
+					full-grown, gives birth to death.</div>
+			</figure>
+			<ul id="1c61bbe8-95ca-4bbf-840d-e084547a2a26" class="bulleted-list">
+				<li style="list-style-type:disc">Guard your heart and mind </li>
+			</ul>
+			<p id="7ce2b4e5-fc54-4b87-90ff-63cb857a5f5c" class="">Proverbs 4:23</p>
+			<figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex"
+				id="d6317459-d003-435f-ad33-293b30ca658e">
+				<div style="font-size:1.5em"><span class="icon">💡</span></div>
+				<div style="width:100%">ከሁሉም በላይ ልብህን ጠብቅ፤ የሕይወት ምንጭ ነውና።</div>
+			</figure>
+			<figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex"
+				id="c3903746-9e82-4b97-b524-8af62443d162">
+				<div style="font-size:1.5em"><span class="icon">💡</span></div>
+				<div style="width:100%">Above all else, guard your heart, for everything you do flows from it.</div>
+			</figure>
+			<ul id="ab73e36f-5b26-40b1-b5e3-a03521eb1cb1" class="bulleted-list">
+				<li style="list-style-type:disc">Seek God&#x27;s strength and resist temptation</li>
+			</ul>
+			<p id="4f2675e5-3657-4a95-aa72-ede766bf1fb8" class="">James 4:7</p>
+			<figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex"
+				id="bb64f015-f6c9-459e-bb00-69315910be9f">
+				<div style="font-size:1.5em"><span class="icon">💡</span></div>
+				<div style="width:100%">እንግዲህ ራሳችሁን ለእግዚአብሔር አስገዙ፤ ዲያብሎስን ተቃወሙት፤ ከእናንተም ይሸሻል።</div>
+			</figure>
+			<figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex"
+				id="1f18b2bc-bff1-4b02-9daf-6fcecdae00e1">
+				<div style="font-size:1.5em"><span class="icon">💡</span></div>
+				<div style="width:100%">Submit yourselves, then, to God. Resist the devil, and he will flee from you.
+				</div>
+			</figure>
+			<ul id="c59ec45d-9752-4bd2-a57e-c3c044a45545" class="bulleted-list">
+				<li style="list-style-type:disc">Renew your mind </li>
+			</ul>
+			<p id="6ae22f12-2086-40f0-9051-7085a9a9488d" class="">Psalms 119:11</p>
+			<figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex"
+				id="8a6f3eeb-3603-4c76-8371-bc0f91ce25be">
+				<div style="font-size:1.5em"><span class="icon">💡</span></div>
+				<div style="width:100%">አንተን እንዳልበድል፣ ቃልህን በልቤ ሰወርሁ።</div>
+			</figure>
+			<figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex"
+				id="fbf8e55a-46a3-4291-abb0-1a6ad36c7303">
+				<div style="font-size:1.5em"><span class="icon">💡</span></div>
+				<div style="width:100%">I have hidden your word in my heart that I might not sin against you.</div>
+			</figure>
+			<ul id="09a22b5c-2627-40d2-903e-52179a1c1ef0" class="bulleted-list">
+				<li style="list-style-type:disc">Flee from temptation </li>
+			</ul>
+			<p id="94ba60aa-349c-4601-a920-e763a46a3aed" class="">1 Corinthians 6:18</p>
+			<figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex"
+				id="645cdf16-e62d-407d-972e-dc461ccf2c5d">
+				<div style="font-size:1.5em"><span class="icon">💡</span></div>
+				<div style="width:100%">ከዝሙት ሽሹ።</div>
+			</figure>
+			<figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex"
+				id="ad40279e-ba60-4925-bfe8-dbec61be6b46">
+				<div style="font-size:1.5em"><span class="icon">💡</span></div>
+				<div style="width:100%">Flee from sexual immorality.</div>
+			</figure>
+			<ul id="aaf45b2b-b2dd-459f-bd12-0925b23efad8" class="bulleted-list">
+				<li style="list-style-type:disc">Be accountable </li>
+			</ul>
+			<p id="e14bd03d-509e-4c38-af9f-1e240c40a431" class="">James 5:16</p>
+			<figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex"
+				id="fafbf2e9-b50b-4022-9d4d-18cb8180da49">
+				<div style="font-size:1.5em"><span class="icon">💡</span></div>
+				<div style="width:100%">ስለዚህ ኀጢአታችሁን እርስ በርሳችሁ ተናዘዙ፤ ትፈወሱም ዘንድ አንዱ ለሌላው ይጸልይ። የጻድቅ ሰው ጸሎት ኃይል አለው፤ ታላቅ
+					ነገርም ያደርጋል።</div>
+			</figure>
+			<figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex"
+				id="fb82e48c-faa1-4a0a-8a04-28480448b10b">
+				<div style="font-size:1.5em"><span class="icon">💡</span></div>
+				<div style="width:100%">Therefore confess your sins to each other and pray for each other so that you
+					may be healed. The prayer of a righteous person is powerful and effective.</div>
+			</figure>
+			<ul id="556fd900-2442-4a16-b7e6-127d71f99f5b" class="bulleted-list">
+				<li style="list-style-type:disc">Seek forgiveness and repentance</li>
+			</ul>
+			<p id="91c3a9d8-a108-4204-90ed-990b4a9d2fe5" class="">1 John 1:9</p>
+			<figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex"
+				id="fc805ae9-39b6-40a7-95c0-400a026f775e">
+				<div style="font-size:1.5em"><span class="icon">💡</span></div>
+				<div style="width:100%">ኀጢአታችንን ብንናዘዝ ኀጢአታችንን ይቅር ሊለን፣ ከዐመፃ ሁሉ ሊያነጻን እርሱ ታማኝና ጻድቅ ነው።</div>
+			</figure>
+			<figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex"
+				id="70a7ea07-0a44-4226-9283-509fcd52c315">
+				<div style="font-size:1.5em"><span class="icon">💡</span></div>
+				<div style="width:100%">If we confess our sins, he is faithful and just and will forgive us our sins and
+					purify us from all unrighteousness.</div>
+			</figure>
+			<p id="08ac84e1-a150-4e2b-89ce-d5eac05a82af" class="">
+			</p>
+			<h1 id="b8b39c62-56f0-4891-ae97-6f417094eed6" class="">Wisdom</h1>
+			<p id="da85c885-2c92-4e0a-bc7f-33c434d6eb90" class="">Here James encourages us to seek wisdom in all aspects
+				of life because some of us lack wisdom. In-fact, asking for wisdom is crucial that even Solomon wasn’t
+				given it until he asked for it. But then again who gave him the wisdom to ask for wisdom?! </p>
+			<p id="45558e7d-4033-4b97-9c29-593a4dac6ad3" class="">Another thing we can learn is that God is a source of
+				wisdom, meaning that wisdom has a touch of spirituality to it. It may not be something that’s taught in
+				school or from people but is a spiritual gift from God to man. </p>
+			<p id="dc9af6e5-5e48-4f96-956c-5975bbb369ed" class="">Now here we notice that people lack wisdom and God
+				knows that. So God doesn’t discriminate or choose who to give wisdom to. That means everyone who asks
+				God for wisdom doubtlessly has an equal chance of being wise. </p>
+			<p id="0eee8730-07e9-4d15-a7fb-932c53a922bc" class="">Tho when asking God for wisdom or anything James tells
+				us that we should ask in complete doubtless faith. We shouldn’t doubt His ability or willingness to
+				provide wisdom, as doubt reveals a lack of faith. Doubt causes instability and inconsistency in our
+				relationship with God, hindering our ability to receive from Him. So doubting will not only cause
+				problems in your relationship with God but will also hinder you from getting what you asked for. </p>
+			<p id="4516f7a1-2ff7-4792-8bc4-7a22ab6a15f6" class="">Side note on doubt is that when you doubt you are
+				basically saying that “God can’t do it” comparing him to man or “God won’t do it” not understanding his
+				will. So God isn’t a person who’s to be doubted, he does what he says and his will is clear. </p>
+			<blockquote id="96baf4fe-b13e-41be-8fae-c32baa2e0c67" class="">The truth of the matter is that God wants you
+				to be wise and if you ask him doubtlessly he will give you it graciously with no questions asked!
+			</blockquote>
+			<blockquote id="8399a6d3-e1c3-4438-9a37-6a58efad58b4" class="">Lack Wisdom → Ask God without doubting →
+				Receive abundant Wisdom </blockquote>
+			<p id="ca499bcb-336e-4a71-839e-57ec430b344c" class=""><strong>James 1:5-8</strong></p>
+			<figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex"
+				id="2c142fd9-2366-4fba-873c-8c533975b8ab">
+				<div style="font-size:1.5em"><span class="icon">💡</span></div>
+				<div style="width:100%">ከእናንተ ማንም ጥበብ ቢጎድለው፥ ሳይነቅፍ በልግስና ለሁሉ የሚሰጠውን እግዚአብሔርን ይለምን፤ ለእርሱም ይሰጠዋል። ነገር ግን
+					በምንም ሳይጠራጠር በእምነት ይለምን፤ ምክንያቱም የሚጠራጠር ሰው በነፋስ እንደሚገፋና እንደሚነዋወጥ የባሕርን ማዕበል ነው። ያ ሰው ከጌታ ዘንድ አንዳች
+					አገኛለሁ ብሎ ሊያስብ አይገባውም። በመንገዱ ሁሉ የሚወላውል ሁለት ሐሳብ ያለው ሰው ነው።</div>
+			</figure>
+			<figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex"
+				id="4e9b8889-53ce-45ef-8dce-3db9e898ed18">
+				<div style="font-size:1.5em"><span class="icon">💡</span></div>
+				<div style="width:100%">If any of you lacks wisdom, you should ask God, who gives generously to all
+					without finding fault, and it will be given to you. But when you ask, you must believe and not
+					doubt, because the one who doubts is like a wave of the sea, blown and tossed by the wind. That
+					person should not expect to receive anything from the Lord. Such a person is double-minded and
+					unstable in all they do.</div>
+			</figure>
+			<p id="31c64bb0-d6a4-4372-9e44-1a1534381639" class="">And God has limitless wisdom </p>
+			<p id="0ba8090f-73aa-4014-89d9-a4315c1f393b" class="">Psalms 147:5</p>
+			<figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex"
+				id="26a852f8-6df3-4387-8c8e-af88d3fdb8a0">
+				<div style="font-size:1.5em"><span class="icon">💡</span></div>
+				<div style="width:100%">ጌታችን ታላቅ ነው፤ እጅግ ኀያልም ነው፤ ለጥበቡም ወሰን የለውም።</div>
+			</figure>
+			<figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex"
+				id="7afde557-2954-4c50-ae4c-2fd9ab913b91">
+				<div style="font-size:1.5em"><span class="icon">💡</span></div>
+				<div style="width:100%">Great is our Lord and mighty in power; his understanding has no limit.</div>
+			</figure>
+			<h1 id="68020597-3080-4339-a4b5-5dd8a3f38a5d" class="">Poor and Rich Believers</h1>
+			<p id="26d71eae-e468-45de-8487-8d4430dc9cd5" class="">We can notice that believers can be poor or rich
+				showing that believing in Christ isn’t a source of finances. Certain things to remark is that the poor
+				aren’t encouraged to be prideful of their poorness, and the rich aren’t encouraged to be prideful of the
+				wealth they’ve acquired. But they’re both encouraged to be prideful of the relationship they have with
+				God.</p>
+			<p id="59ca9ec0-8313-4a88-8063-03f15c5ea548" class="">The poor being lowly yet God forms a relationship with
+				them, the rich possessing temporary material yet God forms a relationship with them. It is this that we
+				should be proud of. That our value isn’t determined by our temporary possessions, social status or
+				wealth but by our relationship with God. </p>
+			<p id="07ef94c4-3911-401a-8019-2e818518a5f6" class=""><strong>James 1:9-11</strong></p>
+			<figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex"
+				id="d98525a3-d68e-40d3-9145-cc0e6e53ee10">
+				<div style="font-size:1.5em"><span class="icon">💡</span></div>
+				<div style="width:100%">ዝቅ ያለው ወንድም ከፍ በማለቱ ይመካ፥ ሀብታምም እንደ ሣር አበባ ስለሚረግፍ በውርደቱ ይመካ። የፀሐይ ቃጠሎ በንዳዱ ሲወጣ
+					ሣሩን ያደርቀዋል፤ አበባውም ይረግፋል፤ የመልኩም ውበት ይጠፋል፤ እንዲሁ ሀብታም ሰው በመንገዱ ይዝላል።</div>
+			</figure>
+			<figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex"
+				id="93ab64f7-622b-47ad-b0f0-7f801dbab07e">
+				<div style="font-size:1.5em"><span class="icon">💡</span></div>
+				<div style="width:100%">Believers in humble circumstances ought to take pride in their high position.
+					But the rich should take pride in their humiliation—since they will pass away like a wild flower.
+					For the sun rises with scorching heat and withers the plant; its blossom falls and its beauty is
+					destroyed. In the same way, the rich will fade away even while they go about their business.</div>
+			</figure>
+			<p id="db866677-9c06-428c-aa91-ac50ba0a35a9" class="">The God of the poor is also the God of the rich</p>
+			<p id="0957cff6-500b-4b22-9caa-f24d874fad1d" class="">Proverbs 22:2</p>
+			<figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex"
+				id="0c2dfe91-d892-40b2-af9b-07a5f52ce259">
+				<div style="font-size:1.5em"><span class="icon">💡</span></div>
+				<div style="width:100%">ባለጠጋና ድሀ ተገናኙ፤ እግዚአብሔር የሁላቸው ፈጣሪ ነው።</div>
+			</figure>
+			<figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex"
+				id="f24f7964-fb66-49f8-ada2-8ca2a8867287">
+				<div style="font-size:1.5em"><span class="icon">💡</span></div>
+				<div style="width:100%">Rich and poor have this in common: The Lord is the Maker of them all.</div>
+			</figure>
+			<blockquote id="218206e9-6c19-4d5a-9dfd-74be8182a1be" class="">Your value isn’t in what you possess but in
+				who possesses you. </blockquote>
+			<h1 id="a8329433-c260-433e-94fe-a01737e5b693" class="">God’s Nature and Perfect Gifts</h1>
+			<p id="60cb13ab-5501-464e-8ce7-2b7e590bce25" class="">James wants to make it clear to us to not be deceived
+				that the good we got isn’t from any other source but from God. All good things are from God. And to
+				relate to the previous ideas we discussed, wisdom is also from God. </p>
+			<p id="3217dafe-a8e2-4a46-be20-1c651a4e6514" class="">Here James went out his way to express God’s nature.
+				How it doesn’t change nor shift like shadows. God&#x27;s nature and character does not change. What that
+				means is that the same God that gave Solomon wisdom when asked for will do the exact same for us. </p>
+			<p id="8976f048-637c-4858-8322-6db8391cb56f" class="">James 1:16-17</p>
+			<figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex"
+				id="24d44a4d-ed41-4a77-b683-71b83af6a30f">
+				<div style="font-size:1.5em"><span class="icon">💡</span></div>
+				<div style="width:100%">የተወደዳችሁ ወንድሞቼ ሆይ! አትታለሉ! መልካም ስጦታ ሁሉ፥ ፍጹምም በረከት ሁሉ፥ እንደ ጥላ መዘዋወር ወይም መለዋወጥ ከሌለበት
+					ከላይ ከብርሃናት አባት ይወርዳሉ። ለፍጥረቱ የበኵራት እንድንሆን በገዛ ፈቃዱ በእውነት ቃል ወለደን።</div>
+			</figure>
+			<figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex"
+				id="dbe5932e-141d-4b1b-80e8-d3709e4a551f">
+				<div style="font-size:1.5em"><span class="icon">💡</span></div>
+				<div style="width:100%">Don’t be deceived, my dear brothers and sisters. Every good and perfect gift is
+					from above, coming down from the Father of the heavenly lights, who does not change like shifting
+					shadows. He chose to give us birth through the word of truth, that we might be a kind of
+					first-fruits of all he created.</div>
+			</figure>
+			<blockquote id="3b5b2805-8781-474d-8f70-476e0cba48ac" class="">If there is any good anywhere, it is from God
+			</blockquote>
+			<blockquote id="be1a47e5-e6d7-4d9c-9e2e-90f777493af1" class="">God remains unchanged and consistent so that
+				we can rely on him knowing that he won’t change on us</blockquote>
+			<p id="57325e52-bf57-4a6a-bf8d-832376c74674" class="">
+			</p>
+			<h1 id="ac3f69f5-7791-474c-96f3-efb6bbb44267" class="">Transformative Power of the Gospel</h1>
+			<p id="4e55d4f4-702c-4a5b-89d7-953eab1251b0" class="">Here James emphasizes that believers are receivers of
+				the new birth through the Word of truth or the message of salvation through Jesus Christ. And we, the
+				believers of this Word, are first fruits — meaning that we are the first of our kinds to receive
+				salvation through belief and not offerings.</p>
+			<p id="d67b33b6-b3cf-4630-8dc2-4bee44d2c6db" class="">James 1:18</p>
+			<figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex"
+				id="a9331f4b-729d-47f8-824a-00d31d46df64">
+				<div style="font-size:1.5em"><span class="icon">💡</span></div>
+				<div style="width:100%">ለፍጥረቱ የበኵራት እንድንሆን በገዛ ፈቃዱ በእውነት ቃል ወለደን።</div>
+			</figure>
+			<figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex"
+				id="464bb1d3-0970-4bd7-a122-188e0089f1b5">
+				<div style="font-size:1.5em"><span class="icon">💡</span></div>
+				<div style="width:100%">He chose to give us birth through the word of truth, that we might be a kind of
+					first-fruits of all he created.</div>
+			</figure>
+			<p id="5821e15d-7400-4ccb-b3d9-1d4b25e8c4f1" class="">
+			</p>
+			<h1 id="b0602786-5c02-4363-af2c-195464c34b01" class="">Attentive Listening and Humility</h1>
+			<p id="da2a4dd7-4c41-4edc-956a-0e38bddca10a" class="">Here it is pointed to us that there there is wisdom in
+				listening well, speaking less and controlling anger. And it is proper communication to listen first then
+				speak.</p>
+			<p id="45f457bb-ed05-4552-82ea-9f513ea0f775" class="">As a person with anger issues, I am learning that
+				anger hinders righteous behavior and can lead to harmful consequences. So believers should strive to
+				control and restrain it.</p>
+			<p id="5c2b3ce3-0995-457c-8038-cc6f87c5053b" class="">James 1:19-20</p>
+			<figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex"
+				id="c22000ea-8fc8-4411-8ad5-43780fbd867c">
+				<div style="font-size:1.5em"><span class="icon">💡</span></div>
+				<div style="width:100%">የተወደዳችሁ ወንድሞቼ ሆይ! ይህን አትርሱ፥ ሰው ሁሉ ለመስማት የፈጠነ፥ ለመናገርም የዘገየ፥ ለቁጣም የዘገየ ይሁን፤ የሰው ቁጣ
+					የእግዚአብሔርን ጽድቅ አይሠራምና። </div>
+			</figure>
+			<figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex"
+				id="99de3e71-24ef-4626-8e80-b423770d86b4">
+				<div style="font-size:1.5em"><span class="icon">💡</span></div>
+				<div style="width:100%">My dear brothers and sisters, take note of this: Everyone should be quick to
+					listen, slow to speak and slow to become angry, because human anger does not produce the
+					righteousness that God desires. </div>
+			</figure>
+			<p id="e7bc813b-7df7-44e0-9363-8af079ef4833" class="">The Word of God is described as being implanted in
+				believers, indicating the transformative power of God&#x27;s truth. It is to be received with humility
+				allowing it to shape our thoughts, attitudes, and actions acknowledging its ability to bring salvation
+				and change lives. While in doing this we should also get rid of evil and restrain from doing it. </p>
+			<p id="3abcacb6-8fba-482c-a37a-479ca2024b09" class="">Here we are urged to get rid of these things: </p>
+			<ol type="1" id="81fed534-85b3-4684-8151-0c7c578b5a11" class="numbered-list" start="1">
+				<li>Moral filth: signifies impurity, corruption, or sinful practices that defile a person&#x27;s
+					character and conduct. This can include actions such as lying, cheating, immorality, greed, hatred,
+					and other forms of unrighteousness.</li>
+			</ol>
+			<ol type="1" id="7401f2a1-2586-445c-946c-b7ff847a1a77" class="numbered-list" start="2">
+				<li>Evil that is so prevalent: It refers to the pervasive presence of wickedness and sinful influences
+					in the world. The term &quot;evil&quot; encompasses all forms of moral wrongdoing, corruption, and
+					disobedience to God&#x27;s commands that are prevalent in society.</li>
+			</ol>
+			<p id="ac92bb4d-cd5b-4759-838f-190b67d3603b" class="">The term “Get rid of” implies a deliberate and
+				intentional effort on the part of believers to separate themselves from such moral filth and evil
+				influences. It involves actively renouncing and turning away from sinful patterns of behavior, embracing
+				a lifestyle of holiness, and seeking God&#x27;s help to resist temptation and overcome the allure of
+				worldly values.</p>
+			<p id="55363ed0-1966-4ba0-b1c4-923898f95a00" class="">James 1:20</p>
+			<figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex"
+				id="10485740-875c-4419-9a19-66e7f0e5df0d">
+				<div style="font-size:1.5em"><span class="icon">💡</span></div>
+				<div style="width:100%">ስለዚህ ርኩሰትን ሁሉ የክፋትንም ትርፍ አስወግዳችሁ፥ ነፍሳችሁን ማዳን የሚችለውን በውስጣችሁም የተተከለውን ቃል በየዋህነት
+					ተቀበሉ።</div>
+			</figure>
+			<figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex"
+				id="4a0bf37b-7996-42ee-a1a6-e638649c627f">
+				<div style="font-size:1.5em"><span class="icon">💡</span></div>
+				<div style="width:100%">Therefore, get rid of all moral filth and the evil that is so prevalent and
+					humbly accept the word planted in you, which can save you.</div>
+			</figure>
+			<blockquote id="dc57f479-5126-4594-aa26-273c3c525acc" class="">The word of God is implanted into us and it
+				can save our soul but the only way it does that is if we humbly accept it.</blockquote>
+			<blockquote id="6eda242e-38f6-4d30-9542-8e8a297c5f06" class="">We as believers have the role of actively and
+				intentionally separating our selves from all wrongdoings. </blockquote>
+			<h1 id="b08dc4b8-8bca-49a4-87e0-c8a237a6c9ff" class="">Active Obedience to the Word</h1>
+			<p id="8fb514e3-f70f-4947-966d-5427518f2628" class="">James highlights that listening to the Word without
+				putting it into practice is self-deception. The word of God is a mirror that shows us our true nature.
+				We can either know that true nature and not do anything about it or we could take action intentionally
+				and consistently and remove the filth and wrong from our lives and in doing so the word has set us free.
+			</p>
+			<p id="c833333c-3079-44ce-9247-38ea8810ff98" class="">James 1:22-25</p>
+			<figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex"
+				id="3c5b9ffe-0df4-4e0d-86bb-211bac52b9ae">
+				<div style="font-size:1.5em"><span class="icon">💡</span></div>
+				<div style="width:100%">ቃሉን የምታደርጉ ሁኑ እንጂ ራሳችሁን እያታለላችሁ፥ የምትሰሙ ብቻ አትሁኑ። ቃሉን የሚሰማና የማያደርግ ቢኖር የተፈጥሮ ፊቱን
+					በመስተዋት የሚያይን ሰው ይመስላል፤ ራሱን አይቶ ይሄዳል፤ ወዲያውም ምን እንደሚመስል ይረሳል። ነገር ግን ነጻ የሚያወጣውን ፍጹሙን ሕግ ተመልክቶ የሚጸናበት፥
+					ሥራንም የሚሠራ እንጂ ሰምቶ የሚረሳ ያልሆነው፥ በሥራው የተባረከ ይሆናል።</div>
+			</figure>
+			<figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex"
+				id="a1019e1a-aa89-4e8c-900d-69a75c807ecf">
+				<div style="font-size:1.5em"><span class="icon">💡</span></div>
+				<div style="width:100%">Do not merely listen to the word, and so deceive yourselves. Do what it says.
+					Anyone who listens to the word but does not do what it says is like someone who looks at his face in
+					a mirror and, after looking at himself, goes away and immediately forgets what he looks like. But
+					whoever looks intently into the perfect law that gives freedom, and continues in it—not forgetting
+					what they have heard, but doing it—they will be blessed in what they do.</div>
+			</figure>
+			<blockquote id="5d629217-3fb4-4d39-a4d3-7e3fab3e71fa" class="">Christian should diligently examine and obey
+				the perfect law of freedom</blockquote>
+			<p id="43a9f9e0-bd19-4d27-9709-4133da60f68e" class="">This part is similar to one of Jesus’ parables:</p>
+			<p id="2d8cb4ce-7d8a-4ae0-93fd-a7dd86511288" class="">Matthew 7:24-27</p>
+			<figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex"
+				id="5a9416b8-6aaf-4059-adeb-1b45fa7d3397">
+				<div style="font-size:1.5em"><span class="icon">💡</span></div>
+				<div style="width:100%">እንግዲህ ይህን ቃሌን ሰምቶ በተግባር የሚያውል፣ ቤቱን በዐለት ላይ የሠራን ብልኅ ሰው ይመስላል። ዶፍ ወረደ፤ ጐርፍም ጐረፈ፤
+					ነፋስም ነፈሰ፤ ያንን ቤት መታው፤ በዐለትም ላይ ስለ ተመሠረተ አልወደቀም። ይህን ቃሌን ሰምቶ በተግባር የማያውለው ግን ቤቱን በአሸዋ ላይ የሠራን ሞኝ ሰው
+					ይመስላል። ዶፍ ወረደ፤ ጐርፍም ጐረፈ፤ ነፋስም ነፈሰ፤ ያንን ቤት መታው፤ ቤቱም ወደቀ፤ አወዳደቁም የከፋ ነበር።</div>
+			</figure>
+			<figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex"
+				id="800e64fa-24d6-4761-9b58-0d6cc3a3ad0b">
+				<div style="font-size:1.5em"><span class="icon">💡</span></div>
+				<div style="width:100%">Therefore everyone who hears these words of mine and puts them into practice is
+					like a wise man who built his house on the rock. The rain came down, the streams rose, and the winds
+					blew and beat against that house; yet it did not fall, because it had its foundation on the rock.
+					But everyone who hears these words of mine and does not put them into practice is like a foolish man
+					who built his house on sand. The rain came down, the streams rose, and the winds blew and beat
+					against that house, and it fell with a great crash.</div>
+			</figure>
+			<p id="d5c733e3-c98a-4c36-8624-e6836d7adb92" class="">To listen and study the word of God is one thing but
+				to live it our is a completely different thing:</p>
+			<p id="4809bd26-b79f-4895-b32a-697679e38ec2" class="">Romans 2:13</p>
+			<figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex"
+				id="0eb732fd-5c7f-449e-8f6d-7483a2f2fb48">
+				<div style="font-size:1.5em"><span class="icon">💡</span></div>
+				<div style="width:100%">ምክንያቱም በእግዚአብሔር ፊት ጻድቃን የሚባሉት ለሕጉ የሚታዘዙ እንጂ፣ ሕጉን የሚሰሙ አይደሉም።</div>
+			</figure>
+			<figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex"
+				id="aa245a4a-adad-4650-a0e6-1ecb2d26dabc">
+				<div style="font-size:1.5em"><span class="icon">💡</span></div>
+				<div style="width:100%">For it is not those who hear the law who are righteous in God’s sight, but it is
+					those who obey the law who will be declared righteous.</div>
+			</figure>
+			<p id="286c61c7-bdfe-455a-8781-d694c5f1bf23" class="">This part can be summarized as:</p>
+			<blockquote id="c2512fec-8e7e-490b-a00b-6ab0aa07d9e0" class="">Just like how we look at our selves on a
+				mirror everyday and adjust ourselves to be proper, we should look at God’s word every day. So that
+				everyday we can see what’s wrong with us and everyday we can adjust it. It may be the same thing that we
+				adjust but keep adjusting.</blockquote>
+			<blockquote id="235d9bd4-eab4-47f2-b717-f12745ca3216" class="">The Word of God is described as the perfect
+				law that brings freedom. It is not a burden but a means of guidance and liberation.</blockquote>
+			<blockquote id="43de2dd1-aa04-46ab-8ef9-6daa15be1098" class="">Study God’s word → Live God’s word
+			</blockquote>
+			<h1 id="5648cb8e-43c9-4449-bb7a-16df880a3325" class="">Genuine Religion and Purity</h1>
+			<p id="733def98-0739-4714-9d9e-9cdb99edbf16" class="">As the tongue speaks out what the heart is filled of,
+				true religion is a transformation of the heart that is evident in one&#x27;s words and actions. Also as
+				true religion is reflected in personal conduct it is also reflected in social responsibilities.</p>
+			<p id="aaa0e1fe-105a-43dd-ab09-32e829ff316e" class="">And one not so obvious but beautiful part of worship
+				is to keep ourselves away from sin. This act is not only good for us, but it is a form of worship. </p>
+			<p id="06cb8f56-6af5-4da9-9f15-1ac6c707ad98" class="">James 1:26-27</p>
+			<figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex"
+				id="58495265-d9a1-4807-82c6-afe782f8c6a3">
+				<div style="font-size:1.5em"><span class="icon">💡</span></div>
+				<div style="width:100%">አንደበቱን ሳይገታ፥ ልቡን እያሳተ እግዚአብሔርን የሚያመልክ የሚመስለው ማንም ቢኖር የእርሱ አምልኮ ከንቱ ነው። በእግዚአብሔር
+					አብ ፊት ንጹሕና ያልረከሰ አምልኮ፥ “አባትና እናት የሞቱባቸውን ልጆች፥ እንዲሁም ባሎቻቸው የሞቱባቸውን ሴቶች በችግራቸው መርዳት፥ ራስንም ከዓለም ርኲሰት
+					መጠበቅ ነው።”</div>
+			</figure>
+			<figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex"
+				id="68ff1bd8-7d13-4497-ba2b-82e235d803bc">
+				<div style="font-size:1.5em"><span class="icon">💡</span></div>
+				<div style="width:100%">Those who consider themselves religious and yet do not keep a tight rein on
+					their tongues deceive themselves, and their religion is worthless. Religion that God our Father
+					accepts as pure and faultless is this: to look after orphans and widows in their distress and to
+					keep oneself from being polluted by the world.</div>
+			</figure>
+			<blockquote id="929bcc89-984d-4473-b8db-ccac86c9efe4" class="">Be transformed enough that the way you speak
+				is evidence of it</blockquote>
+			<p id="29b9f87f-77a5-416b-8611-6af20441b269" class="">It is wise to control our tongue. It has also been
+				said that even a fool who controls his tongue is deemed wise</p>
+			<p id="55971188-8417-47a7-8a63-df119947845f" class="">Proverbs 17:28</p>
+			<figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex"
+				id="b5069574-492f-445b-af97-32d65c5ea8d2">
+				<div style="font-size:1.5em"><span class="icon">💡</span></div>
+				<div style="width:100%">አላዋቂ እንኳ ዝም ቢል ጠቢብ፣ አንደበቱንም ቢገዛ አስተዋይ ይመስላል።</div>
+			</figure>
+			<figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex"
+				id="ab2319d4-d9ea-4ba7-9463-1252bb08689c">
+				<div style="font-size:1.5em"><span class="icon">💡</span></div>
+				<div style="width:100%">Even fools are thought wise if they keep silent, and discerning if they hold
+					their tongues.</div>
+			</figure>
+		</div>
+	</article>
+</body>
+
+</html>
