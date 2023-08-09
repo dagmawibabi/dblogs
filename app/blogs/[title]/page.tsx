@@ -1,12 +1,50 @@
-'use client';
+// 'use client';
+// 'use server';
 
 import Footer from "@/app/components/footer";
 import Navigation from "@/app/components/navigations";
+import matter from "gray-matter";
+import Markdown from 'markdown-to-jsx'
+import ReactMarkdown from 'react-markdown';
+import { remark } from 'remark';
+import remarkGfm from 'remark-gfm';
+import remarkToc from 'remark-toc';
+import remarkHtml from "remark-html";
+import remarkParse from 'remark-parse';
+import remarkRehype from 'remark-rehype';
+import remarkBehead from "remark-behead";
+import remarkBreaks from "remark-breaks";
+import remarkMdx from "remark-mdx";
+import rehypeStringify from 'rehype-stringify';
+import mdx from "remark-mdx";
+// import a11yEmoji from '@fec/remark-a11y-emoji';
 
+export default async function (param: any) {
+    const fs = require('fs');
 
-export default function (param: any) {
+    let pathMD = "public/blogs/" + param.params.title.toString().replace(/%20/g, " ") + ".md";
+    let pathHTML = "public/blogs/" + param.params.title.toString().replace(/%20/g, " ") + ".html";
 
-    let file = "./Sin.html";
+    const dataMD = await fs.readFileSync(pathMD, 'utf8');
+    const dataHTML = await fs.readFileSync(pathHTML, 'utf8');
+
+    let resultMD = matter(dataMD);
+    let resultHTML = matter(dataHTML);
+
+    const file = await remark()
+        // .use(remarkGfm)
+        // .use(remarkToc)
+        // .use(remarkBehead)
+        // .use(remarkBreaks)
+        // .use(a11yEmoji)
+        // .use(remarkMdx)
+        // .use(remarkHtml)
+        .process(dataMD);
+
+    // console.log(file.value);
+
+    const processedContent = await remark().use(mdx).process(dataMD);
+    const contentHtml = processedContent.toString();
 
     return (
         <div className="flex bg-[#0A0A0A] ">
@@ -16,15 +54,35 @@ export default function (param: any) {
 
             <div className="w-6/12 mx-auto h-fit overflow-scroll pt-10 pb-4 px-10 bg-[#0A0A0A] z-40">
                 <Navigation />
-                <div className="text-zinc-400">
+                {/* DATE */}
+                <div className="text-zinc-400 text-sm mb-5">
                     July 12, 2024
                 </div>
-                <div className="text-white text-2xl font-bold">
+
+                {/* BLOG TITLE */}
+                <div className="text-white text-2xl font-bold mb-5">
                     {param.params.title.toString().replace(/%20/g, " ")}
                 </div>
-                <div className="h-screen text-white pb-96">
+
+                {/* <div className="h-screen text-white pb-96">
                     <iframe src="./Sin.html" className="h-screen text-white bg-[#0A0A0A]" width={"100%"} ></iframe>
-                </div>
+                </div> */}
+
+                {/* <Markdown children={result.content} remarkPlugins={[remarkGfm, remarkToc]} /> */}
+                {/* <ReactMarkdown children={result.content} remarkPlugins={[remarkGfm, remarkToc, remarkRehype]} /> */}
+                {/* <ReactMarkdown children={file.value.toString()} skipHtml={true} remarkPlugins={[remarkGfm, remarkToc]} /> */}
+
+                {/* <div dangerouslySetInnerHTML={{ __html: file.value }} /> */}
+                {/* <div className="h-screen w-full text-white pb-96" >
+                    {
+                        resultHTML.content
+                    }
+                </div> */}
+                {/* <div className="w-full" dangerouslySetInnerHTML={{ __html: dataHTML }} /> */}
+                <ReactMarkdown remarkPlugins={[remarkGfm, remarkMdx, remarkBehead, remarkBreaks, remarkToc]}>
+                    {contentHtml}
+                </ReactMarkdown>
+
                 <Footer />
             </div>
 

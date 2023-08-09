@@ -17,7 +17,7 @@ export default function Blogs() {
     let techBlogs: Array<blogIntro> = [
         {
             "date": "July 12, 2023",
-            "title": "The Loyalty of God",
+            "title": "James Chapter 1",
             "description": "God is a loyal God. He is always faithful to his promises, even when we are not faithful to him. He loves us unconditionally and will never leave us or forsake us. We can always count on God to be there for us, no matter what.",
         },
         {
