@@ -94,3 +94,17 @@ blockquote {
 blockquote p {
   margin: 0;
 }
+
+span p {
+  border: 1px solid red;
+}
+
+/* p::first-letter {} */
+
+.verses {
+  border: 1px solid red;
+}
+
+#verses {
+  border: 1px solid red;
+}

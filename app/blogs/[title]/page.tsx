@@ -34,11 +34,16 @@ import rehypeReact from 'rehype-react';
 import React from "react";
 import rehypeSanitize from 'rehype-sanitize';
 import path from "path";
+import rehypeHighlight from 'rehype-highlight';
+// import addClasses from 'rehype-add-classes';
+import Markdoc from '@markdoc/markdoc';
+// let addClasses = require('rehype-add-classes');
 
 export default async function (param: any) {
     const fs = require('fs');
-    let pathMD = path.join(process.cwd(), 'public/blogs/') + param.params.title.toString().replace(/%20/g, " ") + ".md";
-    let pathHTML = path.join(process.cwd(), 'public/blogs/'); + param.params.title.toString().replace(/%20/g, " ") + ".html";
+    // let addClasses = require('rehype-add-classes');
+    let pathMD = "public/blogs/" + param.params.title.toString().replace(/%20/g, " ") + ".md";
+    let pathHTML = "public/blogs/" + param.params.title.toString().replace(/%20/g, " ") + ".html";
     // console.log(pathMD)
 
     const dataMD = await fs.readFileSync(pathMD, { encoding: 'utf8' });
@@ -72,6 +77,7 @@ export default async function (param: any) {
         .use(rehypeParse)
         .use(rehypeStringify)
         .use(rehypeSanitize)
+        .use(rehypeHighlight)
         // .use(rehypeRewrite)
         // .use(rehypeAccessibleEmojis)
         // .use(rehypeRemark)
@@ -86,6 +92,11 @@ export default async function (param: any) {
 
     const processedContent = await remark().use(mdx).process(dataMD);
     const contentHtml = processedContent.toString();
+
+    const ast = Markdoc.parse(dataMD);
+    const content = Markdoc.transform(ast);
+
+    // console.log(ast);
 
     return (
         <div className="flex bg-[#0A0A0A] " suppressHydrationWarning >
@@ -112,10 +123,10 @@ export default async function (param: any) {
                     {renderableDataString.toString()}
                 </div> */}
 
-                {/* <div dangerouslySetInnerHTML={{ __html: renderableDataString }} /> */}
+                {/* <div dangerouslySetInnerHTML={{ __html: dataHTML }} /> */}
 
                 {/* <div className="h-screen w-full text-white pb-96" >
-                    { renderableData.value }
+                    {renderableData.value}
                 </div> */}
 
                 {/* <ReactMarkdown className="text-white" remarkPlugins={[remarkBreaks, remarkBehead, remarkGfm]} rehypePlugins={[rehypeParse]} >
@@ -124,6 +135,10 @@ export default async function (param: any) {
                 <ReactMarkdown className="text-white" >
                     {renderableDataString}
                 </ReactMarkdown>
+
+                {/* {
+                    Markdoc.renderers.react(content, React)
+                } */}
 
                 <div className="h-52"></div>
                 <Footer />

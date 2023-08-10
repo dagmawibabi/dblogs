@@ -67,7 +67,7 @@ export default function Blogs() {
             <div className="mb-5 text-xl sticky top-0 py-5 bg-[#0A0A0A] z-50">
                 Latest Blogs
             </div>
-            <div className="grid grid-cols-2 gap-y-12 gap-x-10 ml-6">
+            <div className="grid grid-cols-1 gap-y-12 gap-x-10 ml-6 sm:grid-cols-2 md:grid-cols-2">
                 {
                     latestBlogs.map((content, index) => {
                         return <EachBlog key={index} {...content} />
