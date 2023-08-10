@@ -74,7 +74,7 @@ export default async function (param: any) {
                     { renderableData.value }
                 </div> */}
 
-                <ReactMarkdown remarkPlugins={[remarkMdx, remarkGfm, remarkBehead, remarkBreaks, remarkToc]}>
+                <ReactMarkdown >
                     {renderableDataString}
                 </ReactMarkdown>
 
