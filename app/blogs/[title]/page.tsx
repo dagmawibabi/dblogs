@@ -52,7 +52,7 @@ export default async function (param: any) {
                 <div className="sticky top-0 m-10 w-80 h-80 bg-red-500 opacity-70 rounded-full"></div>
             </div>
 
-            <div className="w-6/12 mx-auto h-fit overflow-scroll pt-10 pb-4 px-10 bg-[#0A0A0A] z-40">
+            <div className="w-6/12 mx-auto h-fit overflow-hidden pt-10 pb-4 px-10 bg-[#0A0A0A] z-40">
                 <Navigation />
                 {/* DATE */}
                 <div className="text-zinc-400 text-sm mb-5">
@@ -74,7 +74,7 @@ export default async function (param: any) {
                     { renderableData.value }
                 </div> */}
 
-                <ReactMarkdown >
+                <ReactMarkdown className="text-white" remarkPlugins={[remarkGfm, remarkToc]}>
                     {renderableDataString}
                 </ReactMarkdown>
 

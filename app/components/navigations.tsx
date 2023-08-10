@@ -6,7 +6,7 @@ export default function Navigation() {
     return (
         <div className="flex justify-between mb-10 sticky top-0 bg-[#0A0A0A] z-50 py-5">
             <Link href={"/"}>
-                <span className="text-3xl hover:underline hover:underline-offset-8">
+                <span className="text-3xl text-white hover:underline hover:underline-offset-8">
                     {"Hi, I'm Dagmawi Babi 👋"}
                 </span>
             </Link>

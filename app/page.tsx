@@ -5,7 +5,7 @@ import Blogs from "./components/blogs";
 import Footer from "./components/footer";
 import Header from "./components/header";
 import Navigation from "./components/navigations";
-<Script src="https://kit.fontawesome.com/15ff0af56e.js" crossOrigin="anonymous"/>
+<Script src="https://kit.fontawesome.com/15ff0af56e.js" crossOrigin="anonymous" />
 
 export default function Home() {
   return (
@@ -14,7 +14,7 @@ export default function Home() {
         <div className="sticky top-0 m-10 w-80 h-80 bg-red-500 opacity-70 rounded-full"></div>
       </div>
 
-      <div className="w-6/12 mx-auto h-fit overflow-scroll pt-10 pb-4 px-10 bg-[#0A0A0A] z-40">
+      <div className="w-6/12 mx-auto h-fit overflow-hidden pt-10 pb-4 px-10 bg-[#0A0A0A] z-40">
         <Navigation />
         <Header />
         <Blogs />
