@@ -33,11 +33,13 @@ import { rehype } from 'rehype';
 import rehypeReact from 'rehype-react';
 import React from "react";
 import rehypeSanitize from 'rehype-sanitize';
+import path from "path";
 
 export default async function (param: any) {
     const fs = require('fs');
-    let pathMD = "public/blogs/" + param.params.title.toString().replace(/%20/g, " ") + ".md";
-    let pathHTML = "public/blogs/" + param.params.title.toString().replace(/%20/g, " ") + ".html";
+    let pathMD = path.join(process.cwd(), 'public/blogs/') + param.params.title.toString().replace(/%20/g, " ") + ".md";
+    let pathHTML = path.join(process.cwd(), 'public/blogs/'); + param.params.title.toString().replace(/%20/g, " ") + ".html";
+    // console.log(pathMD)
 
     const dataMD = await fs.readFileSync(pathMD, { encoding: 'utf8' });
     const dataHTML = await fs.readFileSync(pathHTML, { encoding: 'utf8' });
