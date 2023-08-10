@@ -1,5 +1,5 @@
-// 'use client';
-// 'use server';
+// "use client";
+// "use server";
 
 import Footer from "@/app/components/footer";
 import Navigation from "@/app/components/navigations";
@@ -17,6 +17,7 @@ import remarkBreaks from "remark-breaks";
 import remarkMdx from "remark-mdx";
 import rehypeStringify from 'rehype-stringify';
 import mdx from "remark-mdx";
+import { MDXProvider } from '@mdx-js/react';
 // import a11yEmoji from '@fec/remark-a11y-emoji';
 
 export default async function (param: any) {
@@ -25,29 +26,28 @@ export default async function (param: any) {
     let pathMD = "public/blogs/" + param.params.title.toString().replace(/%20/g, " ") + ".md";
     let pathHTML = "public/blogs/" + param.params.title.toString().replace(/%20/g, " ") + ".html";
 
-    const dataMD = await fs.readFileSync(pathMD, 'utf8');
-    const dataHTML = await fs.readFileSync(pathHTML, 'utf8');
+    const dataMD = await fs.readFileSync(pathMD, { encoding: 'utf8' });
+    const dataHTML = await fs.readFileSync(pathHTML, { encoding: 'utf8' });
 
     let resultMD = matter(dataMD);
     let resultHTML = matter(dataHTML);
 
-    const file = await remark()
-        // .use(remarkGfm)
-        // .use(remarkToc)
+    const renderableData = await remark()
+        .use(remarkGfm)
+        .use(remarkToc)
         // .use(remarkBehead)
         // .use(remarkBreaks)
-        // .use(a11yEmoji)
         // .use(remarkMdx)
         // .use(remarkHtml)
-        .process(dataMD);
-
-    // console.log(file.value);
+        // .use(remarkRehype)
+        .process(resultMD.content);
+    const renderableDataString = renderableData.value.toString();
 
     const processedContent = await remark().use(mdx).process(dataMD);
     const contentHtml = processedContent.toString();
 
     return (
-        <div className="flex bg-[#0A0A0A] ">
+        <div className="flex bg-[#0A0A0A] " suppressHydrationWarning >
             <div className="bg-[#0A0A0A] w-fit blur-3xl absolute top-0 left-0 ">
                 <div className="sticky top-0 m-10 w-80 h-80 bg-red-500 opacity-70 rounded-full"></div>
             </div>
@@ -64,25 +64,21 @@ export default async function (param: any) {
                     {param.params.title.toString().replace(/%20/g, " ")}
                 </div>
 
-                {/* <div className="h-screen text-white pb-96">
-                    <iframe src="./Sin.html" className="h-screen text-white bg-[#0A0A0A]" width={"100%"} ></iframe>
+                {/* <div className="h-screen text-white bg-white">
+                    <iframe src="./James Chapter 1.html" className="h-screen text-white bg-[#0A0A0A] px-10" width={"100%"} ></iframe>
                 </div> */}
-
-                {/* <Markdown children={result.content} remarkPlugins={[remarkGfm, remarkToc]} /> */}
-                {/* <ReactMarkdown children={result.content} remarkPlugins={[remarkGfm, remarkToc, remarkRehype]} /> */}
-                {/* <ReactMarkdown children={file.value.toString()} skipHtml={true} remarkPlugins={[remarkGfm, remarkToc]} /> */}
 
                 {/* <div dangerouslySetInnerHTML={{ __html: file.value }} /> */}
+
                 {/* <div className="h-screen w-full text-white pb-96" >
-                    {
-                        resultHTML.content
-                    }
+                    { renderableData.value }
                 </div> */}
-                {/* <div className="w-full" dangerouslySetInnerHTML={{ __html: dataHTML }} /> */}
-                <ReactMarkdown remarkPlugins={[remarkGfm, remarkMdx, remarkBehead, remarkBreaks, remarkToc]}>
-                    {contentHtml}
+
+                <ReactMarkdown remarkPlugins={[remarkMdx, remarkGfm, remarkBehead, remarkBreaks, remarkToc]}>
+                    {renderableDataString}
                 </ReactMarkdown>
 
+                <div className="h-52"></div>
                 <Footer />
             </div>
 

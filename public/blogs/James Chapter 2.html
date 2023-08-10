@@ -1,0 +1,681 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Chapter 2</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+    margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-interactiveBlue { background-color: rgba(35, 131, 226, .07); }
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-translucentGray { background-color: rgba(255, 255, 255, 0.0375); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+.select-value-color-pageGlass { background-color: undefined; }
+.select-value-color-washGlass { background-color: undefined; }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="d73de018-80a1-4fad-8fbd-e0226a7ba77d" class="page sans"><header><h1 class="page-title">Chapter 2</h1><p class="page-description"></p></header><div class="page-body"><h1 id="9e7bb24d-a269-4a70-b545-564756a8710b" class="">Partiality</h1><p id="83b230a7-fba1-4396-91c4-2db60c62320f" class="">In the first couple of verses James talk about how people were showing favoritism to people depending on their outward look but we learnt in the previous chapter that for God the poor and the rich are the same. He told us that the poor should be proud that God is with them despite their lowly life and that the rich should be proud that God is with that despite their temporary possessions. </p><p id="2e523bb0-e584-4c74-acbe-5900828b1d4c" class="">Notice how James said “Bad Judges” and didn’t eliminate the fact that we shouldn’t judge he is pointing out that such actions not only discriminate against the poor but also reveal evil thoughts and a departure from the principles of the Christian faith.</p><p id="11006ac2-33d3-4a54-afc9-5230c05136d8" class="">Believers should actively resist the temptation to show favoritism based on outward appearances and treat all individuals with fairness and love.</p><p id="1fa20860-c0b2-4d00-b517-35a08562e3d4" class="">James 2:1-4</p><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="801b648d-e00c-42bd-a746-975a0e83f061"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%">ወንድሞቼ ሆይ፤ ክቡር በሆነው በጌታችን በኢየሱስ ክርስቶስ የምታምኑ እንደ መሆናችሁ አድልዎ አታድርጉ። የወርቅ ቀለበት ያደረገና ያማረ ልብስ የለበሰ ሰው ወደ ጉባኤአችሁ ቢመጣ እንዲሁም ያደፈ ልብስ የለበሰ ድኻ ሰው ቢገባ፣ ያማረ ልብስ ለለበሰው የተለየ አክብሮት በማሳየት፣ “ለአንተ የሚሆን መልካም ስፍራ ይኸውልህ” ብትሉትና ድኻውን ሰው ግን፣ “አንተ በዚያ ቁም” ወይም “ከእግሬ በታች በወለሉ ላይ ተቀመጥ” ብትሉት፣ በመካከላችሁ አድልዎ ማድረጋችሁ አይደለምን? ደግሞስ በክፉ ሐሳብ የተያዛችሁ ፈራጆች መሆናችሁ አይደለምን?</div></figure><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="0fcc1b1e-d28f-4e61-aa27-311547f3147d"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%">My brothers and sisters, believers in our glorious Lord Jesus Christ must not show favoritism. Suppose a man comes into your meeting wearing a gold ring and fine clothes, and a poor man in filthy old clothes also comes in. If you show special attention to the man wearing fine clothes and say, “Here’s a good seat for you,” but say to the poor man, “You stand there” or “Sit on the floor by my feet,” have you not discriminated among yourselves and become judges with evil thoughts?</div></figure><blockquote id="27a91407-9fb4-4df8-992d-7d3c819abd2a" class="">The value of a person is in his relationship with God and not what they possess. And so judging and showing favoritism based on social status is completely wrong. </blockquote><blockquote id="9b516f49-da55-4947-aee1-8564101a4068" class="">Treat all individuals with equal respect and dignity, regardless of their socioeconomic status.</blockquote><blockquote id="70e0e50a-005a-4814-8d32-61582bf63d30" class="">እግዚአብሄር አንድ ልጁን ሲሰጠን ካላዳላ እኛስ ለምን እናዳላለን?</blockquote><p id="84884a51-6a5e-46a9-b7bc-b0bc880b1955" class="">
+</p><h1 id="8a4d0015-26f3-45d2-b755-cadda56b8a77" class="">The Paradox of God&#x27;s Choosing</h1><p id="07aa43f4-c5ab-47ae-9abf-4d13affcd269" class="">Here James emphasizes the contrast between the world&#x27;s perspective on poverty and God&#x27;s perspective. He explains that those who are poor in worldly terms can be rich in faith and enjoy the blessings and promises of God&#x27;s kingdom. And also notes the irony that the rich, who are often idolized, can be the ones exploiting and mistreating the believers, leading to legal disputes and dishonoring God&#x27;s name.</p><p id="72c6ce69-7ec1-48aa-95f8-45562fd93f0f" class="">James 2:5-7</p><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="13ae0226-91c3-4f5c-b884-d8e3b746f58b"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%">የተወደዳችሁ ወንድሞቼ ሆይ፤ ስሙ፤ እግዚአብሔር በእምነት ባለጠጋ እንዲሆኑና እርሱን ለሚወድዱም ተስፋ የተሰጣቸውን መንግሥት እንዲወርሱ የዚህን ዓለም ድኾች አልመረጠምን? እናንተ ግን ድኾችን አዋረዳችሁ፤ እናንተን የሚያስጨንቋችሁ ሀብታሞች አይደሉምን? ወደ ፍርድ ቤት የሚጐትቷችሁስ እነርሱ አይደሉምን? በእናንተ የተጠራውን ክቡር የሆነውን ስም የሚሳደቡ እነርሱ አይደሉምን?</div></figure><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="43a2ea10-7600-4785-b2f7-da7774477692"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%">Listen, my dear brothers and sisters: Has not God chosen those who are poor in the eyes of the world to be rich in faith and to inherit the kingdom he promised those who love him? But you have dishonored the poor. Is it not the rich who are exploiting you? Are they not the ones who are dragging you into court? Are they not the ones who are blaspheming the noble name of him to whom you belong?</div></figure><blockquote id="6d1f14dd-d256-40a4-ad0d-bd5f2d7cc988" class="">Here it’s worth noting that God chooses very peculiarly. He doesn’t see like we do so he chooses like we won’t. </blockquote><p id="1e22b203-b1c8-42d2-8ed2-33aebc1dd10d" class="">
+</p><h1 id="422ec11b-f934-49a1-96bf-6cda0b131bc4" class="">All Sins are Equal</h1><p id="74091912-029c-48ad-8016-f069cbfd3137" class="">Everyone that sins fall short of the glory of God. It doesn’t matter how small or big you’ve sinned it will separate you from God. So all sins are equal to God. But depending on the worldly consequence of Sin, there is smaller and bigger sin. For example: Tho thinking lustful thoughts and adultery are the same to God, here on Earth one goes unnoticed and the other can be perceived. </p><p id="dc3d5cda-411d-466c-bb07-8e285826049c" class="">And so understanding that God doesn’t see like we do (like the poor and rich) anything short of holiness is unholy. Doesn’t matter how short, you’ll be unholy.</p><p id="225ff28a-229b-4278-a3c2-ae2f043f740e" class="">James 2:8-13</p><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="096baec8-a1f8-4509-a5de-3f52b2aefaab"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%">በመጽሐፍ፣ “ባልንጀራህን እንደ ራስህ አድርገህ ውደድ” ተብሎ የተጻፈውን ክቡር ሕግ ብትፈጽሙ፣ መልካም እያደረጋችሁ ነው። አድልዎ ብታደርጉ ግን ኀጢአት መሥራታችሁ ነው፤ በሕግም ፊት እንደ ሕግ ተላላፊዎች ትቈጠራላችሁ፤ ምክንያቱም ሕግን ሁሉ የሚፈጽም ነገር ግን በአንዱ የሚሰናከል ቢኖር፣ ሁሉን እንደ ተላለፈ ይቈጠራል። “አታመንዝር” ያለ እርሱ ራሱ “አትግደልም” ብሏልና። ባታመነዝር፣ ነገር ግን ብትገድል፣ ሕግ ተላላፊ ሆነሃል። ስትናገሩም ሆነ ስታደርጉ ነጻነት በሚሰጠው ሕግ እንደሚፈረድባቸው ሰዎች ሁኑ፤ ምክንያቱም ምሕረት ያላደረገ ሁሉ ያለ ምሕረት ይፈረድበታል፤ ምሕረት በፍርድ ላይ ያይላል።</div></figure><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="ad969f01-809e-43cc-8517-0366bf343ce7"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%">If you really keep the royal law found in Scripture, “Love your neighbor as yourself,” you are doing right. But if you show favoritism, you sin and are convicted by the law as lawbreakers. For whoever keeps the whole law and yet stumbles at just one point is guilty of breaking all of it. For he who said, “You shall not commit adultery,” also said, “You shall not murder.” If you do not commit adultery but do commit murder, you have become a lawbreaker. Speak and act as those who are going to be judged by the law that gives freedom, because judgment without mercy will be shown to anyone who has not been merciful. Mercy triumphs over judgment.</div></figure><blockquote id="2db50f8d-d81a-429b-a0af-e35dd735a4b4" class="">Mercy triumphs over judgment. </blockquote><p id="4ed67f53-9e1c-4d71-8b69-fcffa90baaa3" class="">But don’t forget…</p><p id="0e56e4da-1abd-4b6b-b005-f12a5454134b" class="">Romans 5:20</p><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="42433366-471e-47d3-94e0-9823becf4974"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%">ነገር ግን ኀጢአት በበዛበት ጸጋ አብልጦ የተትረፈረፈ ሆነ</div></figure><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="82ce147c-ff97-4212-990d-4fe1f7211942"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%">But where sin increased, grace abounded all the more</div></figure><blockquote id="3958c1eb-5f5c-46d6-a4fb-8ed1733b1152" class="">No one can out-sin God’s grace!</blockquote><p id="17909434-99a9-4a6f-b518-775b7119f8dc" class="">
+</p><h1 id="ba59d7f2-6f60-47c0-8e0f-6a180cef9f03" class="">Faith and Work</h1><p id="bad6ec8b-98b3-4312-b802-0e0a4807a937" class="">James asserts that genuine faith affects the believer’s behavior; faith that does not affect behavior is superficial and cannot save. If you really do believe in something your change of actions will show your belief. The reverse is also true; if you don’t believe enough then your actions won’t change much. That is why people change by the renewal of their mind.</p><p id="826ba7d6-c430-4a93-997a-4a0c4beb2b43" class="">James 2:14-17</p><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="5976774a-deeb-4776-96a0-f12d9b8dc91d"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%">ወንድሞቼ ሆይ፤ አንድ ሰው እምነት አለኝ ቢል፣ ሥራ ግን ባይኖረው ምን ይጠቅመዋል? እንዲህ ያለው እምነት ሊያድነው ይችላልን? አንድ ወንድም ወይም አንዲት እኅት የሚለብሱት ልብስም ሆነ የሚመገቡት ምግብ ዐጥተው፣ ከእናንተ መካከል አንዱ፣ “በሰላም ሂዱ፤ አይብረዳችሁ፤ ጥገቡ” ቢላቸው፣ ለሰውነታቸው ግን የሚያስፈልጋቸውን ባይሰጣቸው፣ ምን ይጠቅማቸዋል? እንዲሁ ሥራ የሌለው እምነት በራሱ የሞተ ነው።</div></figure><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="9f723b3b-513e-4a13-b01d-01f9ac2709ca"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%">What good is it, my brothers and sisters, if someone claims to have faith but has no deeds? Can such faith save them? Suppose a brother or a sister is without clothes and daily food. If one of you says to them, “Go in peace; keep warm and well fed,” but does nothing about their physical needs, what good is it? In the same way, faith by itself, if it is not accompanied by action, is dead.</div></figure><blockquote id="95f65a2b-7f47-42d0-b91c-dae8756f494d" class="">If you believe → Live out your belief </blockquote><p id="28685b58-cc03-4c1d-9f48-4d92f84e7330" class="">Whatever you believe you will live out. So if you believe in God’s laws, you will live a life that keeps them. If you believe in the opposite, you will live your life breaking them. So for somethings the reason why you’re doing certain things wrong is because you believe the wrong things. So if you want to do the right and holy things then truly believe in the right and holy things.</p><blockquote id="46a4d4fe-0b36-4ebd-9f1a-1d75aa4c5752" class="">Whatever you believe → You will live out </blockquote><blockquote id="2bd41766-995a-48b2-b890-51b3858e45fe" class="">What is that wrong thing you believe that’s making you sin?</blockquote><p id="f9e2b930-3534-4fc0-ae93-29fd0ffbcca4" class="">So this is the deal; The moment you believe something you change. That’s just how belief works. For example: If you’re in a dark room and you believe a scary creature is in there with you, then you naturally fear it and react. You didn’t have to think about it, you didn’t have to consciously order your body to fear and react, you just did! That’s how faith works. If you truly believe that lust is the same us murder in the face of God, you will not lust. And if you truly believe that taking care of Orphans is worshiping God then you will do it.</p><blockquote id="4a250c0b-a46b-406a-ab60-fe587342e1ce" class="">Belief will effortlessly produce work. </blockquote><p id="88ad68c7-7f34-46c5-9b58-3e92fd85a6c6" class="">And so faith and work are inseparable. They have a cause and effect relationship. Where true faith is there will, without a doubt, be good works. So if believers inherit the kingdom of God, then those believers have done somethings in their lives to show their faith. So their faith is expressed through their way of life and actions; and so their faith is completed and perfected.</p><p id="9727b980-a62d-414c-9cb1-64fdbd09cfe4" class="">James 2:18-20</p><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="3d375b90-32c9-4a8c-99c4-e8543993e14e"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%">ነገር ግን አንድ ሰው “አንተ እምነት አለህ፤ እኔ ሥራ አለኝ።” እምነትህን ከሥራ ለይተህ አሳየኝ፤ እኔም እምነቴን በሥራዬ አሳይሃለሁ ይላል። አንድ እግዚአብሔር እንዳለ ታምናለህ፤ መልካም ነው፤ አጋንንትም ይህንኑ ያምናሉ፤ በፍርሀትም ይንቀጠቀጣሉ። አንተ ከንቱ ሰው! እምነት ያለ ሥራ ዋጋ የሌለው መሆኑን ለማወቅ ማስረጃ ትፈልጋለህን?</div></figure><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="b95dfa81-7441-42db-903f-5c9bf62ed3b8"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%">But someone will say, “You have faith; I have deeds.” Show me your faith without deeds, and I will show you my faith by my deeds. You believe that there is one God. Good! Even the demons believe that—and shudder. You foolish person, do you want evidence that faith without deeds is useless</div></figure><p id="f083c578-d03c-465c-a57d-2f3c2ad7b1bd" class="">James 2:22</p><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="6bfce438-c423-4a37-9d18-95f50057d6f7"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%">በዚህም፣ እምነት ከሥራው ጋር አብሮ ይሠራ እንደ ነበር ታያለህ፤ እምነትም በሥራ ፍጹም ሆነ።</div></figure><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="af38863d-0e91-44d3-aa89-aeb49b5b4202"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%">You see that his faith and his actions were working together, and his faith was made complete by what he did.</div></figure><p id="a975de71-850d-4a53-a583-eb385c4a4bf9" class="">James 2:24</p><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="98a74172-5fdd-4442-9911-ae43a43566b8"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%">እንግዲህ ሰው በእምነት ብቻ ሳይሆን በሥራ እንዲጸድቅ ታያላችሁ።</div></figure><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="8dc6cd1e-d67a-40a9-be87-45a30304eac3"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%">You see that a person is considered righteous by what they do and not by faith alone.</div></figure><p id="8bf062a1-b338-41c1-8caa-39dad6331d27" class="">James 2:26</p><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="959cbc36-9ae8-44f3-92fa-41955dcb825b"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%">ከመንፈስ የተለየ ሥጋ የሞተ እንደ ሆነ፣ ከሥራም የተለየ እምነት የሞተ ነው።</div></figure><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="16e8b372-138e-490b-818c-3f10777afb0c"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%">As the body without the spirit is dead, so faith without deeds is dead.</div></figure><blockquote id="150ef3d4-dabb-41bf-8835-41de3ec5f010" class="">ማመኔ በስራዬ ነው የሚታየው</blockquote><p id="dfec5ac0-1780-401f-9bb4-6cc085f3348e" class="">
+</p><p id="ec981bf8-3caf-467b-b8b0-57dc90a037a5" class="">
+</p></div></article></body></html>
