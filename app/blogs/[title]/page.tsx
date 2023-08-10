@@ -15,14 +15,26 @@ import remarkRehype from 'remark-rehype';
 import remarkBehead from "remark-behead";
 import remarkBreaks from "remark-breaks";
 import remarkMdx from "remark-mdx";
-import rehypeStringify from 'rehype-stringify';
 import mdx from "remark-mdx";
 import { MDXProvider } from '@mdx-js/react';
-// import a11yEmoji from '@fec/remark-a11y-emoji';
+import remark2rehype from 'remark-rehype';
+import remarkStringify from 'remark-stringify';
+import remarkHeadingGap from 'remark-heading-gap';
+
+import rehypeStringify from 'rehype-stringify';
+import rehypeParse from 'rehype-parse';
+import rehypeRemark from 'rehype-remark';
+// import rehypeFigure from "rehype-figure";
+import rehypeToc from '@jsdevtools/rehype-toc';
+import { rehypeAccessibleEmojis } from "rehype-accessible-emojis";
+// import remarkCitation from 'rehype-citation';
+import rehypeRewrite from 'rehype-rewrite';
+import { rehype } from 'rehype';
+import rehypeReact from 'rehype-react';
+import React from "react";
 
 export default async function (param: any) {
     const fs = require('fs');
-
     let pathMD = "public/blogs/" + param.params.title.toString().replace(/%20/g, " ") + ".md";
     let pathHTML = "public/blogs/" + param.params.title.toString().replace(/%20/g, " ") + ".html";
 
@@ -32,16 +44,41 @@ export default async function (param: any) {
     let resultMD = matter(dataMD);
     let resultHTML = matter(dataHTML);
 
-    const renderableData = await remark()
-        .use(remarkGfm)
-        .use(remarkToc)
+    const renderableDataMDX = await remark()
+        // .use(remarkParse)
+        // .use(remarkGfm)
+        // .use(remarkToc)
         // .use(remarkBehead)
         // .use(remarkBreaks)
+        // .use(rehypeToc)
         // .use(remarkMdx)
+        // .use(remarkHeadingGap)
         // .use(remarkHtml)
+        // .use(remarkStringify)
+
         // .use(remarkRehype)
+        // .use(remark2rehype)
+        // .use(rehypeRemark)
+        // .use(rehypeParse)
+        .use(rehypeRewrite)
         .process(resultMD.content);
+
+    const renderableData = await rehype()
+        // .use(rehypeToc)
+        // .use(rehypeRemark)
+        .use(rehypeParse)
+        .use(rehypeStringify)
+        // .use(rehypeRewrite)
+        // .use(rehypeAccessibleEmojis)
+        // .use(rehypeRemark)
+        .process(resultMD.content);
+
     const renderableDataString = renderableData.value.toString();
+
+    const renderableDataMD = await remark()
+        .use(rehypeRemark)
+        .process(renderableData);
+
 
     const processedContent = await remark().use(mdx).process(dataMD);
     const contentHtml = processedContent.toString();
@@ -67,14 +104,20 @@ export default async function (param: any) {
                 {/* <div className="h-screen text-white bg-white">
                     <iframe src="./James Chapter 1.html" className="h-screen text-white bg-[#0A0A0A] px-10" width={"100%"} ></iframe>
                 </div> */}
+                {/* <div>
+                    {renderableDataString.toString()}
+                </div> */}
 
-                {/* <div dangerouslySetInnerHTML={{ __html: file.value }} /> */}
+                {/* <div dangerouslySetInnerHTML={{ __html: renderableDataString }} /> */}
 
                 {/* <div className="h-screen w-full text-white pb-96" >
                     { renderableData.value }
                 </div> */}
 
-                <ReactMarkdown className="text-white" remarkPlugins={[remarkGfm, remarkToc]}>
+                {/* <ReactMarkdown className="text-white" remarkPlugins={[remarkBreaks, remarkBehead, remarkGfm]} rehypePlugins={[rehypeParse]} >
+                    {renderableDataString}
+                </ReactMarkdown> */}
+                <ReactMarkdown className="text-white" >
                     {renderableDataString}
                 </ReactMarkdown>
 

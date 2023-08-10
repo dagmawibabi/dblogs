@@ -40,3 +40,57 @@ body {
     }
   }
 }
+
+/*  */
+
+strong {
+  margin-top: 100px;
+  padding-top: 100px;
+}
+
+p aside {
+  background-color: #1f1f1f;
+  /* border: 1px red solid; */
+  padding: 5px 20px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+p {
+  color: whitesmoke;
+  margin: 20px 2px 3px;
+  /* font-weight: bold; */
+  font-size: 18px;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: larger;
+  margin-top: 20px;
+}
+
+h3 {
+  /* border: 1px solid red; */
+  margin-top: 50px;
+  font-weight: bold;
+  font-size: larger;
+}
+
+li {
+  /* color: red; */
+  margin: 5px 20px 0px;
+  list-style: disc;
+}
+
+blockquote {
+  border-left: 2px solid yellow;
+  padding: 10px 20px;
+  margin: 10px 0px;
+  background-color: #1f1f1f;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+blockquote p {
+  margin: 0;
+}
