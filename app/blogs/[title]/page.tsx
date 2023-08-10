@@ -32,6 +32,7 @@ import rehypeRewrite from 'rehype-rewrite';
 import { rehype } from 'rehype';
 import rehypeReact from 'rehype-react';
 import React from "react";
+import rehypeSanitize from 'rehype-sanitize';
 
 export default async function (param: any) {
     const fs = require('fs');
@@ -68,6 +69,7 @@ export default async function (param: any) {
         // .use(rehypeRemark)
         .use(rehypeParse)
         .use(rehypeStringify)
+        .use(rehypeSanitize)
         // .use(rehypeRewrite)
         // .use(rehypeAccessibleEmojis)
         // .use(rehypeRemark)

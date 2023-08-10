@@ -43,6 +43,7 @@
     "rehype-react": "^7.2.0",
     "rehype-remark": "^9.1.2",
     "rehype-rewrite": "^3.0.6",
+    "rehype-sanitize": "^5.0.1",
     "rehype-shift-heading": "^1.0.2",
     "rehype-stringify": "^9.0.3",
     "remark": "^14.0.3",
