@@ -1,4 +1,4 @@
-# Chapter 2
+# James Chapter 2
 
 # Partiality
 

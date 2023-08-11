@@ -56,12 +56,12 @@ export default async function (param: any) {
                 </div>
 
                 {/* BLOG TITLE */}
-                <div className="
+                {/* <div className="
                     text-white text-xl font-bold mb-5
                     sm:text-2xl
                 ">
                     {param.params.title.toString().replace(/%20/g, " ")}
-                </div>
+                </div> */}
 
                 {/* CONTENT */}
                 <ReactMarkdown className="text-white" >

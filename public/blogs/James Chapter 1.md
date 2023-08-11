@@ -1,4 +1,4 @@
-# Chapter 1
+# James Chapter 1
 
 Subtle note on the beginning of the book is that tho James is Jesus’ brother he calls himself a servant of him. It’s beautiful tho we are all brother’s of Christ we ought to be calling ourselves servants of him also.
 

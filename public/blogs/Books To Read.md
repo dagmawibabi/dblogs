@@ -1,0 +1,61 @@
+# Books To Read
+
+- [x]  The Alchemist
+- [x]  God's Generals
+- [x]  Rich Dad Poor Dad
+- [x]  Think And Grow Rich
+- [x]  48 Laws Of Power
+- [x]  The Lean Startup
+- [ ]  Round Iron with a fridge
+- [ ]  Life is what you make of it - Peter Buffete
+- [ ]  Where good ideas come from - Steven Johnson
+- [ ]  Moonwalkimg with Einstein- Joshua Foer
+- [ ]  The Intelligent Investor
+- [ ]  Structures: Or why things don't fall down - JE Gordon
+- [ ]  Super Intelligence: Paths, Dangers, Strategies - Nick Bostrom
+- [x]  Our final invention- James Barrat
+- [ ]  Life 3.0 Being Human in the Age of artificial intelligence- Max Tegmark
+- [x]  Zero to One - Peter Thiel
+- [ ]  The Culture Series - Iain M.Banks
+- [x]  The Happiness Equation - Niel Pasricha
+- [ ]  Why Nations Fail - Doron Acemorgu
+- [x]  The Daily Stoic - Ryan Holiday
+- [ ]  Business Adventures - John Brooks
+- [x]  Sapiens - Noah Harari
+- [x]  Homodeus - Noah Harari
+- [x]  21 Lessons for the 21st Century
+- [ ]  The Box - Marc Levinson
+- [ ]  How not to be wrong - Jordan Ellenberg
+- [x]  How to win friends and influence people
+- [x]  Turtles All The Way Down
+- [ ]  Max Weber - Economy and Society
+- [x]  Carl Marx - The Communist Manifesto
+- [x]  Mere Christianity
+- [x]  Letters to Milena
+- [ ]  Americanah by chimamanda ngozi adichie
+- [ ]  Thinking in Systems
+- [x]  Medemer - Dr.Abiy
+- [ ]  The Leadership Secrets - Billy Graham
+- [ ]  15 Invaluable Laws of Growth - John Maxwell
+- [ ]  5 Temptations of a CEO - Patrick Lencioni
+- [ ]  The 5 Levels of Leadership - John Maxwell
+- [x]  Eat That Frog - Brian Tracy
+- [ ]  Leaders Eat Last - Simon Sinek
+- [x]  Primal Leadership - Daniel Goleman
+- [ ]  The Dichotomy Of Leadership - Jocko Willink
+- [ ]  War of the world HG
+- [ ]  Old man and the sea
+- [ ]  Mine to win - Hiwet Tefera
+- [ ]  Kemegarejaw Bestejerba
+- [ ]  Designing Social Inquiry
+- [ ]  Utopia - Thomas Moore
+- [ ]  War and Peace
+- [ ]  The Lessons of History
+- [ ]  The History of the decline and fall of the Roman Empire
+- [ ]  How to not die alone - Logan Ury
+- [ ]  The courage to be disliked - Ichiro Kishimi
+- [ ]  Versity Colleen hoover
+- [ ]  Oromai by Bealu Girma
+- [ ]  The Selfish Gene - Richard Dawkins
+- [ ]  The Cell - Molecular Biology
+- [ ]
