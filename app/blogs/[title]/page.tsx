@@ -8,10 +8,12 @@ import { rehype } from 'rehype';
 import React from "react";
 import rehypeSanitize from 'rehype-sanitize';
 import rehypeHighlight from 'rehype-highlight';
+import path from "path";
 
 export default async function (param: any) {
     const fs = require('fs');
-    let pathMD = "blogs/" + param.params.title.toString().replace(/%20/g, " ") + ".md";
+    // let pathMD = "blogs/" + param.params.title.toString().replace(/%20/g, " ") + ".md";
+    let pathMD = path.join(process.cwd(), "public", "BLOGS", param.params.title.toString().replace(/%20/g, " ") + ".md");
     const dataMD = await fs.readFileSync(pathMD, { encoding: 'utf8' });
     let resultMD = matter(dataMD);
 
