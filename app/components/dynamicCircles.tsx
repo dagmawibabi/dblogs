@@ -35,7 +35,7 @@ export default function DynamicCircles() {
             setClientWidth(window.innerWidth);
             setClientHeight(window.innerHeight);
         };
-        window.addEventListener("resize", handleResize);
+        // window.addEventListener("resize", handleResize);
 
         return () => {
             window.removeEventListener("resize", handleResize);
