@@ -78,8 +78,9 @@ h3 {
 
 li {
   /* color: red; */
-  margin: 5px 20px 0px;
+  margin: 25px 20px 0px;
   list-style: disc;
+  font-size: 20px;
 }
 
 blockquote {
@@ -89,6 +90,10 @@ blockquote {
   background-color: #1f1f1f;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
+}
+
+blockquote:hover {
+  background-color: #323232;
 }
 
 blockquote p {

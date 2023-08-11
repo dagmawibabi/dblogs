@@ -4,13 +4,15 @@ import Link from "next/link";
 
 export default function Navigation() {
     return (
-        <div className="flex justify-between mb-10 sticky top-0 bg-[#0A0A0A] z-50 py-5">
+        <div className="inline-block justify-between mb-2 sticky top-0 bg-[#0A0A0A] z-50 py-5 md:flex lg:flex
+        sm:mb-10">
             <Link href={"/"}>
-                <span className="text-3xl text-white hover:underline hover:underline-offset-8">
+                <span className="text-2xl text-white hover:underline hover:underline-offset-8
+                sm:text-3lg">
                     {"Hi, I'm Dagmawi Babi 👋"}
                 </span>
             </Link>
-            <div className="w-44 flex justify-between">
+            <div className="w-36 flex justify-between mt-8 sm:mt-0 sm:w-44 md:w-44 lg:w-44 xl:w-44">
                 <FontAwesomeIcon icon={faTelegramPlane} className="text-zinc-500 hover:text-white hover:scale-125" width={23} height={23} />
                 <FontAwesomeIcon icon={faInstagram} className="text-zinc-500 hover:text-white hover:scale-125" width={23} height={23} />
                 <FontAwesomeIcon icon={faTiktok} className="text-zinc-500 hover:text-white hover:scale-125" width={23} height={23} />
