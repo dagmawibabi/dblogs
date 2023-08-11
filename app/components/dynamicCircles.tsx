@@ -1,15 +1,25 @@
 // @ts-nocheck 
 'use client'
 import React, { useEffect, useState } from "react";
-import random from 'canvas-sketch-util/random';
-import Color from 'canvas-sketch-util/color';
 import configJSON from "../../public/config.json";
+
+const randomChoice = (array) => {
+    const randomFloat = Math.random();
+    const randomIndex = Math.floor(randomFloat * array.length);
+    return array[randomIndex];
+}
+
+function randomRange(start, stop) {
+    const randomFloat = Math.random();
+    const randomInteger = start + Math.floor(randomFloat * (stop - start));
+    return randomInteger;
+}
 
 const allcolors = configJSON.colors
 const DynamicCircle = ({ cx, cy, radius }) => {
-    const randomPalette = random.pick(allcolors)
-    randomPalette.filter(colorHex => Color.contrastRatio(colorHex, '#00000055') < 7.5);
-    const randomColor = random.pick(randomPalette);
+    const randomPalette = randomChoice(allcolors)
+    // randomPalette.filter(colorHex => Color.contrastRatio(colorHex, '#00000055') < 7.5);
+    const randomColor = randomChoice(randomPalette);
 
     return (
         <circle
@@ -30,24 +40,15 @@ export default function DynamicCircles() {
     useEffect(() => {
         setClientWidth(window.innerWidth);
         setClientHeight(window.innerHeight);
-
-        const handleResize = () => {
-            setClientWidth(window.innerWidth);
-            setClientHeight(window.innerHeight);
-        };
-        // window.addEventListener("resize", handleResize);
-
         return () => {
-            window.removeEventListener("resize", handleResize);
         };
     }, []);
 
     const dynamicCircles = [];
     for (let i = 0; i < 5; i++) {
-        const randomCx = random.range(0, clientWidth);
-        const randomCy = random.range(0, clientHeight);
-        const randomRadius = random.range(80, 170);
-
+        const randomCx = randomRange(0, clientWidth);
+        const randomCy = randomRange(0, clientHeight);
+        const randomRadius = randomRange(80, 170);
         dynamicCircles.push(
             <DynamicCircle key={i} cx={randomCx} cy={randomCy} radius={randomRadius} />
         );
