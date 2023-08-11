@@ -29,7 +29,7 @@ export default function Navigation() {
 
     return (
         <div className="
-            inline-block justify-between mb-2 sticky top-0 bg-[#0A0A0A] z-50 py-5 
+            inline-block justify-between mb-2 sticky top-0 z-50 py-5 
             md:flex lg:flex
             sm:mb-5 md:mb-5 lg:mb-5 xl:mb-5
         ">
