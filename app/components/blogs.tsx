@@ -3,6 +3,21 @@ import EachBlogCategory from "./eachBlogCategory";
 export default function Blogs() {
     let allBlogs: Array<allBlogs> = [
         {
+            "category": "Bible Studies",
+            "blogs": [
+                {
+                    "date": "July 12, 2023",
+                    "title": "James Chapter 1",
+                    "description": "God is a loyal God. He is always faithful to his promises, even when we are not faithful to him. He loves us unconditionally and will never leave us or forsake us. We can always count on God to be there for us, no matter what.",
+                },
+                {
+                    "date": "July 12, 2023",
+                    "title": "James Chapter 2",
+                    "description": "God is a loyal God. He is always faithful to his promises, even when we are not faithful to him. He loves us unconditionally and will never leave us or forsake us. We can always count on God to be there for us, no matter what.",
+                },
+            ],
+        },
+        {
             "category": "Latest Blogs",
             "blogs": [
                 {

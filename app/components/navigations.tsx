@@ -3,6 +3,28 @@ import { faGithub, faInstagram, faLinkedin, faLinkedinIn, faTelegram, faTelegram
 import Link from "next/link";
 
 export default function Navigation() {
+    let socials = [
+        {
+            "icon": faTelegramPlane,
+            "link": "https://t.me/Dagmawi_Babi/",
+        },
+        {
+            "icon": faInstagram,
+            "link": "https://www.instagram.com/dagmawibabi/",
+        },
+        {
+            "icon": faTiktok,
+            "link": "https://www.tiktok.com/@dagmawi_babi",
+        },
+        {
+            "icon": faLinkedinIn,
+            "link": "https://www.linkedin.com/in/dagmawibabi/",
+        },
+        {
+            "icon": faGithub,
+            "link": "https://github.com/dagmawibabi",
+        },
+    ]
     return (
         <div className="
             inline-block justify-between mb-2 sticky top-0 bg-[#0A0A0A] z-50 py-5 
@@ -19,11 +41,13 @@ export default function Navigation() {
             <div className="w-36 flex justify-between mt-6
                 sm:mt-0 sm:w-44 md:w-44 lg:w-44 xl:w-44
             ">
-                <FontAwesomeIcon icon={faTelegramPlane} className="text-zinc-500 hover:text-white hover:scale-125" width={23} height={23} />
-                <FontAwesomeIcon icon={faInstagram} className="text-zinc-500 hover:text-white hover:scale-125" width={23} height={23} />
-                <FontAwesomeIcon icon={faTiktok} className="text-zinc-500 hover:text-white hover:scale-125" width={23} height={23} />
-                <FontAwesomeIcon icon={faLinkedinIn} className="text-zinc-500 hover:text-white hover:scale-125" width={23} height={23} />
-                <FontAwesomeIcon icon={faGithub} className="text-zinc-500 hover:text-white hover:scale-125" width={23} height={23} />
+                {
+                    socials.map((content, index) => {
+                        return <Link href={content.link}>
+                            <FontAwesomeIcon key={index} icon={content.icon} className="text-zinc-500 hover:text-white hover:scale-125" width={23} height={23} />
+                        </Link>
+                    })
+                }
             </div>
         </div>
     )

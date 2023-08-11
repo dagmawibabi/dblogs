@@ -2,7 +2,7 @@ import EachBlog from "./eachBlog"
 
 export default function EachBlogCategory(category: allBlogs) {
     return <div>
-        <div className="mb-5 text-lg sticky top-0 py-5 bg-[#0A0A0A] z-50 h-fit
+        <div className="mb-5 text-lg sticky top-0 py-5 bg-[#0A0A0A] text-white z-50 h-fit
         sm:text-xl">
             {category.category.toString()}
         </div>
