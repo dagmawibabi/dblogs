@@ -46,7 +46,7 @@ export default function Navigation() {
                 {
                     socials.map((content, index) => {
                         return content.link != "" ?
-                            <Link href={content.link} key={index} >
+                            <Link href={content.link} key={index} target="_blank">
                                 <FontAwesomeIcon icon={content.icon} className="text-zinc-500 hover:text-white hover:scale-125" width={23} height={23} />
                             </Link> : <> </>
                     })
