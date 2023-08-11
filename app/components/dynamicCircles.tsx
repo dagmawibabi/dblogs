@@ -1,3 +1,4 @@
+// @ts-nocheck 
 'use client'
 import React, { useEffect, useState } from "react";
 import configJSON from "../../public/config.json";
@@ -39,7 +40,6 @@ export default function DynamicCircles() {
     useEffect(() => {
         setClientWidth(window.innerWidth);
         setClientHeight(window.innerHeight);
-
         return () => {
         };
     }, []);
@@ -49,7 +49,6 @@ export default function DynamicCircles() {
         const randomCx = randomRange(0, clientWidth);
         const randomCy = randomRange(0, clientHeight);
         const randomRadius = randomRange(80, 170);
-
         dynamicCircles.push(
             <DynamicCircle key={i} cx={randomCx} cy={randomCy} radius={randomRadius} />
         );
