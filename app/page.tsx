@@ -22,15 +22,15 @@ export default function Home() {
         <div className="w-full h-fit overflow-hidden pt-2 pb-4 px-5 bg-[#000000c0] opacity-80 z-40 mx-0 
         sm:pt-10
         sm:px-10
-        sm:w-full lg:w-6/12 xl:w-10/12 
+        sm:w-6/12 lg:w-6/12 xl:w-6/12 
         sm:mx-auto md:mx-auto lg:mx-auto xl:mx-auto
         shadow-xl
       ">
-            <Navigation />
-            <Header />
-            <Blogs />
-            <Footer />
-          </div>
+          <Navigation />
+          <Header />
+          <Blogs />
+          <Footer />
+        </div>
       </div>
     </div>
 

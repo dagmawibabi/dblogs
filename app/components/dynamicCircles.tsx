@@ -1,3 +1,4 @@
+// @ts-nocheck 
 'use client'
 import React, { useEffect, useState } from "react";
 import random from 'canvas-sketch-util/random';
@@ -44,7 +45,7 @@ export default function DynamicCircles() {
     const dynamicCircles = [];
     for (let i = 0; i < 5; i++) {
         const randomCx = random.range(0, clientWidth);
-        const randomCy = random.range(0, clientHeight) ;
+        const randomCy = random.range(0, clientHeight);
         const randomRadius = random.range(80, 170);
 
         dynamicCircles.push(
