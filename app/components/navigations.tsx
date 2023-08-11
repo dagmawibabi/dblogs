@@ -1,30 +1,32 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub, faInstagram, faLinkedin, faLinkedinIn, faTelegram, faTelegramPlane, faTiktok } from "@fortawesome/free-brands-svg-icons";
+import { faGithub, faInstagram, faLinkedinIn, faTelegramPlane, faTiktok } from "@fortawesome/free-brands-svg-icons";
 import Link from "next/link";
+import configJSON from "../../public/config.json";
 
 export default function Navigation() {
     let socials = [
         {
             "icon": faTelegramPlane,
-            "link": "https://t.me/Dagmawi_Babi/",
+            "link": configJSON.socials.telegram,
         },
         {
             "icon": faInstagram,
-            "link": "https://www.instagram.com/dagmawibabi/",
+            "link": configJSON.socials.instagram,
         },
         {
             "icon": faTiktok,
-            "link": "https://www.tiktok.com/@dagmawi_babi",
+            "link": configJSON.socials.tiktok,
         },
         {
             "icon": faLinkedinIn,
-            "link": "https://www.linkedin.com/in/dagmawibabi/",
+            "link": configJSON.socials.linkedin,
         },
         {
             "icon": faGithub,
-            "link": "https://github.com/dagmawibabi",
+            "link": configJSON.socials.github,
         },
     ]
+
     return (
         <div className="
             inline-block justify-between mb-2 sticky top-0 bg-[#0A0A0A] z-50 py-5 
@@ -35,7 +37,7 @@ export default function Navigation() {
                 <span className="text-2xl text-white hover:underline hover:underline-offset-8
                     sm:text-3lg
                 ">
-                    {"Hi, I'm Dagmawi Babi 👋"}
+                    {`Hi, I'm ${configJSON.username.toString()} 👋`}
                 </span>
             </Link>
             <div className="w-36 flex justify-between mt-6
@@ -43,9 +45,10 @@ export default function Navigation() {
             ">
                 {
                     socials.map((content, index) => {
-                        return <Link href={content.link} key={index} >
-                            <FontAwesomeIcon icon={content.icon} className="text-zinc-500 hover:text-white hover:scale-125" width={23} height={23} />
-                        </Link>
+                        return content.link != "" ?
+                            <Link href={content.link} key={index} >
+                                <FontAwesomeIcon icon={content.icon} className="text-zinc-500 hover:text-white hover:scale-125" width={23} height={23} />
+                            </Link> : <> </>
                     })
                 }
             </div>

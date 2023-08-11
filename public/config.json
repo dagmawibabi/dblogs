@@ -1,0 +1,94 @@
+{
+    "username": "Dagmawi Babi",
+    "introduction": "I'm a creative engineer focused on making exceptional digital products. Currently I'm focused on building my own start up at Dream Intelligence. But in this part of my journey I'm learning to read and write. So this's a place to host all my writings. I hope it inspires, motivates and helps you grow. Enjoy!",
+    "socials": {
+        "telegram": "https://t.me/Dagmawi_Babi/",
+        "instagram": "https://www.instagram.com/dagmawibabi/",
+        "tiktok": "https://www.tiktok.com/@dagmawi_babi",
+        "linkedin": "https://www.linkedin.com/in/dagmawibabi/",
+        "github": "https://github.com/dagmawibabi"
+    },
+    "footer": "Dream Intelligence",
+    "blogs": [
+        {
+            "category": "Bible Studies",
+            "blogs": [
+                {
+                    "date": "July 12, 2023",
+                    "title": "James Chapter 1",
+                    "description": "God is a loyal God. He is always faithful to his promises, even when we are not faithful to him. He loves us unconditionally and will never leave us or forsake us. We can always count on God to be there for us, no matter what."
+                },
+                {
+                    "date": "July 12, 2023",
+                    "title": "James Chapter 2",
+                    "description": "God is a loyal God. He is always faithful to his promises, even when we are not faithful to him. He loves us unconditionally and will never leave us or forsake us. We can always count on God to be there for us, no matter what."
+                }
+            ]
+        },
+        {
+            "category": "Latest Blogs",
+            "blogs": [
+                {
+                    "date": "July 12, 2023",
+                    "title": "James Chapter 1",
+                    "description": "God is a loyal God. He is always faithful to his promises, even when we are not faithful to him. He loves us unconditionally and will never leave us or forsake us. We can always count on God to be there for us, no matter what."
+                },
+                {
+                    "date": "July 12, 2023",
+                    "title": "James Chapter 2",
+                    "description": "God is a loyal God. He is always faithful to his promises, even when we are not faithful to him. He loves us unconditionally and will never leave us or forsake us. We can always count on God to be there for us, no matter what."
+                }
+            ]
+        },
+        {
+            "category": "Tech Blogs",
+            "blogs": [
+                {
+                    "date": "July 12, 2023",
+                    "title": "Building a Blog site with Next JS",
+                    "description": "God is a loyal God. He is always faithful to his promises, even when we are not faithful to him. He loves us unconditionally and will never leave us or forsake us. We can always count on God to be there for us, no matter what."
+                },
+                {
+                    "date": "July 12, 2023",
+                    "title": "How many GPU's does it take to simulate the universe?",
+                    "description": "God is a loyal God. He is always faithful to his promises, even when we are not faithful to him. He loves us unconditionally and will never leave us or forsake us. We can always count on God to be there for us, no matter what."
+                },
+                {
+                    "date": "July 12, 2023",
+                    "title": "The Loyalty of God",
+                    "description": "God is a loyal God. He is always faithful to his promises, even when we are not faithful to him. He loves us unconditionally and will never leave us or forsake us. We can always count on God to be there for us, no matter what."
+                },
+                {
+                    "date": "July 12, 2023",
+                    "title": "The Faithfulness of God",
+                    "description": "God is a loyal God. He is always faithful to his promises, even when we are not faithful to him. He loves us unconditionally and will never leave us or forsake us. We can always count on God to be there for us, no matter what."
+                }
+            ]
+        },
+        {
+            "category": "Spiritual Blogs",
+            "blogs": [
+                {
+                    "date": "July 12, 2023",
+                    "title": "The Loyalty of God",
+                    "description": "God is a loyal God. He is always faithful to his promises, even when we are not faithful to him. He loves us unconditionally and will never leave us or forsake us. We can always count on God to be there for us, no matter what."
+                },
+                {
+                    "date": "July 12, 2023",
+                    "title": "The Faithfulness of God",
+                    "description": "God is a loyal God. He is always faithful to his promises, even when we are not faithful to him. He loves us unconditionally and will never leave us or forsake us. We can always count on God to be there for us, no matter what."
+                },
+                {
+                    "date": "July 12, 2023",
+                    "title": "The Loyalty of God",
+                    "description": "God is a loyal God. He is always faithful to his promises, even when we are not faithful to him. He loves us unconditionally and will never leave us or forsake us. We can always count on God to be there for us, no matter what."
+                },
+                {
+                    "date": "July 12, 2023",
+                    "title": "The Faithfulness of God",
+                    "description": "God is a loyal God. He is always faithful to his promises, even when we are not faithful to him. He loves us unconditionally and will never leave us or forsake us. We can always count on God to be there for us, no matter what."
+                }
+            ]
+        }
+    ]
+}
