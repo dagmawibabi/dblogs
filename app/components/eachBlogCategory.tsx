@@ -8,6 +8,7 @@ export default function EachBlogCategory(category: allBlogs) {
             {category.category.toString()}
         </div>
         <div className="
+            w-full
             grid grid-cols-1 gap-y-5 ml-1 mx-auto grid-rows-1 
             max-[1024px]:gap-x-40 min-[1550px]:gap-x-10 
             sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-2
