@@ -5,9 +5,10 @@ export default function Header() {
 
 
     return (
-        <div className="w-full text-zinc-400 text-md 
-        sm:text-lg 
-        sm:w-11/12 mg:w-11/12 lg::w-11/12 xl:w-11/12">
+        <div className="
+            w-full text-zinc-400 text-md 
+            sm:text-lg 
+        ">
             {
 
                 headerTextArray.map((content, index) => {

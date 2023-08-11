@@ -1,4 +1,3 @@
-import EachBlog from "./eachBlog";
 import EachBlogCategory from "./eachBlogCategory";
 
 export default function Blogs() {
@@ -72,51 +71,12 @@ export default function Blogs() {
     ];
 
     return (
-        <div className="my-10">
-
+        <div className="mb-10">
             {
                 allBlogs.map((content, index) => {
                     return <EachBlogCategory key={index} {...content} />
                 })
             }
-
-            {/* Latest Blog
-            <div className="mb-5 text-xl sticky top-0 py-5 bg-[#0A0A0A] z-50">
-                Latest Blogs
-            </div>
-            <div className="grid grid-cols-1 gap-y-12 gap-x-10 ml-6 sm:grid-cols-2 md:grid-cols-2">
-                {
-                    latestBlogs.map((content, index) => {
-                        return <EachBlog key={index} {...content} />
-                    })
-                }
-            </div>
-
-            {/* Spiritual Blogs */}
-            {/* <div className="mb-5 text-xl sticky top-16 py-5 bg-[#0A0A0A] z-50">
-                Spiritual Blogs
-            </div>
-            <div className="grid grid-cols-2 gap-y-12 gap-x-10 ml-6">
-                {
-                    spiritualBlogs.map((content, index) => {
-                        return <EachBlog key={index} {...content} />
-                    })
-                }
-            </div> */}
-
-            {/* Tech Blogs */}
-            {/* <div className="mb-5 text-xl sticky top-16 py-5 bg-[#0A0A0A] z-50">
-                Tech Blogs
-            </div>
-            <div className="grid grid-cols-2 gap-y-12 gap-x-10 ml-6">
-                {
-                    techBlogs.map((content, index) => {
-                        return <EachBlog key={index} {...content} />
-                    })
-                }
-            </div>  */}
-
-
         </div>
     )
 }

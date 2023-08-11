@@ -10,18 +10,30 @@ import Navigation from "./components/navigations";
 export default function Home() {
   return (
     <div className="flex bg-[#0A0A0A] ">
-      <div className="bg-[#0A0A0A] blur-3xl absolute top-0 left-0 w-0 hidden sm:hidden md:w-fit lg:w-fit xl:w-fit">
+      <div className="
+        bg-[#0A0A0A] blur-3xl absolute top-0 left-0 w-fit hidden 
+          sm:w-fit md:w-fit lg:w-fit xl:w-fit
+          sm:block md:block lg:block xl:block
+        ">
         <div className="sticky top-0 m-10 w-80 h-80 bg-red-500 opacity-70 rounded-full"></div>
       </div>
 
-      <div className="w-full sm:w-6/12 h-fit overflow-hidden pt-10 pb-4 px-5 sm:px-10 bg-[#0A0A0A] z-40 mx-0 sm:mx-auto md:mx-auto lg:mx-auto xl:mx-auto">
+      <div className="w-full h-fit overflow-hidden pt-2 pb-4 px-5 bg-[#0A0A0A] z-40 mx-0 
+        sm:pt-10
+        sm:px-10
+        sm:w-6/12 
+        sm:mx-auto md:mx-auto lg:mx-auto xl:mx-auto
+      ">
         <Navigation />
         <Header />
         <Blogs />
         <Footer />
       </div>
 
-      <div className="bg-[#0A0A0A] w-fit blur-3xl absolute bottom-0 right-0 hidden sm:block md:block lg:block xl:block">
+      <div className="
+        bg-[#0A0A0A] blur-3xl absolute bottom-0 right-0 w-fit hidden 
+        sm:block md:block lg:block xl:block
+      ">
         <div className=" m-10 w-80 h-80 bg-blue-500 opacity-70 rounded-full"></div>
       </div>
 
