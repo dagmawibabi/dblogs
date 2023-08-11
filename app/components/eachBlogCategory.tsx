@@ -6,10 +6,11 @@ export default function EachBlogCategory(category: allBlogs) {
         sm:text-xl">
             {category.category.toString()}
         </div>
-        <div className="grid grid-cols-1 gap-y-5 max-[1024px]:gap-x-40 gap-x-40 min-[1550px]:gap-x-10 ml-1 mx-auto
-        sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2  xl:grid-cols-2
-        sm:gap-y-12 md:gap-y-12 lg:gap-y-12 xl:gap-y-2
-        sm:ml-6
+        <div className="grid grid-cols-1 gap-y-5 ml-1 mx-auto grid-rows-1 
+        max-[1024px]:gap-x-40 min-[1550px]:gap-x-10 
+        sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2
+        sm:gap-y-12 md:gap-y-12 lg:gap-y-12 xl:gap-y-12
+        sm:w-full md:w-full
         ">
             {
                 category.blogs.map((content, index) => {
