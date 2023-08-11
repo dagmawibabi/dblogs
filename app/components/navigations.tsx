@@ -28,10 +28,10 @@ export default function Navigation() {
     ]
 
     return (
-        <div className="
+        <div className="items-center content-center
             inline-block justify-between mb-2 sticky top-0 z-50 py-5 
-            md:flex lg:flex
             sm:mb-5 md:mb-5 lg:mb-5 xl:mb-5
+            xl:flex 2xl:flex
         ">
             <Link href={"/"}>
                 <span className="text-2xl text-white hover:underline hover:underline-offset-8
@@ -41,8 +41,9 @@ export default function Navigation() {
                 </span>
             </Link>
             <div className="w-36 flex justify-between mt-6
-                sm:mt-0 sm:w-44 md:w-44 lg:w-44 xl:w-44
-            ">
+                    sm:mt-6 xl:mb-6 2xl:mb-6
+                    sm:w-44 md:w-44 lg:w-44 xl:w-44 2xl:w-44
+                ">
                 {
                     socials.map((content, index) => {
                         return content.link != "" ?
