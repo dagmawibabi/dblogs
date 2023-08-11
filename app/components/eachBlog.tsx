@@ -21,8 +21,9 @@ export default function EachBlog(blogIntroObj: blogIntro) {
 
 
                     {/* Title */}
-                    <div className="text-md font-bold mb-0 mt-1
-                    sm:text-xl sm:mb-3 ">
+                    <div className="text-md font-bold mb-0 mt-1 text-white
+                    sm:text-xl sm:mb-3
+                    sm:text-zinc-300 md:text-zinc-300 lg:text-zinc-300 xl:text-zinc-300">
                         {blogIntroObj.title}
                     </div>
 
