@@ -1,7 +1,7 @@
 // @ts-nocheck 
 'use client'
 import React, { useEffect, useState } from "react";
-import configJSON from "../../public/config.json";
+import bgColorsConfig from "../../public/bgColorsConfig.json";
 
 const randomChoice = (array) => {
     const randomFloat = Math.random();
@@ -15,7 +15,7 @@ function randomRange(start, stop) {
     return randomInteger;
 }
 
-const allcolors = configJSON.colors
+const allcolors = bgColorsConfig.colors
 const DynamicCircle = ({ cx, cy, radius }) => {
     const randomPalette = randomChoice(allcolors)
     // randomPalette.filter(colorHex => Color.contrastRatio(colorHex, '#00000055') < 7.5);
