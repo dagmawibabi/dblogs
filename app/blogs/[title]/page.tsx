@@ -11,7 +11,7 @@ import rehypeHighlight from 'rehype-highlight';
 
 export default async function (param: any) {
     const fs = require('fs');
-    let pathMD = "public/blogs/" + param.params.title.toString().replace(/%20/g, " ") + ".md";
+    let pathMD = "blogs/" + param.params.title.toString().replace(/%20/g, " ") + ".md";
     const dataMD = await fs.readFileSync(pathMD, { encoding: 'utf8' });
     let resultMD = matter(dataMD);
 
@@ -32,10 +32,10 @@ export default async function (param: any) {
     return (
         <div className="flex bg-[#0A0A0A] " suppressHydrationWarning >
             <div className="
-        bg-[#0A0A0A] blur-3xl absolute top-0 left-0 w-fit hidden 
-          sm:w-fit md:w-fit lg:w-fit xl:w-fit
-          sm:hidden md:hidden lg:block xl:block
-        ">
+                bg-[#0A0A0A] blur-3xl absolute top-0 left-0 w-fit hidden 
+                sm:w-fit md:w-fit lg:w-fit xl:w-fit
+                sm:hidden md:hidden lg:block xl:block
+            ">
                 <div className="sticky top-0 m-10 w-80 h-80 bg-red-500 opacity-70 rounded-full"></div>
             </div>
 
