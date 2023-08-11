@@ -1,6 +1,7 @@
 {
     "username": "Dagmawi Babi",
-    "introduction": "I'm a creative engineer focused on making exceptional digital products. Currently I'm focused on building my own start up at Dream Intelligence. But in this part of my journey I'm learning to read and write. So this's a place to host all my writings. I hope it inspires, motivates and helps you grow. Enjoy!",
+    "introduction": "In this part of my journey I am learning to read and write as per the advice of Dr.Jordan Peterson, So this is an attempt at doing just that. And since I've been journalling all my life I know how helpful it is to organize and put thoughts into words. So this's a place to host all my writings and I hope it inspires, motivates and helps you grow as it does to me. Enjoy!",
+    "footer": "Dream Intelligence",
     "socials": {
         "telegram": "https://t.me/Dagmawi_Babi/",
         "instagram": "https://www.instagram.com/dagmawibabi/",
@@ -8,7 +9,6 @@
         "linkedin": "https://www.linkedin.com/in/dagmawibabi/",
         "github": "https://github.com/dagmawibabi"
     },
-    "footer": "Dream Intelligence",
     "blogs": [
         {
             "category": "Bible Studies",
