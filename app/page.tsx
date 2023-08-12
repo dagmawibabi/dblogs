@@ -7,6 +7,8 @@ import Header from "./components/header";
 import Navigation from "./components/navigations";
 import DynamicCircles from "./components/dynamicCircles";
 
+import './globals.css';
+
 <Script src="https://kit.fontawesome.com/15ff0af56e.js" crossOrigin="anonymous" />
 
 
