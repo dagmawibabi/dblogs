@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/react';
+import Loglib from "@loglib/tracker/react";
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -19,6 +20,11 @@ export default function RootLayout({
       <body className={inter.className}>
         {children}
         <Analytics />
+        <Loglib
+          config={{
+            id: "blog_dagmawibabi",
+          }}
+        />
       </body>
     </html>
   )
