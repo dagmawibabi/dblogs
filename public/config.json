@@ -1,79 +1,82 @@
 {
-    "username": "Dagmawi Babi",
-    "introduction": "In this part of my journey I am learning to read and write as per the advice of Dr.Jordan Peterson, So this is an attempt in doing just that. And since I've been journalling all my life I know how helpful it is to organize and put thoughts into words. So this's a place to host all my writings and I hope it inspires, motivates and helps you grow as it does to me. Enjoy!",
-    "footer": "Dream Intelligence",
-    "socials": {
-        "telegram": "https://t.me/Dagmawi_Babi/",
-        "instagram": "https://www.instagram.com/dagmawibabi/",
-        "tiktok": "https://www.tiktok.com/@dagmawi_babi",
-        "linkedin": "https://www.linkedin.com/in/dagmawibabi/",
-        "github": "https://github.com/dagmawibabi"
-    },
-    "blogs": [
+  "username": "Dagmawi Babi",
+  "introduction": "In this part of my journey I am learning to read and write as per the advice of Dr.Jordan Peterson, So this is an attempt in doing just that. And since I've been journalling all my life I know how helpful it is to organize and put thoughts into words. So this's a place to host all my writings and I hope it inspires, motivates and helps you grow as it does to me. Enjoy!",
+  "footer": "Dream Intelligence",
+  "metadatatitle": "Dagbab",
+  "metadatadescription": "A collection of notes and journals written by Dagmawi Babi.",
+  "loglibid": "blog_dagmawibabi",
+  "socials": {
+    "telegram": "https://t.me/Dagmawi_Babi/",
+    "instagram": "https://www.instagram.com/dagmawibabi/",
+    "tiktok": "https://www.tiktok.com/@dagmawi_babi",
+    "linkedin": "https://www.linkedin.com/in/dagmawibabi/",
+    "github": "https://github.com/dagmawibabi"
+  },
+  "blogs": [
+    {
+      "category": "Latest Blogs",
+      "blogs": [
         {
-            "category": "Latest Blogs",
-            "blogs": [
-                {
-                    "date": "July 1, 2023",
-                    "title": "Sin",
-                    "description": "Sin is a force that tests our moral compass and challenges our relationship with God. Sin, in its myriad forms, reminds us of our imperfections, our vulnerability, and our need for redemption. This is a detailed study about the concept of Sin."
-                },
-                {
-                    "date": "November 5, 2023",
-                    "title": "Books To Read",
-                    "description": "These are a list of amazing books I've read and plan on reading in the coming months. This is an ever-expanding list I adjust regularly as I read and discover more books. If you need a list of incredible books, this could be it."
-                }
-            ]
+          "date": "July 1, 2023",
+          "title": "Sin",
+          "description": "Sin is a force that tests our moral compass and challenges our relationship with God. Sin, in its myriad forms, reminds us of our imperfections, our vulnerability, and our need for redemption. This is a detailed study about the concept of Sin."
         },
         {
-            "category": "Spiritual Blogs",
-            "blogs": [
-                {
-                    "date": "March 18, 2023",
-                    "title": "Thoughts About Mercy",
-                    "description": "When talking about forgiveness from God. It feels easy. Do I just confess my sins and repent and that's it, I'm forgiven? And that being true makes it look so easy. This forgiveness is made free for all of us, but it isn't cheap."
-                },
-                {
-                    "date": "May 11, 2023",
-                    "title": "How to Prioritize God",
-                    "description": "I don't understand what prioritizing God means, so the best way I found to model and picture it is by starting off what prioritizing my girlfriend meant. Because I prioritize my girlfriend this would help understanding it all."
-                }
-            ]
-        },
-        {
-            "category": "The Book of James Bible Study",
-            "blogs": [
-                {
-                    "date": "July 5, 2023",
-                    "title": "James Chapter 1",
-                    "description": "This chapter is centered around the concept of enduring trials and testing with steadfast faith, seeking wisdom from God, and living out the Word of God emphasizing the importance of maintaining joy and perseverance in the midst of difficulties. "
-                },
-                {
-                    "date": "July 11, 2023",
-                    "title": "James Chapter 2",
-                    "description": "The main idea of this chapter revolves around the idea that genuine faith is demonstrated through actions and highlights the need for faith to be living and active, expressed through compassionate actions towards others."
-                }
-            ]
-        },
-        {
-            "category": "The Book of Job Bible Study",
-            "blogs": [
-                {
-                    "date": "April 25, 2023",
-                    "title": "Job Chapter 1",
-                    "description": "This chapter introduces the story of Job, a righteous and prosperous man who faces a series of devastating trials. The main idea revolves around the concept of suffering and the question of why bad things happen to good people."
-                },
-                {
-                    "date": "April 28, 2023",
-                    "title": "Job Chapter 2",
-                    "description": "This chapter continues the narrative of Job's suffering and the ongoing test of his faith. Centering on Job's response to further trials and his interaction with his friends. Despite his intense suffering, Job maintains his integrity, refusing to curse God."
-                },
-                {
-                    "date": "May 2, 2023",
-                    "title": "Job Chapter 3",
-                    "description": "This chapter portrays the depths of Job's suffering revealing his deep anguish and despair in the midst of his suffering. The main idea revolving around Job's emotional outpouring as he curses the day of his birth."
-                }
-            ]
+          "date": "November 5, 2023",
+          "title": "Books To Read",
+          "description": "These are a list of amazing books I've read and plan on reading in the coming months. This is an ever-expanding list I adjust regularly as I read and discover more books. If you need a list of incredible books, this could be it."
         }
-    ]
+      ]
+    },
+    {
+      "category": "Spiritual Blogs",
+      "blogs": [
+        {
+          "date": "March 18, 2023",
+          "title": "Thoughts About Mercy",
+          "description": "When talking about forgiveness from God. It feels easy. Do I just confess my sins and repent and that's it, I'm forgiven? And that being true makes it look so easy. This forgiveness is made free for all of us, but it isn't cheap."
+        },
+        {
+          "date": "May 11, 2023",
+          "title": "How to Prioritize God",
+          "description": "I don't understand what prioritizing God means, so the best way I found to model and picture it is by starting off what prioritizing my girlfriend meant. Because I prioritize my girlfriend this would help understanding it all."
+        }
+      ]
+    },
+    {
+      "category": "The Book of James Bible Study",
+      "blogs": [
+        {
+          "date": "July 5, 2023",
+          "title": "James Chapter 1",
+          "description": "This chapter is centered around the concept of enduring trials and testing with steadfast faith, seeking wisdom from God, and living out the Word of God emphasizing the importance of maintaining joy and perseverance in the midst of difficulties. "
+        },
+        {
+          "date": "July 11, 2023",
+          "title": "James Chapter 2",
+          "description": "The main idea of this chapter revolves around the idea that genuine faith is demonstrated through actions and highlights the need for faith to be living and active, expressed through compassionate actions towards others."
+        }
+      ]
+    },
+    {
+      "category": "The Book of Job Bible Study",
+      "blogs": [
+        {
+          "date": "April 25, 2023",
+          "title": "Job Chapter 1",
+          "description": "This chapter introduces the story of Job, a righteous and prosperous man who faces a series of devastating trials. The main idea revolves around the concept of suffering and the question of why bad things happen to good people."
+        },
+        {
+          "date": "April 28, 2023",
+          "title": "Job Chapter 2",
+          "description": "This chapter continues the narrative of Job's suffering and the ongoing test of his faith. Centering on Job's response to further trials and his interaction with his friends. Despite his intense suffering, Job maintains his integrity, refusing to curse God."
+        },
+        {
+          "date": "May 2, 2023",
+          "title": "Job Chapter 3",
+          "description": "This chapter portrays the depths of Job's suffering revealing his deep anguish and despair in the midst of his suffering. The main idea revolving around Job's emotional outpouring as he curses the day of his birth."
+        }
+      ]
+    }
+  ]
 }

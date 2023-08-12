@@ -13,6 +13,9 @@ export default config({
         username: fields.text({ label: "Username" }),
         introduction: fields.text({ label: "Introduction" }),
         footer: fields.text({ label: "Footer" }),
+        metadatatitle: fields.text({ label: "Metadata Title" }),
+        metadatadescription: fields.text({ label: "Metadata Description" }),
+        loglibid: fields.text({ label: "LogLib ID" }),
         socials: fields.object({
           telegram: fields.text({ label: "Telegram" }),
           instagram: fields.text({ label: "Instagram" }),
