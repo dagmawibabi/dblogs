@@ -30,8 +30,9 @@ export default function Navigation() {
     return (
         <div className="items-center content-center
             inline-block justify-between mb-2 sticky top-0 z-50 py-5 
-            sm:mb-5 md:mb-5 lg:mb-5 xl:mb-5
-            xl:flex 2xl:flex
+            sm:pb-0 md:pb-0 lg:pb-0 xl:pb-0 2xl:pb-0
+            sm:mb-4 md:mb-4 lg:mb-4 xl:mb-4
+            sm:inline-block md:inline-block lg:inline-block xl:flex 2xl:flex
         ">
             <Link href={"/"}>
                 <span className="text-2xl text-white hover:underline hover:underline-offset-8
