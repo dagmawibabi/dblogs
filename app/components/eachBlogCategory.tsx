@@ -22,7 +22,7 @@ export default function EachBlogCategory(category: allBlogs) {
 
         {/* Divider Line */}
         <div className="
-            w-52 mt-8 mb-2 bg-zinc-800 h-[0.5px]
+            w-52 mt-6 mb-1 bg-zinc-800 h-[0.5px]
             sm:mt-12 md:mt-12 lg:mt-12 xl:mt-12 2xl:mt-12
             sm:mb-5 md:mb-5 lg:mb-5 xl:mb-5 2xl:mb-5
         ">
