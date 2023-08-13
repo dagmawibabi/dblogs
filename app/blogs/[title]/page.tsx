@@ -14,21 +14,15 @@ import path from "path";
 
 export default async function (param: any) {
     const fs = require('fs');
-    // let pathMD = "blogs/" + param.params.title.toString().replace(/%20/g, " ") + ".md";
     let pathMD = path.join(process.cwd(), "public", "blogs", param.params.title.toString().replace(/%20/g, " ") + ".md");
     const dataMD = await fs.readFileSync(pathMD, { encoding: 'utf8' });
     let resultMD = matter(dataMD);
 
     const renderableData = await rehype()
-        // .use(rehypeToc)
-        // .use(rehypeRemark)
         .use(rehypeParse)
         .use(rehypeStringify)
         .use(rehypeSanitize)
         .use(rehypeHighlight)
-        // .use(rehypeRewrite)
-        // .use(rehypeAccessibleEmojis)
-        // .use(rehypeRemark)
         .process(resultMD.content);
 
     const renderableDataString = renderableData.value.toString();
@@ -52,7 +46,7 @@ export default async function (param: any) {
                         <Navigation />
 
                         <div className="text-zinc-400 text-sm mb-5">
-                            July 12, 2024
+                            {param.searchParams.date.toString()}
                         </div>
 
                         <ReactMarkdown className="text-white" >
@@ -65,7 +59,5 @@ export default async function (param: any) {
                 </div>
             </div>
         </div>
-
-
     )
 }

@@ -14,6 +14,21 @@
   },
   "blogs": [
     {
+      "category": "Coming Soon",
+      "blogs": [
+        {
+          "date": "Augest 20, 2023",
+          "title": "My Testamony",
+          "description": "This is the story of how I was saved and started my beautiful relationsip with God. This is how the generous loving God rescued my lost lust drenched soul. This will be my most secretive story to tell. I hope it sparks something in you!"
+        },
+        {
+          "date": "Augest 25, 2023",
+          "title": "How Many GPU's Does It Take to Simulate The Universe?",
+          "description": "Have you ever wondered how many GPU's it might require to actually simulate and run our universe? This is my attempt at finding out a technically accurate number. "
+        }
+      ]
+    },
+    {
       "category": "Latest Blogs",
       "blogs": [
         {

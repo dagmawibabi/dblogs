@@ -1,19 +1,21 @@
 import Link from "next/link";
 
 
-export default function EachBlog(blogIntroObj: blogIntro) {
+export default function EachBlog({ blogIntroObj, isClickable }: { blogIntroObj: blogIntro, isClickable: boolean }) {
     return (
-        <Link href={`blogs/${blogIntroObj.title}`} target="_blank">
+        <Link href={isClickable == false ? "" : `blogs/${blogIntroObj.title}?date=${blogIntroObj.date}`} target={isClickable == false ? "" : "_blank"}>
             <div className="
-                no-scrollbar 
-                relative w-full h-52 rounded-2xl z-0 border-zinc-800 border border-t-0 border-l-0 
-                hover:border-zinc-700 hover:border-2 hover:border-t-0 hover:border-l-0 hover:bg-zinc-900
-                sm:w-full md:w-full lg:w-96 xl:w-96 2xl:w-96
+                    no-scrollbar 
+                    relative w-full h-52 rounded-2xl z-0 border-zinc-800 border border-t-0 border-l-0 
+                    hover:border-zinc-700 hover:border-2 hover:border-t-0 hover:border-l-0 hover:bg-zinc-900 duration-[0.4s]
+                    sm:w-full md:w-full lg:w-96 xl:w-96 2xl:w-96
                 ">
                 <div className="
-                    absolute w-full h-52 -m-2 p-4 border-2 rounded-xl border-zinc-700 overflow-hidden text-zinc-300
-                    hover:border-zinc-200 hover:-m-4 hover:bg-[#0A0A0A] hover:text-white
-                    sm:w-full md:w-full lg:w-96 xl:w-96 2xl:w-96">
+                        overflow-scroll no-scrollbar
+                        absolute w-full h-full -m-2 p-4 border-2 rounded-xl border-zinc-700 text-zinc-300
+                        hover:border-zinc-200 hover:bg-[#0A0A0A] hover:text-white hover:-m-4 duration-[0.2s]
+                        sm:w-full md:w-full lg:w-96 xl:w-96 2xl:w-96
+                    ">
 
                     {/* Date */}
                     <span className="text-zinc-500 text-xs">
