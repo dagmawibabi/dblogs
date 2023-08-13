@@ -1,8 +1,8 @@
 import EachBlog from "./eachBlog"
 
 export default function EachBlogCategory(category: allBlogs) {
-    return <div>
-        <div className="mb-5 text-lg sticky top-0 py-5 text-white z-50 h-fit w-full 
+    return <div className="">
+        <div className="mb-5 text-lg sticky top-0 py-5 text-white z-50 h-fit w-full  
                 sm:text-xl
             ">
             {category.category.toString()}
@@ -18,6 +18,14 @@ export default function EachBlogCategory(category: allBlogs) {
                     return <EachBlog key={index} blogIntroObj={content} isClickable={category.category == "Coming Soon" ? false : true} />
                 })
             }
+        </div>
+
+        {/* Divider Line */}
+        <div className="
+            w-52 mt-8 mb-2 bg-zinc-800 h-[0.5px]
+            sm:mt-12 md:mt-12 lg:mt-12 xl:mt-12 2xl:mt-12
+            sm:mb-5 md:mb-5 lg:mb-5 xl:mb-5 2xl:mb-5
+        ">
         </div>
     </div>
 }

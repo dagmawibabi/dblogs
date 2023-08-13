@@ -29,13 +29,23 @@
       ]
     },
     {
-      "category": "Latest Blogs",
+      "category": "Short Writes and Poems",
       "blogs": [
         {
-          "date": "July 1, 2023",
-          "title": "Sin",
-          "description": "Sin is a force that tests our moral compass and challenges our relationship with God. Sin, in its myriad forms, reminds us of our imperfections, our vulnerability, and our need for redemption. This is a detailed study about the concept of Sin."
+          "date": "December 4, 2021",
+          "title": "A Letter to Void and Loneliness",
+          "description": "This is a small letter I wrote to void and loneliness. Emotions I've been drenched in years ago. I've pictured them as my own two bestfriends by how long I've felt them. But now they've wedded and this's my letter to them."
         },
+        {
+          "date": "November 28, 2017",
+          "title": "The Pain You Caused Me",
+          "description": "A small poem I wrote about a person I really liked that somehow became my obsession and later on my road to depression. This was something I wrote about her when I was at my lowest."
+        }
+      ]
+    },
+    {
+      "category": "Lists",
+      "blogs": [
         {
           "date": "November 5, 2023",
           "title": "Books To Read",
@@ -47,6 +57,11 @@
       "category": "Spiritual Blogs",
       "blogs": [
         {
+          "date": "July 1, 2023",
+          "title": "Sin",
+          "description": "Sin is a force that tests our moral compass and challenges our relationship with God. Sin, in its myriad forms, reminds us of our imperfections, our vulnerability, and our need for redemption. This is a detailed study about the concept of Sin."
+        },
+        {
           "date": "March 18, 2023",
           "title": "Thoughts About Mercy",
           "description": "When talking about forgiveness from God. It feels easy. Do I just confess my sins and repent and that's it, I'm forgiven? And that being true makes it look so easy. This forgiveness is made free for all of us, but it isn't cheap."
@@ -54,6 +69,11 @@
         {
           "date": "May 11, 2023",
           "title": "How to Prioritize God",
+          "description": "I don't understand what prioritizing God means, so the best way I found to model and picture it is by starting off what prioritizing my girlfriend meant. Because I prioritize my girlfriend this would help understanding it all."
+        },
+        {
+          "date": "Auget 9, 2023",
+          "title": "Eve The Holyspirit",
           "description": "I don't understand what prioritizing God means, so the best way I found to model and picture it is by starting off what prioritizing my girlfriend meant. Because I prioritize my girlfriend this would help understanding it all."
         }
       ]
