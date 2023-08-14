@@ -34,7 +34,6 @@
     "eslint-config-next": "13.4.12",
     "gray-matter": "^4.0.3",
     "markdown-to-jsx": "^7.3.2",
-    "moment": "^2.29.4",
     "next": "13.4.12",
     "pnpm": "^8.6.12",
     "postcss": "8.4.27",
