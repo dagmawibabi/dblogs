@@ -7,6 +7,7 @@ import configJSON from "../public/config.json";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(configJSON.website.toString()),
   title: configJSON.metadatatitle.toString(),
   description: configJSON.metadatadescription.toString(),
   openGraph: {
