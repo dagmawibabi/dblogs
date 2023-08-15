@@ -1,12 +1,12 @@
 import { ImageResponse, NextRequest } from "next/server";
-import { reader } from "../lib/reader";
+import configJSON from "../../public/config.json";
 
 export const runtime = "edge";
 
 export async function GET(req: NextRequest) {
   const { searchParams } = req.nextUrl;
   const title = searchParams.get("title") || "";
-  const configData = await reader.singletons.homepage.read();
+
   return new ImageResponse(
     (
       <div
@@ -43,10 +43,10 @@ export async function GET(req: NextRequest) {
             fontWeight: 700,
           }}
         >
-          {configData?.metadatatitle}
+          {configJSON.metadatatitle.toString()}
         </div>
         <div style={{ color: "white", fontSize: 20 }}>
-          {configData?.metadatadescription}
+          {configJSON.metadatadescription.toString()}
         </div>
       </div>
     ),
