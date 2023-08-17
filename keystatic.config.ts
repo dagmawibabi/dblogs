@@ -15,6 +15,7 @@ export default config({
         footer: fields.text({ label: "Footer" }),
         metadatatitle: fields.text({ label: "Metadata Title" }),
         metadatadescription: fields.text({ label: "Metadata Description" }),
+        website: fields.text({ label: "Website" }),
         loglibid: fields.text({ label: "LogLib ID" }),
         socials: fields.object({
           telegram: fields.text({ label: "Telegram" }),
