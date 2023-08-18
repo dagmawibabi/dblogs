@@ -1,118 +1,138 @@
 {
-  "username": "Dagmawi Babi",
-  "introduction": "In this part of my journey I am learning to read and write as per the advice of Dr.Jordan Peterson, So this is an attempt in doing just that. And since I've been journalling all my life I know how helpful it is to organize and put thoughts into words. So this's a place to host all my writings and I hope it inspires, motivates and helps you grow as it does to me. Enjoy!",
-  "footer": "Dream Intelligence",
-  "metadatatitle": "DBlog",
-  "metadatadescription": "A collection of notes and journals written by Dagmawi Babi.",
-  "website": "http://dblogs-dusky.vercel.app",
-  "loglibid": "blog_dagmawibabi",
-  "socials": {
-    "telegram": "https://t.me/Dagmawi_Babi/",
-    "instagram": "https://www.instagram.com/dagmawibabi/",
-    "tiktok": "https://www.tiktok.com/@dagmawi_babi",
-    "linkedin": "https://www.linkedin.com/in/dagmawibabi/",
-    "github": "https://github.com/dagmawibabi"
-  },
-  "blogs": [
-    {
-      "category": "Coming Soon",
-      "blogs": [
-        {
-          "date": "Augest 20, 2023",
-          "title": "My Testimony",
-          "description": "This is the story of how I was saved and started my beautiful relationsip with God. This is how the generous loving God rescued my lost lust drenched soul. This will be my most secretive story to tell. I hope it sparks something in you!"
-        },
-        {
-          "date": "Augest 25, 2023",
-          "title": "How Many GPU's Does It Take to Simulate The Universe?",
-          "description": "Have you ever wondered how many GPU's it might require to actually simulate and run our universe? This is my attempt at finding out a technically accurate number. "
-        }
-      ]
+    "username": "Dagmawi Babi",
+    "introduction": "In this part of my journey I am learning to read and write as per the advice of Dr.Jordan Peterson, So this is an attempt in doing just that. And since I've been journalling all my life I know how helpful it is to organize and put thoughts into words. So this's a place to host all my writings and I hope it inspires, motivates and helps you grow as it does to me. Enjoy!",
+    "footer": "Dream Intelligence",
+    "metadatatitle": "DBlog",
+    "metadatadescription": "A collection of notes and journals written by Dagmawi Babi.",
+    "website": "http://dblogs-dusky.vercel.app",
+    "loglibid": "blog_dagmawibabi",
+    "socials": {
+        "telegram": "https://t.me/Dagmawi_Babi/",
+        "instagram": "https://www.instagram.com/dagmawibabi/",
+        "tiktok": "https://www.tiktok.com/@dagmawi_babi",
+        "linkedin": "https://www.linkedin.com/in/dagmawibabi/",
+        "github": "https://github.com/dagmawibabi"
     },
-    {
-      "category": "Short Writes and Poems",
-      "blogs": [
+    "blogs": [
         {
-          "date": "December 4, 2021",
-          "title": "A Letter to Void and Loneliness",
-          "description": "This is a small letter I wrote to void and loneliness. Emotions I've been drenched in years ago. I've pictured them as my own two bestfriends by how long I've felt them. But now they've wedded and this's my letter to them."
+            "category": "Coming Soon",
+            "blogs": [
+                {
+                    "date": "Augest 20, 2023",
+                    "title": "My Testimony",
+                    "description": "This is the story of how I was saved and started my beautiful relationsip with God. This is how the generous loving God rescued my lost lust drenched soul. This will be my most secretive story to tell. I hope it sparks something in you!"
+                },
+                {
+                    "date": "Augest 25, 2023",
+                    "title": "How Many GPU's Does It Take to Simulate The Universe?",
+                    "description": "Have you ever wondered how many GPU's it might require to actually simulate and run our universe? This is my attempt at finding out a technically accurate number. "
+                }
+            ]
         },
         {
-          "date": "November 28, 2017",
-          "title": "The Pain You Caused Me",
-          "description": "A small poem I wrote about a person I really liked that somehow became my obsession and later on my road to depression. This was something I wrote about her when I was at my lowest. A poem about Her."
+            "category": "Short Writes and Poems",
+            "blogs": [
+                {
+                    "date": "December 4, 2021",
+                    "title": "A Letter to Void and Loneliness",
+                    "description": "This is a small letter I wrote to void and loneliness. Emotions I've been drenched in years ago. I've pictured them as my own two bestfriends by how long I've felt them. But now they've wedded and this's my letter to them."
+                },
+                {
+                    "date": "November 28, 2017",
+                    "title": "The Pain You Caused Me",
+                    "description": "A small poem I wrote about a person I really liked that somehow became my obsession and later on my road to depression. This was something I wrote about her when I was at my lowest. A poem about Her."
+                }
+            ]
+        },
+        {
+            "category": "Lists",
+            "blogs": [
+                {
+                    "date": "November 5, 2023",
+                    "title": "Books To Read",
+                    "description": "These are a list of amazing books I've read and plan on reading in the coming months. This is an ever-expanding list I adjust regularly as I read and discover more books. If you need a list of incredible books, this could be it."
+                }
+            ]
+        },
+        {
+            "category": "Spiritual Blogs",
+            "blogs": [
+                {
+                    "date": "July 1, 2023",
+                    "title": "Sin",
+                    "description": "Sin is a force that tests our moral compass and challenges our relationship with God. Sin, in its myriad forms, reminds us of our imperfections, our vulnerability, and our need for redemption. This is a detailed study about the concept of Sin."
+                },
+                {
+                    "date": "March 18, 2023",
+                    "title": "Thoughts About Mercy",
+                    "description": "When talking about forgiveness from God. It feels easy. Do I just confess my sins and repent and that's it, I'm forgiven? And that being true makes it look so easy. This forgiveness is made free for all of us, but it isn't cheap."
+                },
+                {
+                    "date": "May 11, 2023",
+                    "title": "How to Prioritize God",
+                    "description": "I don't understand what prioritizing God means, so the best way I found to model and picture it is by starting off what prioritizing my girlfriend meant. Because I prioritize my girlfriend this would help understanding it all."
+                },
+                {
+                    "date": "Auget 9, 2023",
+                    "title": "Eve The Holyspirit",
+                    "description": "What seemed like a simple question led me to one of the most beautiful concepts I've encountered recently. It changed my entire perspective on the Holyspirit. It made the relationship I have with God evermore intimate. "
+                }
+            ]
+        },
+        {
+            "category": "The Book of James Bible Study",
+            "blogs": [
+                {
+                    "date": "July 5, 2023",
+                    "title": "James Chapter 1",
+                    "description": "This chapter is centered around the concept of enduring trials and testing with steadfast faith, seeking wisdom from God, and living out the Word of God emphasizing the importance of maintaining joy and perseverance in the midst of difficulties. "
+                },
+                {
+                    "date": "July 11, 2023",
+                    "title": "James Chapter 2",
+                    "description": "The main idea of this chapter revolves around the idea that genuine faith is demonstrated through actions and highlights the need for faith to be living and active, expressed through compassionate actions towards others."
+                }
+            ]
+        },
+        {
+            "category": "The Book of Job Bible Study",
+            "blogs": [
+                {
+                    "date": "April 25, 2023",
+                    "title": "Job Chapter 1",
+                    "description": "This chapter introduces the story of Job, a righteous and prosperous man who faces a series of devastating trials. The main idea revolves around the concept of suffering and the question of why bad things happen to good people."
+                },
+                {
+                    "date": "April 28, 2023",
+                    "title": "Job Chapter 2",
+                    "description": "This chapter continues the narrative of Job's suffering and the ongoing test of his faith. Centering on Job's response to further trials and his interaction with his friends. Despite his intense suffering, Job maintains his integrity."
+                },
+                {
+                    "date": "May 2, 2023",
+                    "title": "Job Chapter 3",
+                    "description": "This chapter portrays the depths of Job's suffering revealing his deep anguish and despair in the midst of his suffering. The main idea revolving around Job's emotional outpouring as he curses the day of his birth."
+                }
+            ]
+        },
+        {
+            "category": "Blogs from Other People",
+            "blogs": [
+                {
+                    "date": "Augest 20, 2023",
+                    "title": "I still think about you.",
+                    "description": "Pain: (noun) great care or trouble, The first word. Love:(noun) an intense feeling of deep affection, The second word. Managed to experience a lot more of that pain we talked about as I grew older."
+                },
+                {
+                    "date": "Augest 20, 2023",
+                    "title": "Pure bliss hidden in Music.",
+                    "description": "“Turn your lights down low” by Bob Marley My first memory of a song I heard after my first crush. 6th grade in pure bliss saying “ I know exactly what he's singing about for sure” felt a fuzzy warmth inside my then very small heart. "
+                },
+                {
+                    "date": "Augest 20, 2023",
+                    "title": "Is it too late?",
+                    "description": "“Cower, weep, Crumpled in agony on the ground.“ So last year I was 22 and in love thinking I had my whole life planned out and I thought I had nothing to worry about, as they say, I felt like the world was my oyster."
+                }
+            ]
         }
-      ]
-    },
-    {
-      "category": "Lists",
-      "blogs": [
-        {
-          "date": "November 5, 2023",
-          "title": "Books To Read",
-          "description": "These are a list of amazing books I've read and plan on reading in the coming months. This is an ever-expanding list I adjust regularly as I read and discover more books. If you need a list of incredible books, this could be it."
-        }
-      ]
-    },
-    {
-      "category": "Spiritual Blogs",
-      "blogs": [
-        {
-          "date": "July 1, 2023",
-          "title": "Sin",
-          "description": "Sin is a force that tests our moral compass and challenges our relationship with God. Sin, in its myriad forms, reminds us of our imperfections, our vulnerability, and our need for redemption. This is a detailed study about the concept of Sin."
-        },
-        {
-          "date": "March 18, 2023",
-          "title": "Thoughts About Mercy",
-          "description": "When talking about forgiveness from God. It feels easy. Do I just confess my sins and repent and that's it, I'm forgiven? And that being true makes it look so easy. This forgiveness is made free for all of us, but it isn't cheap."
-        },
-        {
-          "date": "May 11, 2023",
-          "title": "How to Prioritize God",
-          "description": "I don't understand what prioritizing God means, so the best way I found to model and picture it is by starting off what prioritizing my girlfriend meant. Because I prioritize my girlfriend this would help understanding it all."
-        },
-        {
-          "date": "Auget 9, 2023",
-          "title": "Eve The Holyspirit",
-          "description": "What seemed like a simple question led me to one of the most beautiful concepts I've encountered recently. It changed my entire perspective on the Holyspirit. It made the relationship I have with God evermore intimate. "
-        }
-      ]
-    },
-    {
-      "category": "The Book of James Bible Study",
-      "blogs": [
-        {
-          "date": "July 5, 2023",
-          "title": "James Chapter 1",
-          "description": "This chapter is centered around the concept of enduring trials and testing with steadfast faith, seeking wisdom from God, and living out the Word of God emphasizing the importance of maintaining joy and perseverance in the midst of difficulties. "
-        },
-        {
-          "date": "July 11, 2023",
-          "title": "James Chapter 2",
-          "description": "The main idea of this chapter revolves around the idea that genuine faith is demonstrated through actions and highlights the need for faith to be living and active, expressed through compassionate actions towards others."
-        }
-      ]
-    },
-    {
-      "category": "The Book of Job Bible Study",
-      "blogs": [
-        {
-          "date": "April 25, 2023",
-          "title": "Job Chapter 1",
-          "description": "This chapter introduces the story of Job, a righteous and prosperous man who faces a series of devastating trials. The main idea revolves around the concept of suffering and the question of why bad things happen to good people."
-        },
-        {
-          "date": "April 28, 2023",
-          "title": "Job Chapter 2",
-          "description": "This chapter continues the narrative of Job's suffering and the ongoing test of his faith. Centering on Job's response to further trials and his interaction with his friends. Despite his intense suffering, Job maintains his integrity."
-        },
-        {
-          "date": "May 2, 2023",
-          "title": "Job Chapter 3",
-          "description": "This chapter portrays the depths of Job's suffering revealing his deep anguish and despair in the midst of his suffering. The main idea revolving around Job's emotional outpouring as he curses the day of his birth."
-        }
-      ]
-    }
-  ]
+    ]
 }
