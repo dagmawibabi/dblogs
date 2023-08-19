@@ -17,12 +17,23 @@ export default config({
         metadatadescription: fields.text({ label: "Metadata Description" }),
         website: fields.text({ label: "Website" }),
         loglibid: fields.text({ label: "LogLib ID" }),
+        loglibapikey: fields.text({ label: "LogLib API Key" }),
         socials: fields.object({
           telegram: fields.text({ label: "Telegram" }),
           instagram: fields.text({ label: "Instagram" }),
           tiktok: fields.text({ label: "Tiktok" }),
           linkedin: fields.text({ label: "Linkedin" }),
           github: fields.text({ label: "Github" }),
+          reddit: fields.text({ label: "Reddit" }),
+          discord: fields.text({ label: "Discord" }),
+          facebook: fields.text({ label: "Facebook" }),
+          twitter: fields.text({ label: "Twitter" }),
+          whatsapp: fields.text({ label: "Whatsapp" }),
+          twitch: fields.text({ label: "Twitch" }),
+          youtube: fields.text({ label: "YouTube" }),
+          itchio: fields.text({ label: "ItchIO" }),
+          behance: fields.text({ label: "Behance" }),
+          bitcoin: fields.text({ label: "Bitcoin" }),
         }),
         blogs: fields.array(
           fields.object({

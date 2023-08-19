@@ -1,29 +1,40 @@
 {
-  "username": "Dagmawi Babi",
+  "username": "Hi, I'm Dagmawi Babi 👋",
   "introduction": "In this part of my journey I am learning to read and write as per the advice of Dr.Jordan Peterson, So this is an attempt in doing just that. And since I've been journalling all my life I know how helpful it is to organize and put thoughts into words. So this's a place to host all my writings and I hope it inspires, motivates and helps you grow as it does to me. Enjoy!",
   "footer": "Dream Intelligence",
   "metadatatitle": "DBlog",
   "metadatadescription": "A collection of notes and journals written by Dagmawi Babi.",
   "website": "http://dblogs-dusky.vercel.app",
   "loglibid": "blog_dagmawibabi",
+  "loglibapikey": "site_qncxptob30",
   "socials": {
     "telegram": "https://t.me/Dagmawi_Babi/",
     "instagram": "https://www.instagram.com/dagmawibabi/",
     "tiktok": "https://www.tiktok.com/@dagmawi_babi",
     "linkedin": "https://www.linkedin.com/in/dagmawibabi/",
-    "github": "https://github.com/dagmawibabi"
+    "github": "https://github.com/dagmawibabi",
+    "reddit": "",
+    "discord": "",
+    "facebook": "",
+    "twitter": "",
+    "whatsapp": "",    
+    "twitch": "",
+    "youtube": "",
+    "itchio": "",
+    "behance": "",    
+    "bitcoin": ""
   },
   "blogs": [
     {
       "category": "Coming Soon",
       "blogs": [
         {
-          "date": "Augest 20, 2023",
+          "date": "Augest 25, 2023",
           "title": "My Testimony",
           "description": "This is the story of how I was saved and started my beautiful relationsip with God. This is how the generous loving God rescued my lost lust drenched soul. This will be my most secretive story to tell. I hope it sparks something in you!"
         },
         {
-          "date": "Augest 25, 2023",
+          "date": "September 5, 2023",
           "title": "How Many GPU's Does It Take to Simulate The Universe?",
           "description": "Have you ever wondered how many GPU's it might require to actually simulate and run our universe? This is my attempt at finding out a technically accurate number. "
         }
