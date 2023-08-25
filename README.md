@@ -1,4 +1,4 @@
-# DBlogs - Open Source Blog Site Platform
+# DBlogs - Open Source Blog Site Platform with Analytics
 
 # DBlogs Logo
 
@@ -14,7 +14,7 @@ DBlogs is an open-source blog site platform that allows users to easily create a
 
 ## Getting Started
 
-To set up and use DBlogs for your own blog site, follow these steps:
+To set up and use DBlogs for your own blog site, follow these steps:   
 
 1. Clone the Repository: Start by cloning the DBlogs repository to your local machine using the following command:
 
