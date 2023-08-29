@@ -38,3 +38,9 @@ Have a wonderful life Jessy. God will save us and clean us up and make us brand 
  This was difficult to publish because it shades a new light on me, specially for those of you that don't know me too close. But I know that there are others like me who can't end the links they've formed and who have found it almost impossible to break out of connections like this. So let this be evidence that you can and that you should. It's worth it! 
  
  Remember, **The less bad links you have the more room you're allowing for God to be intimately involved with you.** And that is what heaven is... to have the most intimate and personal connection with God.
+
+### Going to leave you with this...
+> "ድነት የሚገኝበት የእግዚአብሔር ጸጋ ለሰዎች ሁሉ ተገልጦአልና፤ ይህም ጸጋ በኀጢአት መኖርንና ዓለማዊ ምኞትን ክደን፣ በአሁኑ ዘመን ራሳችንን በመግዛት በጽድቅ፣ በእውነተኛ መንፈሳዊ ሕይወት እንድንኖር ያስተምረናል::" 
+ ቲቶ 2:11-12 (አዲሱ መ.ት)
+
+> For the grace of God that brings salvation has appeared to all men. It teaches us to say "No" to ungodliness and worldly passions, and to live self-controlled, upright and godly lives in this present age. Tit 2:11-12 (NIV)
