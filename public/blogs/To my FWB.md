@@ -9,7 +9,7 @@
 
 **Hey Jessica,** You're one of the cutest, sweetest, coolest, fun, sexiest, wholesome person I know. I call you a friend but your place is somewhere unique and special. I've had the absolute delight in knowing you as a person and also in knowing you in the most intimate, nude, intricate way possible. And you knew me that way too. This knowledge we have of eachother isn't going to wash away anytime soon. 
 
-I don't know about your spiritual life but I know you are a Christian. እኔ after we fuck around, I go right back to God and be accepted by him. I don't know if you do the same. And I feel the absolute conviction from God. That የራሴ ሳያንስ, I'm pushing you even further away from him. And you know how painfully loud God is when he convicts and councils you.
+I don't know about your spiritual life but I know you are a Christian. እኔ after we fuck around, I go right back to God and be accepted by him. But I don't know if you do the same and I feel the absolute conviction from God. That የራሴ ሳያንስ, I'm pushing you even further away from him. And you know how painfully loud God is when he convicts and councils you.
 
 **Me in my absolute selfishness** ለራሴ Godን አግኝቼ and delghting in his peace, freedom and satisfaction. አንቺን ግን when I come to you I don't bring any of it. While God wanted you so much and while you needed him and wanted to be with him, **I kept him hidden away from you and only used us for sex.*** And he convicts me so much for it. And I'm sorry I did that to you. 
 
