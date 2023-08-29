@@ -1,4 +1,4 @@
-# To My Friends With Benefits
+# To my Friends with Benefits
 > This is a very intimate and personal text I sent to a person I've been in a friends with benefits relationship with. My connection with her started way back from 10th grade and continued up until a few weeks ago. Even when I converted to a christian that link was still open.
 
 > She's an amazing person, without a doubt! If you're reading this know that you're still incredible in my eyes! And I hope all good gets you. And knowing that we're both christians, I hope God cleanses us for our future partners. 
