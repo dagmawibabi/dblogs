@@ -17,7 +17,7 @@ Now my body really hates me for doing this and I know I might regret it but this
 
 I like you Jessy. Honestly I'm kinda lucky to be your friend and to go deeper with you. So this's me not being selfish and finally cutting this long and intimate bond we've formed and finally setting you free. And **I'm hoping that God will get a bigger step closer to you as I leave what we've built with our lust.** This's just step one so he'll handle what comes to you after this. 
 
-I've blocked you. And I think you should do the same. I was thinking that I should preach to you and tell you all that spiritual stuff but **I'm not that person for us in this relationship.** I apologize for ruining the image of Christianity for you (If I have) But the Dagim you saw isn't the Christ I try to represent. Christ is much more... so much more! I'm just a very horrible representative of him for the moment. But I have prayed for you and will continue to do so. So that someday we might meet back again and just delight in God for saving us from our **guilty pleasures***. 
+I've blocked you. And I think you should do the same. I was thinking that I should preach to you and tell you all that spiritual stuff but **I'm not that person for us in this relationship.** I apologize for ruining the image of Christianity for you (If I have) But the Dagim you saw isn't the Christ I try to represent. Christ is much more... so much more! I'm just a very horrible representative of him for the moment. But I have prayed for you and will continue to do so. So that someday we might meet back again and just delight in God for saving us from our **guilty pleasures**.* 
 
 I'm a bad (if not the worst) symbol to represent God for you **but right now I hope I represent something important for you. That someone as shitty as me who cheats, lusts around and is a hypocrite can be transformed because of God.** We both know that I wouldn't end this connection we have, the past 6 years are proof of that. But here I am doing it and I want you to know that I was only able to make this decision because God counciled me to do so and because he gave me the strength to break this intimate bond we have. **And we both know how strong bonds formed out of lust can be.** 
 
@@ -32,7 +32,7 @@ Have a wonderful life Jessy. God will save us and clean us up and make us brand 
 
 **Sex: is what I called it because even though our relationship was mostly virtual, the intimacy formed is nothing less than of it.*
 
-**Guilty Pleasures: is what we used to call our encounters because we both feel horrible for doing it yet we did it anyways.* 
+**Guilty Pleasures: is what we used to call our encounters because we both felt horrible for doing it yet we did it anyway.* 
 
 ### Last Words
  This was difficult to publish because it shades a new light on me, specially for those of you that don't know me too close. But I know that there are others like me who can't end the links they've formed and who have found it almost impossible to break out of connections like this. So let this be evidence that you can and that you should. It's worth it! 
