@@ -16,7 +16,7 @@ export default function Footer() {
         const month = String(currentDate.getMonth() + 1).padStart(2, '0'); 
         const day = String(currentDate.getDate() + 1).padStart(2, '0');
         const formattedDate = `${year}-${month}-${day}`;    
-        let visitorCountResult = await axios.get(`https://api.loglib.io/v1/inisght?apiKey=${configJSON.loglibapikey}&startDate=2023-08-10&endDate=${formattedDate}&timeZone=Africa/Addis_Ababa`);
+        let visitorCountResult = await axios.get(`https://api.loglib.io/v1/insight?apiKey=${configJSON.loglibapikey}&startDate=2023-08-10&endDate=${formattedDate}&timeZone=Africa/Addis_Ababa`);
         setVisitorCount(visitorCountResult.data.insight.totalPageViews.current);
     }
     getVisitorCount();
