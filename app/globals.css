@@ -43,6 +43,14 @@ body {
 
 /*  */
 
+a {
+  color: rgb(23, 221, 221);
+}
+
+a:hover {
+  color: yellow;
+}
+
 strong {
   margin-top: 100px;
   padding-top: 100px;
@@ -98,6 +106,15 @@ blockquote:hover {
 
 blockquote p {
   margin: 0;
+}
+
+blockquote blockquote {
+  border-left: none;
+  /* padding: 10px 20px; */
+  /* margin: 10px 0px; */
+  background-color: #141414;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 span p {

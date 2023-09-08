@@ -71,8 +71,13 @@
       ]
     },
     {
-      "category": "Spiritual Blogs",
+      "category": "Spiritual Blogs", 
       "blogs": [
+        {
+          "date": "September 06, 2023",
+          "title": "Bible Translations",
+          "description": "This is the story of how I was saved and started my beautiful relationsip with God. This is how the generous loving God rescued my lost lust drenched soul. This will be my most secretive story to tell. I hope it sparks something in you!"
+        },
         {
           "date": "July 1, 2023",
           "title": "Sin",
