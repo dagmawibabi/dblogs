@@ -187,23 +187,25 @@ span p {
 
   li {
     /* color: red; */
-    margin: 25px 20px 0px;
+    display: list-item;
+    margin: 5px 20px 0px;
     list-style: disc;
-    font-size: 16px;
+    /* font-size: 20px; */
   }
 
   blockquote img:not(:only-child) {
     display: inline-block;
     width: 100%;
     margin-top: 10px;
+    margin-left: -10px;
     z-index: 9999;
   }
-  
   
   blockquote blockquote img:not(:only-child) {
     display: inline-block;
     width: 100%;
     margin-top: 10px;
+    margin-left: -10px;
     z-index: 9999;
   }
 }
@@ -229,9 +231,10 @@ span p {
 
   li {
     /* color: red; */
-    margin: 25px 20px 0px;
+    display: list-item;
+    margin: 5px 20px 0px;
     list-style: disc;
-    font-size: 16px;
+    /* font-size: 20px; */
   }
 
   blockquote img:not(:only-child) {
