@@ -1,5 +1,37 @@
-<html>
-<body>
+# Horrible Web Designs
+
+On December 14 I hosted ***5,000 ETB*** web dev competition in Addis Ababa Science and Technology University (AASTU) for all batches. The theme of the competition was **Horrible Design** and contestants were expected to make the most difficult to use, hedious looking, unintuitive, user-unfriendly, time wasting abomination of a website... and they didn't fail me! 
+
+# This was what I told the contestants 
+When I look at your websites I want to gag and feel immense pain in my soul. I want my eyes to be in agony looking at your designs. Are you good at UI/UX design? Well throw that out the window. Do you like making people's digital life easier? Well throw that out the window as well. Do you follow good design and interaction guidelines? Throw that out the window!! Infact when I look at your designs, I want it to make me throw MY computer out the window!! Enjoy causing pain on all of us and go crazy with your creativity. Competition starts now and ends in 3 days. Have fun. 🥳
+
+# Requirements 
+* Must be an original design
+* You can be in teams or alone
+* Should be a single page website
+* Should include multiple sections within the page 
+* You can use any framework or tool you're comfortable with
+* Should have multiple interactive elements like forms, buttons, hover effects, scroll effects and so forth
+* Should be hosted on either GitHub Pages, Vercel, Netlify or any other free hosting service.
+
+# Things to focus on
+* Design horribleness
+* Allow interaction but just agonizing 
+* Content should be visible, just visibly painful 
+* Non-conformity to standard design and UI/UX rules and trends 
+* Adding your twists to original popular webpage components.
+
+# Submission and Deadline
+* **Submission**: Dec 17 12:00 local time. 
+* **Deadline**: Dec 17 Midnight 6:00 LT
+
+# ⚠️ Warning and Usage
+* Epileptic Warning
+* Volume Up for Full Experience
+* View on PC for full experience 
+* Enable Pop Ups and JavaScript
+
+# Here are the submissions...
 
 **Submission 1** - [https://haileabt.github.io/pain](https://haileabt.github.io/pain)
 
@@ -12,7 +44,7 @@
 **Submission 2** - [https://mesmerizing-ui-competition.vercel.app](https://mesmerizing-ui-competition.vercel.app)
 
 > By [Amanuel Wonde](https://github.com/amanuelWonde) 
->> "I saw that it's hard to make a website the most hedios looking. I really love the idea and gave me time to think outside the real world work."
+>> "I saw that it's hard to make a website the most hedious looking. I really loved the idea and it gave me time to think outside the real world work."
 
 > ![Submission 2](../images/HorribleWebDesigns/2a.png) ![Submission 2](../images/HorribleWebDesigns/2b.png)
 
@@ -20,7 +52,7 @@
 **Submission 3** - [https://dawit-sh.github.io/shit-post](https://dawit-sh.github.io/shit-post)
 
 > By [Dawit Sharon](https://github.com/Dawit-Sh/) 
->> "I dare you to write your full name and email and then submit!"
+>> "I dare you to write your fullname and email and then submit!"
 
 > ![Submission 3](../images/HorribleWebDesigns/3a.png) ![Submission 3](../images/HorribleWebDesigns/3b.png)
 
@@ -44,7 +76,7 @@
 **Submission 6** - [https://annoying-website.vercel.app](https://annoying-website.vercel.app)
 
 > By [Tadiwos Anegagregn](https://github.com/Tadi-san) 
->> "The reason why i didn't center anything, is not because i couldn't center a div , it's to make it more annoying  (*lies)"
+>> "The reason why I didn't center anything is not because I couldn't center a div, it's to make it more annoying! (*lies)"
 
 > ![Submission 6](../images/HorribleWebDesigns/6a.png) ![Submission 6](../images/HorribleWebDesigns/6b.png)
 
@@ -52,7 +84,7 @@
 **Submission 7** - [https://aastu-comp.vercel.app](https://aastu-comp.vercel.app)
 
 > By [Kemal siraj](https://github.com/hawt24) 
->> "After taking cigarette it's not that painful bro...so Please order"
+>> "After taking cigarette it's not that painful bro...so Please order!"
 
 > ![Submission 7](../images/HorribleWebDesigns/7a.png) ![Submission 7](../images/HorribleWebDesigns/7b.png)
 
@@ -109,14 +141,13 @@
 
 > By [DeadBeat_Noble](https://github.com/deadbeatnoble) 
 >> "It's a simple lovely clear birthday card generator."
-
-> ![Submission 14](../images/HorribleWebDesigns/14a.png) ![Submission 14](../images/HorribleWebDesigns/14b.png)
+>>> * Submission Removed By The Author
 
 
 **Submission 15** - [https://hnfsrj.github.io/Chaltulator](https://hnfsrj.github.io/Chaltulator)
 
 > By [Hnfsrj](https://github.com/hnfsrj) 
->> "Ugly calculator where you don't have a normal numpad but list of numbers from zero to 1000. And it is too dump to calculate.."
+>> "Ugly calculator where you don't have a normal numpad but list of numbers from zero to 1000. And it is too dump to calculate."
 
 > ![Submission 15](../images/HorribleWebDesigns/15a.png) ![Submission 15](../images/HorribleWebDesigns/15b.png)
 
@@ -124,7 +155,7 @@
 **Submission 16** - [https://get-your-fiance-e.vercel.app](https://get-your-fiance-e.vercel.app)
 
 > By [Eyob2m](http://github.com/eyob2m) 
->> "Mobile Irresponsive"
+>> "Mobile Irresponsive."
 
 > ![Submission 16](../images/HorribleWebDesigns/16a.png) ![Submission 16](../images/HorribleWebDesigns/16b.png)
 
@@ -169,5 +200,8 @@
 > ![Submission 21](../images/HorribleWebDesigns/21a.png) ![Submission 21](../images/HorribleWebDesigns/21b.png)
 
 
-</html>
-</body>
+# AND THAT WAS PAINFUL! I HOPE YOU HAD A VERY AGONIZING JOURNEY!
+
+# YOU CAN REST NOW! THERE'S NO MORE HORROR!
+
+# THANK YOU FOR READING!
