@@ -43,6 +43,11 @@ body {
 
 /*  */
 
+h1 a {
+  font-size: 1em;
+  font-weight: normal;
+}
+
 a[target="_blank"] {
   color: rgb(23, 221, 221);
 }
