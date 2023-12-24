@@ -43,9 +43,14 @@ body {
 
 /*  */
 
+a[target="_blank"] {
+  color: rgb(23, 221, 221);
+}
+
 a {
   color: rgb(23, 221, 221);
 }
+
 
 a:hover {
   color: yellow;
@@ -93,7 +98,7 @@ li {
 
 blockquote {
   border-left: 2px solid yellow;
-  padding: 10px 20px;
+  padding: 15px 20px;
   margin: 10px 0px;
   background-color: #1f1f1f;
   border-top-right-radius: 10px;
@@ -106,15 +111,39 @@ blockquote:hover {
 
 blockquote p {
   margin: 0;
+  display: block;
 }
 
 blockquote blockquote {
   border-left: none;
   /* padding: 10px 20px; */
-  /* margin: 10px 0px; */
+  margin: 10px 0px;
   background-color: #141414;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
+}
+
+blockquote blockquote:hover {
+  background-color: #141414;
+}
+
+blockquote img:not(:only-child) {
+  display: inline-block;
+  width: 48%;
+  margin-left: 10px;
+  z-index: 9999;
+}
+
+
+blockquote blockquote img:not(:only-child) {
+  display: inline-block;
+  width: 48%;
+  margin-left: 10px;
+  z-index: 9999;
+}
+
+blockquote blockquote img:not(:only-child):hover {
+  width: 100%;
 }
 
 span p {

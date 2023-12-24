@@ -6,7 +6,7 @@
   "metadatadescription": "A collection of notes and journals written by Dagmawi Babi.",
   "website": "http://dblogs-dusky.vercel.app",
   "loglibid": "blog_dagmawibabi",
-  "loglibapikey": "site_g4htfvc3ii",
+  "loglibapikey": "site_h7mxqiif4d",
   "socials": {
     "telegram": "https://t.me/Dagmawi_Babi/",
     "instagram": "https://www.instagram.com/dagmawibabi/",
@@ -29,14 +29,24 @@
       "category": "Coming Soon",
       "blogs": [
         {
-          "date": "December 18, 2023",
+          "date": "February 18, 2023",
           "title": "My Testimony",
           "description": "This is the story of how I was saved and started my beautiful relationsip with God. This is how the generous loving God rescued my lost lust drenched soul. This will be my most secretive story to tell. I hope it sparks something in you!"
         },
         {
-          "date": "December 28, 2023",
+          "date": "February 28, 2023",
           "title": "Beautiful Loss",
           "description": "When I decided to follow Christ with all of me, I had to burn down some long lasting friendships, lustful strings I kept holding on. I had to leave and break away from some of the most meaningful people to me at that time. This is the story of loss. "
+        }
+      ]
+    },
+    {
+      "category": "Tech",
+      "blogs": [
+        {
+          "date": "December 24, 2023",
+          "title": "Horrible Web Designs",
+          "description": "This is the story of how I was saved and started my beautiful relationsip with God. This is how the generous loving God rescued my lost lust drenched soul. This will be my most secretive story to tell. I hope it sparks something in you!"
         }
       ]
     },
