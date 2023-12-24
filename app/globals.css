@@ -197,7 +197,7 @@ span p {
     display: inline-block;
     width: 100%;
     margin-top: 10px;
-    margin-left: -10px;
+    margin-left: -4px;
     z-index: 9999;
   }
   
@@ -205,7 +205,7 @@ span p {
     display: inline-block;
     width: 100%;
     margin-top: 10px;
-    margin-left: -10px;
+    margin-left: -4px;
     z-index: 9999;
   }
 }
