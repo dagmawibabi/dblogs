@@ -1,9 +1,12 @@
 # Horrible Web Designs
 
-On December 14 I hosted ***5,000 ETB*** web dev competition in Addis Ababa Science and Technology University (AASTU) for all batches. The theme of the competition was **Horrible Design** and contestants were expected to make the most difficult to use, hedious looking, unintuitive, user-unfriendly, time wasting abomination of a website... and they didn't fail me! 
+On December 14 I hosted a ***5,000 ETB*** web dev competition in Addis Ababa Science and Technology University (AASTU) for all batches. The theme of the competition was **Horrible Design** and contestants were expected to make the most difficult to use, hedious looking, unintuitive, user-unfriendly, time wasting abomination of a website... and they didn't fail me! 
 
 # This was what I told the contestants 
 When I look at your websites I want to gag and feel immense pain in my soul. I want my eyes to be in agony looking at your designs. Are you good at UI/UX design? Well throw that out the window. Do you like making people's digital life easier? Well throw that out the window as well. Do you follow good design and interaction guidelines? Throw that out the window!! Infact when I look at your designs, I want it to make me throw MY computer out the window!! Enjoy causing pain on all of us and go crazy with your creativity. Competition starts now and ends in 3 days. Have fun. 🥳
+
+#Who Participated?
+During the competition students from freshman year to the graduating classes, from Addis Ababa Science and Technology University (AASTU) and Addis Ababa University (AAU) to dropouts, from software engineering and computer science to chemical engineering and electromechanical departments joined the contest. 
 
 # Requirements 
 * Must be an original design
@@ -30,6 +33,7 @@ When I look at your websites I want to gag and feel immense pain in my soul. I w
 * Volume Up for Full Experience
 * View on PC for full experience 
 * Enable Pop Ups and JavaScript
+* Most component and content on the websites are interactive, so hover everywhere, click on things and fill out forms 
 
 # Here are the submissions...
 
