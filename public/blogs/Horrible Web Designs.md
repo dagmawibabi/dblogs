@@ -33,7 +33,7 @@ During the competition students from freshman year to the graduating classes, fr
 * Volume Up for Full Experience
 * View on PC for full experience 
 * Enable Pop Ups and JavaScript
-* Most component and content on the websites are interactive, so hover everywhere, click on things and fill out forms 
+* Most components and contents on the websites are interactive, so hover everywhere, click on things and fill out forms 
 
 # Here are the submissions...
 
