@@ -16,7 +16,7 @@ export default function EachBlog({ blogIntroObj, isClickable }: { blogIntroObj: 
     let yearDifference = year - blogYear;
     if(yearDifference == 0){
         let monthDifference = Math.abs(months.indexOf(blogMonth) - parseInt(month));
-        if(monthDifference < 3 || blogMonth == month){
+        if(monthDifference > 5 || months.indexOf(blogMonth) == parseInt(month) || monthDifference < 3){
             isRecent = true;
         } 
     } else if(yearDifference <= 1){
