@@ -2,6 +2,29 @@ import Link from "next/link";
 
 
 export default function EachBlog({ blogIntroObj, isClickable }: { blogIntroObj: blogIntro, isClickable: boolean }) {
+    let isRecent = false;
+    let isComingSoon = false;
+    
+    const currentDate = new Date();
+    const year = currentDate.getFullYear();
+    const month = String(currentDate.getMonth() + 1).padStart(2, '0'); 
+    const day = String(currentDate.getDate() + 1).padStart(2, '0');
+    const formattedDate = `${year}-${month}-${day}`;   
+
+    const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"].reverse();
+
+    let blogDateArray = blogIntroObj.date.toString().split(" ")
+    let blogYear = parseInt(blogDateArray[2]);
+    let blogMonth = blogDateArray[0].toString().substring(0,3);
+    let yearDifference = year - blogYear;
+
+    if(yearDifference <= 1){
+        let monthDifference = Math.abs(months.indexOf(blogMonth) - parseInt(month));
+        if(monthDifference < 3){
+            isRecent = true;
+        } 
+    }
+
     return (
         <Link href={isClickable == false ? "" : `blogs/${blogIntroObj.title}?date=${blogIntroObj.date}`} target={isClickable == false ? "" : "_blank"}>
             <div className="
@@ -18,9 +41,14 @@ export default function EachBlog({ blogIntroObj, isClickable }: { blogIntroObj: 
                     ">
 
                     {/* Date */}
+                    <div className="flex justify-between">
                     <span className="text-zinc-500 text-xs">
-                        {blogIntroObj.date}
+                        {blogIntroObj.date} 
                     </span>
+                    <span className={isClickable == true ? "text-emerald-400 text-xs font-bold uppercase" : "text-cyan-500 text-xs font-bold uppercase"}>
+                        { isRecent == true ? "New" : (isClickable == false ? "Soon" : "") }
+                    </span>
+                    </div>
 
 
                     {/* Title */}

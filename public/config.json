@@ -29,14 +29,19 @@
       "category": "Coming Soon",
       "blogs": [
         {
-          "date": "February 18, 2023",
+          "date": "Status: Detailed Draft",
           "title": "My Testimony",
           "description": "This is the story of how I was saved and started my beautiful relationsip with God. This is how the generous loving God rescued my lost lust drenched soul. This will be my most secretive story to tell. I hope it sparks something in you!"
         },
         {
-          "date": "February 28, 2023",
+          "date": "Status: Editing",
           "title": "Beautiful Loss",
           "description": "When I decided to follow Christ with all of me, I had to burn down some long lasting friendships, lustful strings I kept holding on. I had to leave and break away from some of the most meaningful people to me at that time. This is the story of loss. "
+        },
+        {
+          "date": "Status: Polishing",
+          "title": "Guide for a Christian Developer",
+          "description": "This is a simple guide on your journey as a Christian software developer. It is true that as people of tech we are incredibly exposed to horrific content and own the ability to create destructive platforms. This is to guide you through this path. "
         }
       ]
     },
@@ -74,7 +79,7 @@
       "category": "Lists",
       "blogs": [
         {
-          "date": "November 5, 2023",
+          "date": "November 5, 2022",
           "title": "Books To Read",
           "description": "These are a list of amazing books I've read and plan on reading in the coming months. This is an ever-expanding list I adjust regularly as I read and discover more books. If you need a list of incredible books, this could be it."
         }
@@ -84,7 +89,7 @@
       "category": "Spiritual Blogs", 
       "blogs": [
         {
-          "date": "September 06, 2023",
+          "date": "September 6, 2023",
           "title": "Bible Translations",
           "description": "Haven't you ever wondered why there are so many versions of the bible even within the same language? This is a brief summary of the history of how the most popular versions we use today came about..."
         },
@@ -124,7 +129,7 @@
           "description": "The main idea of this chapter revolves around the idea that genuine faith is demonstrated through actions and highlights the need for faith to be living and active, expressed through compassionate actions towards others."
         },
         {
-          "date": "October 03, 2023",
+          "date": "October 3, 2023",
           "title": "James Chapter 3",
           "description": "This chapter is a profound book of wisdom where James teaches us about controlling our speech, cautions that should be taken when teaching others and shows us comparisons of God's wisdom vs Demonic and Earthly wisdom."
         }
