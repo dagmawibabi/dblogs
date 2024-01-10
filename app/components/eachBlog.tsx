@@ -3,24 +3,26 @@ import Link from "next/link";
 
 export default function EachBlog({ blogIntroObj, isClickable }: { blogIntroObj: blogIntro, isClickable: boolean }) {
     let isRecent = false;
-    let isComingSoon = false;
     
     const currentDate = new Date();
     const year = currentDate.getFullYear();
     const month = String(currentDate.getMonth() + 1).padStart(2, '0'); 
-    const day = String(currentDate.getDate() + 1).padStart(2, '0');
-    const formattedDate = `${year}-${month}-${day}`;   
 
-    const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"].reverse();
+    let months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 
     let blogDateArray = blogIntroObj.date.toString().split(" ")
     let blogYear = parseInt(blogDateArray[2]);
     let blogMonth = blogDateArray[0].toString().substring(0,3);
     let yearDifference = year - blogYear;
-
-    if(yearDifference <= 1){
+    if(yearDifference == 0){
         let monthDifference = Math.abs(months.indexOf(blogMonth) - parseInt(month));
-        if(monthDifference < 3){
+        if(monthDifference < 3 || blogMonth == month){
+            isRecent = true;
+        } 
+    } else if(yearDifference <= 1){
+        months = months.reverse();
+        let monthDifference = Math.abs(months.indexOf(blogMonth) - parseInt(month));
+        if(monthDifference < 3 || blogMonth == month){
             isRecent = true;
         } 
     }
