@@ -16,7 +16,7 @@ import './globals.css';
 export default function Home() {
 
   return (
-    <div>
+    <div className="flex absolute">
       <DynamicCircles />
 
       <div className="flex backdrop-blur-3xl ">

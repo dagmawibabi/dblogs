@@ -1,12 +1,16 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBehance, faBitbucket, faBitcoin, faBity, faDiscord, faEthereum, faFacebookF, faGithub, faInstagram, faIntercom, faItchIo, faLinkedinIn, faRedditAlien, faTelegramPlane, faTiktok, faTwitch, faTwitter, faWhatsapp, faYoutube } from "@fortawesome/free-brands-svg-icons";
+import { faBehance, faBitbucket, faBitcoin, faBity, faDiscord, faEthereum, faFacebookF, faGithub, faInstagram, faIntercom, faInternetExplorer, faItchIo, faLinkedinIn, faRedditAlien, faSafari, faTelegramPlane, faTiktok, faTwitch, faTwitter, faWhatsapp, faYoutube } from "@fortawesome/free-brands-svg-icons";
 import Link from "next/link";
 import configJSON from "../../public/config.json";
 
 export default function Navigation() {
     let socials = [
         {
-            "icon": faTelegramPlane,
+            "icon": faSafari,
+            "link": configJSON.socials.website,
+        },
+        {
+            "icon": faTelegramPlane, 
             "link": configJSON.socials.telegram,
         },
         {

@@ -39,13 +39,13 @@ export default function DynamicCircles() {
 
     useEffect(() => {
         setClientWidth(window.innerWidth);
-        setClientHeight(window.innerHeight);
+        setClientHeight(5000);
         return () => {
         };
     }, []);
 
     const dynamicCircles = [];
-    for (let i = 0; i < 5; i++) {
+    for (let i = 0; i < 16; i++) {
         const randomCx = randomRange(0, clientWidth);
         const randomCy = randomRange(0, clientHeight);
         const randomRadius = randomRange(80, 170);
