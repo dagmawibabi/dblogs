@@ -28,7 +28,7 @@ On some days I would also self harm but I used self harming to stop me from cryi
 
 # The Spirit Of Lust
 
-One night as I was in space with one girl just casually making out and all, I encountered the most strangest thing in my life. Me and and the girl I was with that night locked the room and were making out and at one moment I decided to open my eyes and in that moment in the middle of the classroom I saw a women clothed in white, with dirt and blood all over her cloth, with a messy hair and with bruised and scarred skin sitting in one of the chairs and grinning at me. She was almost satisfied with what I was doing with the girl beside me. It felt like worship.
+One night as I was in space with one girl just casually making out and all, I encountered the most strangest thing in my life. Me and the girl I was with that night locked the room and were making out and at one moment I decided to open my eyes and in that moment in the middle of the classroom I saw a women clothed in white, with dirt and blood all over her cloth, with a messy hair and with bruised and scarred skin sitting in one of the chairs and grinning at me. She was almost satisfied with what I was doing with the girl beside me. It felt like worship.
 
 So I was shocked cause I remembered locking the door and even all the windows so there was no way for her to enter. I stopped what I was doing and double checked if what I was seeing was real or not. I even asked the girl with me if she saw the same thing, but she didn’t. So I thought I was just being delusional or my mind was playing tricks on me so I went back to making out. Ever since that night I would see that spirit follow me, in my room, with other people and so much more.
 
