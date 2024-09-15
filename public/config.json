@@ -1,205 +1,205 @@
 {
-  "username": "Hi, I'm Dagmawi Babi 👋",
-  "introduction": "In this part of my journey I am learning to read and write as per the advice of Dr.Jordan Peterson, So this is an attempt in doing just that. And since I've been journalling all my life I know how helpful it is to organize and put thoughts into words. So this's a place to host all my writings and I hope it inspires, motivates and helps you grow as it does to me. Enjoy!",
-  "footer": "Dream Intelligence",
-  "metadatatitle": "DBlog",
-  "metadatadescription": "A collection of notes and journals written by Dagmawi Babi.",
-  "website": "http://dblogs-dusky.vercel.app",
-  "loglibid": "blog_dagmawibabi",
-  "loglibapikey": "site_h7mxqiif4d",
-  "socials": {
-    "website": "https://www.dagmawibabi.com",
-    "telegram": "https://t.me/Dagmawi_Babi/",
-    "instagram": "https://www.instagram.com/dagmawibabi/",
-    "tiktok": "https://www.tiktok.com/@dagmawi_babi",
-    "linkedin": "https://www.linkedin.com/in/dagmawibabi/",
-    "github": "https://github.com/dagmawibabi",
-    "reddit": "",
-    "discord": "",
-    "facebook": "",
-    "twitter": "",
-    "whatsapp": "",    
-    "twitch": "",
-    "youtube": "",
-    "itchio": "",
-    "behance": "",    
-    "bitcoin": ""
-  },
-  "blogs": [
-    {
-      "category": "Coming Soon",
-      "blogs": [
-        {
-          "date": "Status: Detailed Draft",
-          "title": "My Testimony",
-          "description": "This is the story of how I was saved and started my beautiful relationsip with God. This is how the generous loving God rescued my lost lust drenched soul. This will be my most secretive story to tell. I hope it sparks something in you!"
-        },
-        {
-          "date": "Status: Editing",
-          "title": "Beautiful Loss",
-          "description": "When I decided to follow Christ with all of me, I had to burn down some long lasting friendships, lustful strings I kept holding on. I had to leave and break away from some of the most meaningful people to me at that time. This is the story of loss. "
-        },
-        {
-          "date": "Status: Polishing",
-          "title": "Guide for a Christian Developer",
-          "description": "This is a simple guide on your journey as a Christian software developer. It is true that as people of tech we are incredibly exposed to horrific content and own the ability to create destructive platforms. This is to guide you through this path. "
-        }
-      ]
+    "username": "Hi, I'm Dagmawi Babi 👋",
+    "introduction": "In this part of my journey I am learning to read and write as per the advice of Dr.Jordan Peterson, So this is an attempt in doing just that. And since I've been journalling all my life I know how helpful it is to organize and put thoughts into words. So this's a place to host all my writings and I hope it inspires, motivates and helps you grow as it does to me. Enjoy!",
+    "footer": "Dream Intelligence",
+    "metadatatitle": "DBlog",
+    "metadatadescription": "A collection of notes and journals written by Dagmawi Babi.",
+    "website": "http://dblogs-dusky.vercel.app",
+    "loglibid": "dblogs_dagmawibabi",
+    "loglibapikey": "site_0bm02zup75",
+    "socials": {
+        "website": "https://www.dagmawibabi.com",
+        "telegram": "https://t.me/Dagmawi_Babi/",
+        "instagram": "https://www.instagram.com/dagmawibabi/",
+        "tiktok": "https://www.tiktok.com/@dagmawi_babi",
+        "linkedin": "https://www.linkedin.com/in/dagmawibabi/",
+        "github": "https://github.com/dagmawibabi",
+        "reddit": "",
+        "discord": "",
+        "facebook": "",
+        "twitter": "",
+        "whatsapp": "",
+        "twitch": "",
+        "youtube": "",
+        "itchio": "",
+        "behance": "",
+        "bitcoin": ""
     },
-    {
-      "category": "Tech",
-      "blogs": [
+    "blogs": [
         {
-          "date": "December 24, 2023",
-          "title": "Horrible Web Designs",
-          "description": "Here you can find the most difficult to use, hedious looking, unintuitive, user-unfriendly, time wasting, and actually painful abomination of a websites. This is how not to design a good website! Prepare for agony!"
+            "category": "Coming Soon",
+            "blogs": [
+                {
+                    "date": "Status: Editing",
+                    "title": "Beautiful Loss",
+                    "description": "When I decided to follow Christ with all of me, I had to burn down some long lasting friendships, lustful strings I kept holding on. I had to leave and break away from some of the most meaningful people to me at that time. This is the story of loss. "
+                },
+                {
+                    "date": "Status: Polishing",
+                    "title": "Guide for a Christian Developer",
+                    "description": "This is a simple guide on your journey as a Christian software developer. It is true that as people of tech we are incredibly exposed to horrific content and own the ability to create destructive platforms. This is to guide you through this path. "
+                }
+            ]
+        },
+        {
+            "category": "Tech",
+            "blogs": [
+                {
+                    "date": "December 24, 2023",
+                    "title": "Horrible Web Designs",
+                    "description": "Here you can find the most difficult to use, hedious looking, unintuitive, user-unfriendly, time wasting, and actually painful abomination of a websites. This is how not to design a good website! Prepare for agony!"
+                }
+            ]
+        },
+        {
+            "category": "Introduction to God",
+            "blogs": [
+                {
+                    "date": "December 28, 2024",
+                    "title": "Day 1 - Humanity and God",
+                    "description": "A Broken World — The Greatest Love Story Ever Told. We will talk about the world we live in, the story of humanity and the relationship we have with God and why pain and suffering exists. This is how it all started!"
+                },
+                {
+                    "date": "December 29, 2024",
+                    "title": "Day 2 - Sin and Mercy",
+                    "description": "Amazing Grace — Born Again and Freedom from Sin. We will talk about our sinful nature and the grace and mercy God rained on us to live a life free of sin. We will also cover the purpose of the biblical laws and the grace given to us."
+                },
+                {
+                    "date": "December 30, 2024",
+                    "title": "Day 3 - The Holyspirit",
+                    "description": "Fire Within — From Dust to Flames. We will talk about the transformation of a christian's life and the power the holyspirit gives over sin and this broken world. This is about the forgotten God that lives within Believers."
+                },
+                {
+                    "date": "December 31, 2024",
+                    "title": "Day 4 - A Christian Life",
+                    "description": "Christ's Bodies — Living Proofs. We will talk in detail about what a Christian's life should be. The activities involved and how we can bible study and live the word. This is about the road to submission and devotion."
+                },
+                {
+                    "date": "January 1, 2024",
+                    "title": "Day 5 - Our Hope",
+                    "description": "Hope and Eternity — A Perfect World. We will talk about the kingdom that comes, the world that prevails, the paradise that awaits believers and the full prevalence of God's Justice and Love. Heaven is real and it shows God loves us so much!"
+                },
+                {
+                    "date": "January 2, 2024",
+                    "title": "Your Journey Begins",
+                    "description": "Because we can't cover every nuance of God and Christianity I now pass the torch to you. It's now your journey and adventure to purposefully read the scriptures, cross examine them and study them. Now you liveout your relationship with God."
+                }
+            ]
+        },
+        {
+            "category": "Spiritual Blogs",
+            "blogs": [
+                {
+                    "date": "September 15, 2024",
+                    "title": "My Testimony",
+                    "description": "This is the story of how I was saved and started my beautiful relationsip with God. This is how the generous loving God rescued my lost lust drenched soul. This will be my most secretive story to tell. I hope it sparks something in you!"
+                },
+                {
+                    "date": "September 6, 2023",
+                    "title": "Bible Translations",
+                    "description": "Haven't you ever wondered why there are so many versions of the bible even within the same language? This is a brief summary of the history of how the most popular versions we use today came about..."
+                },
+                {
+                    "date": "July 1, 2023",
+                    "title": "Sin",
+                    "description": "Sin is a force that tests our moral compass and challenges our relationship with God. Sin, in its myriad forms, reminds us of our imperfections, our vulnerability, and our need for redemption. This is a detailed study about the concept of Sin."
+                },
+                {
+                    "date": "March 18, 2023",
+                    "title": "Thoughts About Mercy",
+                    "description": "When talking about forgiveness from God. It feels easy. Do I just confess my sins and repent and that's it, I'm forgiven? And that being true makes it look so easy. This forgiveness is made free for all of us, but it isn't cheap."
+                },
+                {
+                    "date": "May 11, 2023",
+                    "title": "How to Prioritize God",
+                    "description": "I don't understand what prioritizing God means, so the best way I found to model and picture it is by starting off what prioritizing my girlfriend meant. Because I prioritize my girlfriend this would help understanding it all."
+                },
+                {
+                    "date": "Auget 9, 2023",
+                    "title": "Eve The Holyspirit",
+                    "description": "What seemed like a simple question led me to one of the most beautiful concepts I've encountered recently. It changed my entire perspective on the Holyspirit. It made the relationship I have with God evermore intimate. "
+                }
+            ]
+        },
+        {
+            "category": "The Book of James Bible Study",
+            "blogs": [
+                {
+                    "date": "July 5, 2023",
+                    "title": "James Chapter 1",
+                    "description": "This chapter is centered around the concept of enduring trials and testing with steadfast faith, seeking wisdom from God, and living out the Word of God emphasizing the importance of maintaining joy and perseverance in the midst of difficulties. "
+                },
+                {
+                    "date": "July 11, 2023",
+                    "title": "James Chapter 2",
+                    "description": "The main idea of this chapter revolves around the idea that genuine faith is demonstrated through actions and highlights the need for faith to be living and active, expressed through compassionate actions towards others."
+                },
+                {
+                    "date": "October 3, 2023",
+                    "title": "James Chapter 3",
+                    "description": "This chapter is a profound book of wisdom where James teaches us about controlling our speech, cautions that should be taken when teaching others and shows us comparisons of God's wisdom vs Demonic and Earthly wisdom."
+                },
+                {
+                    "date": "November 3, 2023",
+                    "title": "James Chapter 4",
+                    "description": "This chapter provides practical guidance on resolving conflicts within the Christian community, emphasizing humility, submission to God, and resisting worldly desires. Encouraging believers to draw near to God through repentance."
+                },
+                {
+                    "date": "November 6, 2023",
+                    "title": "James Chapter 5",
+                    "description": "This chapter warns against the misuse of wealth and encourages believers to be patient in the face of trials. The chapter emphasizes the power of prayer and the importance of confessing sins to one another."
+                }
+            ]
+        },
+        {
+            "category": "The Book of Job Bible Study",
+            "blogs": [
+                {
+                    "date": "April 25, 2023",
+                    "title": "Job Chapter 1",
+                    "description": "This chapter introduces the story of Job, a righteous and prosperous man who faces a series of devastating trials. The main idea revolves around the concept of suffering and the question of why bad things happen to good people."
+                },
+                {
+                    "date": "April 28, 2023",
+                    "title": "Job Chapter 2",
+                    "description": "This chapter continues the narrative of Job's suffering and the ongoing test of his faith. Centering on Job's response to further trials and his interaction with his friends. Despite his intense suffering, Job maintains his integrity."
+                },
+                {
+                    "date": "May 2, 2023",
+                    "title": "Job Chapter 3",
+                    "description": "This chapter portrays the depths of Job's suffering revealing his deep anguish and despair in the midst of his suffering. The main idea revolving around Job's emotional outpouring as he curses the day of his birth."
+                }
+            ]
+        },
+        {
+            "category": "Short Writes and Poems",
+            "blogs": [
+                {
+                    "date": "August 19, 2023",
+                    "title": "To my FWB",
+                    "description": "This is a very intimate and personal text I sent to a person I've been in a friends with benefits relationship with. My connection with her started way back from 10th grade and continued up until a few weeks ago. "
+                },
+                {
+                    "date": "December 4, 2021",
+                    "title": "A Letter to Void and Loneliness",
+                    "description": "This is a small letter I wrote to void and loneliness. Emotions I've been drenched in years ago. I've pictured them as my own two bestfriends by how long I've felt them. But now they've wedded and this's my letter to them."
+                },
+                {
+                    "date": "November 28, 2017",
+                    "title": "The Pain You Caused Me",
+                    "description": "A small poem I wrote about a person I really liked that somehow became my obsession and later on my road to depression. This was something I wrote about her when I was at my lowest. A poem about Her."
+                }
+            ]
+        },
+        {
+            "category": "Lists",
+            "blogs": [
+                {
+                    "date": "November 5, 2022",
+                    "title": "Books To Read",
+                    "description": "These are a list of amazing books I've read and plan on reading in the coming months. This is an ever-expanding list I adjust regularly as I read and discover more books. If you need a list of incredible books, this could be it."
+                }
+            ]
         }
-      ]
-    },
-    {
-      "category": "Short Writes and Poems",
-      "blogs": [
-        {
-          "date": "August 19, 2023",
-          "title": "To my FWB",
-          "description": "This is a very intimate and personal text I sent to a person I've been in a friends with benefits relationship with. My connection with her started way back from 10th grade and continued up until a few weeks ago. "
-        },
-        {
-          "date": "December 4, 2021",
-          "title": "A Letter to Void and Loneliness",
-          "description": "This is a small letter I wrote to void and loneliness. Emotions I've been drenched in years ago. I've pictured them as my own two bestfriends by how long I've felt them. But now they've wedded and this's my letter to them."
-        },
-        {
-          "date": "November 28, 2017",
-          "title": "The Pain You Caused Me",
-          "description": "A small poem I wrote about a person I really liked that somehow became my obsession and later on my road to depression. This was something I wrote about her when I was at my lowest. A poem about Her."
-        }
-      ]
-    },
-    {
-      "category": "Lists",
-      "blogs": [
-        {
-          "date": "November 5, 2022",
-          "title": "Books To Read",
-          "description": "These are a list of amazing books I've read and plan on reading in the coming months. This is an ever-expanding list I adjust regularly as I read and discover more books. If you need a list of incredible books, this could be it."
-        }
-      ]
-    },
-    {
-      "category": "Introduction to God", 
-      "blogs": [
-        {
-          "date": "December 28, 2024",
-          "title": "Day 1 - Humanity and God",
-          "description": "A Broken World — The Greatest Love Story Ever Told. We will talk about the world we live in, the story of humanity and the relationship we have with God and why pain and suffering exists. This is how it all started!"
-        },
-        {
-          "date": "December 29, 2024",
-          "title": "Day 2 - Sin and Mercy",
-          "description": "Amazing Grace — Born Again and Freedom from Sin. We will talk about our sinful nature and the grace and mercy God rained on us to live a life free of sin. We will also cover the purpose of the biblical laws and the grace given to us."
-        },
-        {
-          "date": "December 30, 2024",
-          "title": "Day 3 - The Holyspirit",
-          "description": "Fire Within — From Dust to Flames. We will talk about the transformation of a christian's life and the power the holyspirit gives over sin and this broken world. This is about the forgotten God that lives within Believers."
-        },
-        {
-          "date": "December 31, 2024",
-          "title": "Day 4 - A Christian Life",
-          "description": "Christ's Bodies — Living Proofs. We will talk in detail about what a Christian's life should be. The activities involved and how we can bible study and live the word. This is about the road to submission and devotion."
-        },
-        {
-          "date": "January 1, 2024",
-          "title": "Day 5 - Our Hope",
-          "description": "Hope and Eternity — A Perfect World. We will talk about the kingdom that comes, the world that prevails, the paradise that awaits believers and the full prevalence of God's Justice and Love. Heaven is real and it shows God loves us so much!"
-        },
-        {
-          "date": "January 2, 2024",
-          "title": "Your Journey Begins",
-          "description": "Because we can't cover every nuance of God and Christianity I now pass the torch to you. It's now your journey and adventure to purposefully read the scriptures, cross examine them and study them. Now you liveout your relationship with God."
-        }
-      ]
-    },
-    {
-      "category": "Spiritual Blogs", 
-      "blogs": [
-        {
-          "date": "September 6, 2023",
-          "title": "Bible Translations",
-          "description": "Haven't you ever wondered why there are so many versions of the bible even within the same language? This is a brief summary of the history of how the most popular versions we use today came about..."
-        },
-        {
-          "date": "July 1, 2023",
-          "title": "Sin",
-          "description": "Sin is a force that tests our moral compass and challenges our relationship with God. Sin, in its myriad forms, reminds us of our imperfections, our vulnerability, and our need for redemption. This is a detailed study about the concept of Sin."
-        },
-        {
-          "date": "March 18, 2023",
-          "title": "Thoughts About Mercy",
-          "description": "When talking about forgiveness from God. It feels easy. Do I just confess my sins and repent and that's it, I'm forgiven? And that being true makes it look so easy. This forgiveness is made free for all of us, but it isn't cheap."
-        },
-        {
-          "date": "May 11, 2023",
-          "title": "How to Prioritize God",
-          "description": "I don't understand what prioritizing God means, so the best way I found to model and picture it is by starting off what prioritizing my girlfriend meant. Because I prioritize my girlfriend this would help understanding it all."
-        },
-        {
-          "date": "Auget 9, 2023",
-          "title": "Eve The Holyspirit",
-          "description": "What seemed like a simple question led me to one of the most beautiful concepts I've encountered recently. It changed my entire perspective on the Holyspirit. It made the relationship I have with God evermore intimate. "
-        }
-      ]
-    },
-    {
-      "category": "The Book of James Bible Study",
-      "blogs": [
-        {
-          "date": "July 5, 2023",
-          "title": "James Chapter 1",
-          "description": "This chapter is centered around the concept of enduring trials and testing with steadfast faith, seeking wisdom from God, and living out the Word of God emphasizing the importance of maintaining joy and perseverance in the midst of difficulties. "
-        },
-        {
-          "date": "July 11, 2023",
-          "title": "James Chapter 2",
-          "description": "The main idea of this chapter revolves around the idea that genuine faith is demonstrated through actions and highlights the need for faith to be living and active, expressed through compassionate actions towards others."
-        },
-        {
-          "date": "October 3, 2023",
-          "title": "James Chapter 3",
-          "description": "This chapter is a profound book of wisdom where James teaches us about controlling our speech, cautions that should be taken when teaching others and shows us comparisons of God's wisdom vs Demonic and Earthly wisdom."
-        },
-        {
-          "date": "November 3, 2023",
-          "title": "James Chapter 4",
-          "description": "This chapter provides practical guidance on resolving conflicts within the Christian community, emphasizing humility, submission to God, and resisting worldly desires. Encouraging believers to draw near to God through repentance."
-        },
-        {
-          "date": "November 6, 2023",
-          "title": "James Chapter 5",
-          "description": "This chapter warns against the misuse of wealth and encourages believers to be patient in the face of trials. The chapter emphasizes the power of prayer and the importance of confessing sins to one another."
-        }
-      ]
-    },
-    {
-      "category": "The Book of Job Bible Study",
-      "blogs": [
-        {
-          "date": "April 25, 2023",
-          "title": "Job Chapter 1",
-          "description": "This chapter introduces the story of Job, a righteous and prosperous man who faces a series of devastating trials. The main idea revolves around the concept of suffering and the question of why bad things happen to good people."
-        },
-        {
-          "date": "April 28, 2023",
-          "title": "Job Chapter 2",
-          "description": "This chapter continues the narrative of Job's suffering and the ongoing test of his faith. Centering on Job's response to further trials and his interaction with his friends. Despite his intense suffering, Job maintains his integrity."
-        },
-        {
-          "date": "May 2, 2023",
-          "title": "Job Chapter 3",
-          "description": "This chapter portrays the depths of Job's suffering revealing his deep anguish and despair in the midst of his suffering. The main idea revolving around Job's emotional outpouring as he curses the day of his birth."
-        }
-      ]
-    }
-  ]
+    ]
 }
