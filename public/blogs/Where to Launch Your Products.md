@@ -36,7 +36,9 @@ Remember the people that actually signed up on your wait-list are the people tha
 
 # Graphics
 
-![ScholarXIV](../images/WhereToLaunchYourProducts/scholarxiv.jpg)
+|                                                                             |                                                                         |
+| --------------------------------------------------------------------------- | ----------------------------------------------------------------------- |
+| ![ScholarXIV](../images/WhereToLaunchYourProducts/scholarxiv_anonymous.jpg) | ![ScholarXIV](../images/WhereToLaunchYourProducts/scholarxiv_stats.jpg) |
 
 Beautiful Screenshots and Videos of your product are so important, they're crucial infact. So do take your time making very eye catching graphics and informatives about your product. Graphics are what grab the attention of users before your captions on most posts so focus on it.
 
@@ -45,8 +47,6 @@ One good decision I made is to make a **[demo video](https://youtu.be/-GlxZRCfxY
 # During Launch Day...
 
 One very important thing to do on launch day is to keep everyone updates on how the launch is going. This will directly translate to get more traction and attention from people. Keep making nice graphics about stats and announcements and post it.
-
-![ScholarXIV](../images/WhereToLaunchYourProducts/scholarxiv_stats.jpg)
 
 By now you would have fixed most basic issues and a ton of feedbacks are flowing in and your product is stable for the most part. Now is the time to really take notes on what to improve and fix. Whatever users say, just note it and always think about it.
 
