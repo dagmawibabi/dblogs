@@ -48,6 +48,11 @@
           "date": "December 24, 2023",
           "title": "Horrible Web Designs",
           "description": "Here you can find the most difficult to use, hedious looking, unintuitive, user-unfriendly, time wasting, and actually painful abomination of a websites. This is how not to design a good website! Prepare for agony!"
+        },
+        {
+          "date": "July 31, 2025",
+          "title": "A month in Better Auth",
+          "description": "It's been a month since I started interning at Better Auth, one of the fastest growing, open-source and comprehensive auth projects and company out there. I learnt so many things and this's a reflection of things I've discovered."
         }
       ]
     },
