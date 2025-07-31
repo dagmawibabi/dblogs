@@ -18,14 +18,16 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(to bottom,
+  background: linear-gradient(
+      to bottom,
       transparent,
-      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
 }
 
 @layer utilities {
   @variants responsive {
-
     /* Hide scrollbar for Chrome, Safari and Opera */
     .no-scrollbar::-webkit-scrollbar {
       display: none;
@@ -55,7 +57,6 @@ a[target="_blank"] {
 a {
   color: rgb(23, 221, 221);
 }
-
 
 a:hover {
   color: yellow;
@@ -140,7 +141,6 @@ blockquote img:not(:only-child) {
   z-index: 9999;
 }
 
-
 blockquote blockquote img:not(:only-child) {
   display: inline-block;
   width: 48%;
@@ -164,6 +164,13 @@ span p {
 
 #verses {
   border: 1px solid red;
+}
+
+code {
+  background-color: #1f1f1f;
+  padding: 2px 6px;
+  border-radius: 5px;
+  color: orange;
 }
 
 /* Mobile Responsive Design */
@@ -200,7 +207,7 @@ span p {
     margin-left: -2px;
     z-index: 9999;
   }
-  
+
   blockquote blockquote img:not(:only-child) {
     display: inline-block;
     width: 100%;
@@ -243,7 +250,7 @@ span p {
     margin-top: 10px;
     z-index: 9999;
   }
-  
+
   blockquote blockquote img:not(:only-child) {
     display: inline-block;
     width: 100%;
@@ -286,7 +293,7 @@ span p {
     margin-left: 10px;
     z-index: 9999;
   }
-  
+
   blockquote blockquote img:not(:only-child) {
     display: inline-block;
     width: 48%;

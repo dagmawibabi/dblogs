@@ -76,7 +76,7 @@ This was a good week. The feeling of being overwhelmed left and I settled and fo
 
    For version 1.3 of Better Auth we’ve migrated from Zod v3 to v4 and this has made significant performance improvements. Went from 15.2 mbs distribution size to less than half of it. (6.04mbs)
 
-   Better Auth deals with lots of string parsings, array parsings and importantly object parsing. All which are extremely faster in the newest release of Zod. (String Parsing 14x, Array Parsing 7x, and Object Parsing 6.5x)
+   Better Auth deals with lots of string parsings, array parsings and importantly object parsings. All which are extremely faster in the newest release of Zod. (String Parsing 14x, Array Parsing 7x, and Object Parsing 6.5x)
 
    ![image](../images/AMonthInBetterAuth/image6.png)
 
@@ -84,7 +84,7 @@ This was a good week. The feeling of being overwhelmed left and I settled and fo
 
 4. AI friendly Docs
 
-   Was going through the docs and I thought it’d be better to make it even more AI friendly past our llm.txt file by allowing users to copy the content of a specific page in markdown or share to popular LLMs. I couldn’t implement this feature cause Stripe issues were urgent but another amazing team mate implemented it.
+   Was going through the docs and I thought it’d be better to make it even more AI friendly past our `llm.txt` file by allowing users to copy the content of a specific page in markdown or share to popular LLMs. I couldn’t implement this feature cause Stripe issues were urgent but another amazing teammate implemented it.
 
    What I learnt was that [Mintlify](https://mintlify.com) was the way to go but turns out [Fumadocs](https://fumadocs.dev/), the one we use for our docs, already supports it and we went ahead and used that. It’s a really wonderful contribution and in that same release we’ve released the stable version of our MCP server.
 
@@ -92,19 +92,19 @@ This was a good week. The feeling of being overwhelmed left and I settled and fo
 
 5. [Dosu Bot](https://dosu.dev/)
 
-   Dosu is an absolutely wonderful service. It turns your codebase into a knowledge base and once you integrate it into your repo it would respond to users creating issues, reponds to follow up questions, shows work arounds to specific problems and takes our minds off of certain low priority things and often times users get instant answers and close issues. We review all these conversations and throughtout the weeks it has surprised me by how good it has been at handling these tasks.
+   Dosu is an absolutely wonderful service. It turns your codebase into a knowledge base and once you integrate it into your repo it would respond to users creating issues, responds to follow up questions, shows workarounds to specific problems and takes our minds off of certain low priority things and oftentimes users get instant answers and close issues. We review all these conversations and throughout the weeks it has surprised me by how good it has been at handling these tasks.
 
 ### Week 3
 
-This week was a blast, I got to meet everyone of the team that was located in Addis Ababa, Ethiopia. They’re some wonderful people and friends I look upto and admire. We got some merch, ate some pizzas and had a very long and technical convo about our previous experiences and everything else. It was very memorable and lovely. This week for me was focused more on expanding Stripe relates features and improvements. While encountering and learning a few things here and there.
+This week was a blast, I got to meet everyone of the team that was located in Addis Ababa, Ethiopia. There’re some wonderful people and friends I look upto and admire. We got some merch, ate some pizzas and had a very long and technical convo about our previous experiences and everything else. It was very memorable and lovely. This week for me was focused more on expanding Stripe related features and improvements. While encountering and learning a few things here and there.
 
 1. [pkg.pr.new](https://pkg.pr.new)
 
-   This is another amazing bot specially for libraries. It creates instant preview releases of your commits and PRs withouth publishing anything to NPM. Meaning you can have a draft version of Better Auth to try out and share with people without affecting everyone else. This makes our lives so easy. Specially when debugging some issues.
+   This is another amazing bot specially for libraries. It creates instant preview releases of your commits and PRs without publishing anything to NPM. Meaning you can have a draft version of Better Auth to try out and share with people without affecting everyone else. This makes our lives so easy. Specially when debugging some issues.
 
 2. [Stripe’s Metered Billing](https://docs.stripe.com/api/billing/meter)
 
-   Stripe allows for usage tracking through it’s metered billing end points. I was deep into Stripe’s architecture past the Sdk to understand how things worked and for Stripe Metered Billing is an independent instance. Meaning a Stripe customer doesn’t necessarily have to subscribe to a plan and the plan doesn’t necessarily have to be associated with a product and the product to a price. Simply put you can arbitrarily track usage completely independently.
+   Stripe allows for usage tracking through it’s metered billing endpoints. I was deep into Stripe’s architecture past the Sdk to understand how things worked and for Stripe Metered Billing is an independent instance. Meaning a Stripe customer doesn’t necessarily have to subscribe to a plan and the plan doesn’t necessarily have to be associated with a product and the product to a price. Simply put you can arbitrarily track usage completely independently.
 
 3. [Polar.sh](https://Polar.sh) and [Autumn](https://autumn.com)
 
