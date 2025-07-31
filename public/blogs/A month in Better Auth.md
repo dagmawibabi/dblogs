@@ -42,7 +42,7 @@ That week I spent most of my time groing through the codebase, running demos and
 
    ![image](../images/AMonthInBetterAuth/image3.png)
 
-6. Twitter Affiliates cost $7k
+6. Twitter Affiliates costs $7k
 
    I was the first intern to join Better Auth and during the interview the first thing I suggested was for us to get Twitter Affiliates and it was quiet literally during the interview that we bought the packages and linked our twitter accounts. Apart from verifying each affiliate it gives extremely bigger reach to the accounts than normal paid versions. This was good cause we haven’t hired any dev rels yet so everyone of us would help fill the gaps by posting. I took it a bit seriously and would post a lot and the views were very good for each post. So highly recommend you do this.
 
@@ -58,7 +58,7 @@ This was a good week. The feeling of being overwhelmed left and I settled and fo
 
    ![image](../images/AMonthInBetterAuth/image5.png)
 
-2. Vitest
+2. [Vitest](https://vitest.dev/)
 
    If you don't need to write tests, you're most likely not doing something important. If you look through Better Auth’s repo you’ll see it’s filled with tests and this is extremely important for us. So many people and companies depend on us and tests allow us to make sure what we’ve implemented is working well and safe before it gets merged and into the hands of thousands.
 
@@ -104,6 +104,10 @@ This week was a blast, I got to meet everyone of the team that was located in Ad
 
    These wonderful Stripe alternative both provide metered billing aka Usage Tracking in a bit of a similar way and I had to create simulations and test things out to see how advanced and better things were. Both had their pros and cons but I would really suggest using their services over defaulting to Stripe.
 
+4. [Better Auth Merch](https://better-merch.dev)
+
+   ![image](../images/AMonthInBetterAuth/image11.jpg)
+
 ### Week 4
 
 It was flu and cold season in Addis Ababa and sadly I cought it too and I wasn’t able to get up from bed and do as much work as I had planned to but I did assist in a few issues, made a few contribution and tried finilizing a few polishes.
@@ -116,7 +120,13 @@ It was flu and cold season in Addis Ababa and sadly I cought it too and I wasn�
 
    ![image](../images/AMonthInBetterAuth/image10.jpg)
 
-2. Better Auth Users
+2. AI Images
+
+   So I wanted to create some AI images for twitter posts. Just to keep promoting Better Auth and gain even more traction. But for some reason no matter what I try it couldn't get our logo right. It just couldn't genration after generation it couldn't. So we left AI generated images entirely. As for me tho I now use our logo to benchmark image generating AIs.
+
+   > ![image](../images/AMonthInBetterAuth/image12.png) ![image](../images/AMonthInBetterAuth/image13.jpg)
+
+3. Better Auth Users
 
    Plugins are what make Better Auth standout and is one of the powerful features built at it’s core. And so somethings across issues and posts I’ve noticed is that our users expect us to make a plugin for almost everything. Though using Stripe’s Sdk is straightforward and most mundane tasks can be implemented using it, users expect an entire Stripe replacement from us. At first it was basic subscriptions, then it was usage based billing, then it became one time checkout and so forth. This is true for all other things too. Users want a plugin for even their niche local finance systems.
 
