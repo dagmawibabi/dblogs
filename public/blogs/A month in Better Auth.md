@@ -86,9 +86,7 @@ This was a good week. The feeling of being overwhelmed left and I settled and fo
 
 5. [Dosu Bot](https://dosu.dev/)
 
-   Dosu is an absolutely wonderful service. It turns your codebase into a knowledge base and once you integrate it into your repo it would respond to users creating issues, reponds to follow up questions, shows work arounds to specific problems and takes our minds off of certain low priority things and often times users get instant answers and close issues.
-
-   We review all these conversations and throughtout the weeks it has surprised me by how good it has been at handling these tasks.
+   Dosu is an absolutely wonderful service. It turns your codebase into a knowledge base and once you integrate it into your repo it would respond to users creating issues, reponds to follow up questions, shows work arounds to specific problems and takes our minds off of certain low priority things and often times users get instant answers and close issues. We review all these conversations and throughtout the weeks it has surprised me by how good it has been at handling these tasks.
 
 ### Week 3
 
