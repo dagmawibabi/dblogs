@@ -10,11 +10,11 @@ I got an internship at Better Auth at the start of July and it’s been a month 
 
 The first week, as you’d expect walking into a new job, was overwhelming. So many things happening at once across the board. Issues and PRs on github happening within hours, everyday. Internal tools I don’t know of, extremely talented people doing epic things everyday, and so much more. I was pretty overwhelmed but as usual I prayed about it and things got manageable afterwards.
 
-That week I spent most of my time groing through the codebase, running demos and docs, having slack huddles with the team to understand the tools and workflow. All of this was very helpful in navigating the rest of the week. With that out of thhe way here are some of the things I learnt and built that week.
+That week I spent most of my time groing through the codebase, running demos and docs, having slack huddles with the team to understand the tools and workflow. All of this was very helpful in navigating the rest of the week. With that out of the way here are some of the things I learnt and built that week.
 
 1. [Better Call](https://github.com/Bekacru/better-call)
 
-   Better Call is a tiny web framework for creating endpoints that can be invoked as normal functions. It’s one of the primary internal tools we use to create endpoints for plugins, auth and more. Out of everything I’ve learnt Better Call is still my favorite. It is straightforward, easy and just very fun to work with. It’s open source so feel free to check it out.
+   Better Call is a tiny web framework for creating endpoints that can be invoked as normal functions. It’s one of the primary internal tools we use to create endpoints for plugins, auth and more. Out of everything I’ve learnt Better Call is still my favorite. It is straightforward, easy and just very fun to work with. It’s open-source so feel free to check it out.
 
    ![image](../images/AMonthInBetterAuth/image.png)
 
@@ -26,7 +26,7 @@ That week I spent most of my time groing through the codebase, running demos and
 
 3. Typescript
 
-   Now I have used typescript in most of my projects and at different jobs. But none of them are as strict as Better Auth when it comes to typesafety (I mean it does say end to endtyppe safety in the docs). So that led me to dig so deep into typescipt and learn so much more than I had previously did and the more I learn and use it the more I love it and now I don’t see myself building anything else without it.
+   Now I have used typescript in most of my projects and at different jobs. But none of them are as strict as Better Auth when it comes to typesafety (I mean it does say end to end type safety in the docs). So that led me to dig so deep into typescipt and learn so much more than I had previously did and the more I learn and use it the more I love it and now I don’t see myself building anything else without it.
 
    There was this one instant during the first week where I made a PR that had `var` and `any` and Beka looked at me so hard I thought I was gonna get fired lol. I was so caught up with the main task I went to the quickest solution. Never again has that happened since.
 
@@ -34,7 +34,9 @@ That week I spent most of my time groing through the codebase, running demos and
 
 4. [Stripe SDK](https://docs.stripe.com/get-started/development-environment)
 
-   This month we pushed out version 1.3 and one of the main goals we had was to make our Stripe plugin production ready and so I was assigned to squash Stripe related bugs and add improvements too. If you go and check the repo you’d find Stripe related issues often. People really want us to build an entire Stripe replacement for them but it’s not what we aim to do at this point. As this was my main task I learnt SO MUCH about stripe, it’s SDK and how it’s architecture. I see lots of people complaining about Stripe on Twitter and all the other alternatives like [Polar.sh](https://Polar.sh) and [Autumn](https://autumn.com) and also researching through how these alternatives work I came to appreciate them all.
+   This month we pushed out [version 1.3](https://www.better-auth.com/blog/1-3) and one of the main goals we had was to make our Stripe plugin production ready and so I was assigned to squash Stripe related bugs and add improvements too. If you go and check the repo you’d find [Stripe related issues](https://github.com/better-auth/better-auth/issues?q=is%3Aissue%20state%3Aopen%20Stripe) often. People really want us to build an entire Stripe replacement for them but it’s not what we aim to do at this point.
+
+   As this was my main task I learnt SO MUCH about stripe, its SDK and how its architecture. I see lots of people complaining about Stripe on Twitter but looking at all the other alternatives like [Polar.sh](https://Polar.sh) and [Autumn](https://autumn.com) and also researching through how these alternatives work I came to appreciate them all.
 
 5. [Open Telemetry](https://opentelemetry.io/)
 
@@ -44,7 +46,7 @@ That week I spent most of my time groing through the codebase, running demos and
 
 6. Twitter Affiliates costs $7k
 
-   I was the first intern to join Better Auth and during the interview the first thing I suggested was for us to get Twitter Affiliates and it was quiet literally during the interview that we bought the packages and linked our twitter accounts. Apart from verifying each affiliate it gives extremely bigger reach to the accounts than normal paid versions. This was good cause we haven’t hired any dev rels yet so everyone of us would help fill the gaps by posting. I took it a bit seriously and would post a lot and the views were very good for each post. So highly recommend you do this.
+   I was the first intern to join Better Auth and during the interview the first thing I suggested was for us to get Twitter Affiliates and it was quiet literally during the interview that we bought the package and linked our twitter accounts. Apart from verifying each affiliate it gives extremely bigger reach to the accounts than normal paid versions. This was good cause we haven’t hired any dev rels yet so everyone of us would help fill the gaps by posting. I took it a bit seriously and would post a lot and the views were very good for each post. So highly recommend you do this.
 
    ![image](../images/AMonthInBetterAuth/image4.jpg)
 
@@ -54,13 +56,17 @@ This was a good week. The feeling of being overwhelmed left and I settled and fo
 
 1. Middlewares in Better Auth
 
-   Just like endpoints and database adapters, we have another internal tool we use to build middlewares. It is a very straightforward, powerful and comfortable way to implement middlewares. It abstracts things enough that you’re more concerned into the quality and function of the middleware than other things. After plugins, middlewares are one of the best ways to learn how Better Auth works. I bult a middleware earlier on to to check usage limits of Stripe customers for our upcoming Usage Based Billing feature and doing so has really helped me understand Better Auth even more.
+   Just like endpoints and database adapters, we have another internal tool we use to build middlewares. It is a very straightforward, powerful and comfortable way to implement middlewares. It abstracts things enough that you’re more concerned about the quality and function of the middleware than other things.
+
+   After plugins, middlewares are one of the best ways to learn how Better Auth works. I bult a middleware earlier on to check usage limits of Stripe customers for our upcoming Usage Based Billing feature and doing so has really helped me understand Better Auth even more.
 
    ![image](../images/AMonthInBetterAuth/image5.png)
 
 2. [Vitest](https://vitest.dev/)
 
-   If you don't need to write tests, you're most likely not doing something important. If you look through Better Auth’s repo you’ll see it’s filled with tests and this is extremely important for us. So many people and companies depend on us and tests allow us to make sure what we’ve implemented is working well and safe before it gets merged and into the hands of thousands.
+   > If you don't need to write tests, you're most likely not doing something important.
+
+   If you look through Better Auth’s repo you’ll see it’s filled with tests and this is extremely important for us. So many people and companies depend on us and tests allow us to make sure what we’ve implemented is working well and safe before it gets merged and into the hands of thousands.
 
    In Better Auth, it’s almost impossible to build without tests. Infact you really can’t make a good contribution without a good set of test cases invovled with it. It made me appreciate tests even more and dig deeper so I could write very effective tests to the things I contribute.
 
