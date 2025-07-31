@@ -1,6 +1,6 @@
 # A month in Better Auth
 
-![image](../images/AmonthInBetterAuth/banner.jpg)
+![image](../images/AMonthInBetterAuth/banner.jpg)
 
 [Better Auth](https://www.better-auth.com/) is the most comprehensive authentication framework for Typescript. It is also one of the fastest growing open-source projects out there with 18.1k stars on [GitHub](https://github.com/better-auth/better-auth) and 2.8 million downloads on [NPM](https://www.npmjs.com/package/better-auth) and growing fast.
 
@@ -16,13 +16,13 @@ That week I spent most of my time groing through the codebase, running demos and
 
    Better Call is a tiny web framework for creating endpoints that can be invoked as normal functions. It’s one of the primary internal tools we use to create endpoints for plugins, auth and more. Out of everything I’ve learnt Better Call is still my favorite. It is straightforward, easy and just very fun to work with. It’s open source so feel free to check it out.
 
-   ![image](../images/AmonthInBetterAuth/image.png)
+   ![image](../images/AMonthInBetterAuth/image.png)
 
 2. Database Adapters
 
    Better Auth uses internal adapters to deal with all the different database providers. It abstracts database specific functions and queries and unifies them all so you can focus more on building plugins and auth related things.
 
-   ![image](../images/AmonthInBetterAuth/image1.png)
+   ![image](../images/AMonthInBetterAuth/image1.png)
 
 3. Typescript
 
@@ -30,7 +30,7 @@ That week I spent most of my time groing through the codebase, running demos and
 
    There was this one instant during the first week where I made a PR that had `var` and `any` and Beka looked at me so hard I thought I was gonna get fired lol. I was so caught up with the main task I went to the quickest solution. Never again has that happened since.
 
-   ![image](../images/AmonthInBetterAuth/image2.png)
+   ![image](../images/AMonthInBetterAuth/image2.png)
 
 4. [Stripe SDK](https://docs.stripe.com/get-started/development-environment)
 
@@ -40,13 +40,13 @@ That week I spent most of my time groing through the codebase, running demos and
 
    Open Telemetry (oTel) is an open-source, high quality, ubiquitous and portable telemetry to enable effective observability. It creates and collects telemetry from your services and software then forwards it to a variety of analysis tools. I was researching about this and one of the first plugins I made in Better Auth is oTel. You can easily plug it in and view telemetry data about your sites. It’s still in the early stages (only supports console exports) and so much needs to be added but I can’t wait till you get to use it.
 
-   ![image](../images/AmonthInBetterAuth/image3.png)
+   ![image](../images/AMonthInBetterAuth/image3.png)
 
 6. Twitter Affiliates cost $7k
 
    I was the first intern to join Better Auth and during the interview the first thing I suggested was for us to get Twitter Affiliates and it was quiet literally during the interview that we bought the packages and linked our twitter accounts. Apart from verifying each affiliate it gives extremely bigger reach to the accounts than normal paid versions. This was good cause we haven’t hired any dev rels yet so everyone of us would help fill the gaps by posting. I took it a bit seriously and would post a lot and the views were very good for each post. So highly recommend you do this.
 
-   ![image](../images/AmonthInBetterAuth/image4.jpg)
+   ![image](../images/AMonthInBetterAuth/image4.jpg)
 
 ### Week 2
 
@@ -56,7 +56,7 @@ This was a good week. The feeling of being overwhelmed left and I settled and fo
 
    Just like endpoints and database adapters, we have another internal tool we use to build middlewares. It is a very straightforward, powerful and comfortable way to implement middlewares. It abstracts things enough that you’re more concerned into the quality and function of the middleware than other things. After plugins, middlewares are one of the best ways to learn how Better Auth works. I bult a middleware earlier on to to check usage limits of Stripe customers for our upcoming Usage Based Billing feature and doing so has really helped me understand Better Auth even more.
 
-   ![image](../images/AmonthInBetterAuth/image5.png)
+   ![image](../images/AMonthInBetterAuth/image5.png)
 
 2. Vitest
 
@@ -72,9 +72,9 @@ This was a good week. The feeling of being overwhelmed left and I settled and fo
 
    Better Auth deals with lots of string parsings, array parsings and importantly object parsing. All which are extremely faster in the newest release of Zod. (String Parsing 14x, Array Parsing 7x, and Object Parsing 6.5x)
 
-   ![image](../images/AmonthInBetterAuth/image6.png)
+   ![image](../images/AMonthInBetterAuth/image6.png)
 
-   ![image](../images/AmonthInBetterAuth/image7.png)
+   ![image](../images/AMonthInBetterAuth/image7.png)
 
 4. AI friendly Docs
 
@@ -82,7 +82,7 @@ This was a good week. The feeling of being overwhelmed left and I settled and fo
 
    What I learnt was that [Mintlify](https://mintlify.com) was the way to go but turns out [Fumadocs](https://fumadocs.dev/), the one we use for our docs, already supports it and we went ahead and used that. It’s a really wonderful contribution and in that same release we’ve released the stable version of our MCP server.
 
-   ![image](../images/AmonthInBetterAuth/image8.png)
+   ![image](../images/AMonthInBetterAuth/image8.png)
 
 5. [Dosu Bot](https://dosu.dev/)
 
@@ -112,9 +112,9 @@ It was flu and cold season in Addis Ababa and sadly I cought it too and I wasn�
 
    For comms we use the Business+ package of Slack and it was at this point I realized some pretty nice AI and workflow integrations within Slack. Apart from unlimited message history and unlimited app integrations. The AI integrations are wonderful. Infact that's where AI should be and it's integrated in the right way. It has AI conversation & meeting summaries, AI Recaps where you can pick channels and get summaries, AI file summaries and translations, and AI automations/workflows where you can prompt what workflow you'd want, like "Remind the team to post async every day" and it would schedule and do that for you.
 
-   ![image](../images/AmonthInBetterAuth/image9.jpg)
+   ![image](../images/AMonthInBetterAuth/image9.jpg)
 
-   ![image](../images/AmonthInBetterAuth/image10.jpg)
+   ![image](../images/AMonthInBetterAuth/image10.jpg)
 
 2. Better Auth Users
 
