@@ -128,18 +128,20 @@ It was flu and cold season in Addis Ababa and sadly I cought it too and I wasn�
 
 2. AI Images
 
-   So I wanted to create some AI images for twitter posts. Just to keep promoting Better Auth and gain even more traction. But for some reason no matter what I try it couldn't get our logo right. It just couldn't genration after generation it couldn't. So we left AI generated images entirely. As for me tho I now use our logo to benchmark image generating AIs.
+   So I wanted to create some AI images for twitter posts. Just to keep promoting Better Auth and gain even more traction. But for some reason no matter what I try it couldn't get our logo right. It just couldn't, generation after generation it couldn't. So we left AI generated images entirely. As for me tho I now use our logo to benchmark image generating AIs.
 
    > ![image](../images/AMonthInBetterAuth/image12.png) ![image](../images/AMonthInBetterAuth/image13.jpg)
 
 3. Better Auth Users
 
-   Plugins are what make Better Auth standout and is one of the powerful features built at it’s core. And so somethings across issues and posts I’ve noticed is that our users expect us to make a plugin for almost everything. Though using Stripe’s Sdk is straightforward and most mundane tasks can be implemented using it, users expect an entire Stripe replacement from us. At first it was basic subscriptions, then it was usage based billing, then it became one time checkout and so forth. This is true for all other things too. Users want a plugin for even their niche local finance systems.
+   [Plugins](https://www.better-auth.com/docs/concepts/plugins) are what make Better Auth standout and is one of the powerful features built at it’s core. And so somethings across issues and posts I’ve noticed is that our users expect us to make a plugin for almost everything.
 
-   While I really love the fact that people have given us their trust and want to replace every other service with Better Auth plugins, it is important for you to realize that we are MOSTLY going to be focusing on building basic support around most requested plugins to get you started building instead of providing an entire replacement. There’s more to be build around auth itself and infrastructure is going to be our priority.
+   Though using Stripe’s Sdk is straightforward and most mundane tasks can be implemented using it, users expect an entire Stripe replacement from us. At first it was basic subscriptions, then it was usage based billing, then it became one time checkout and so forth. This is true for all other things too. Users want a plugin for even their niche local finance systems.
+
+   While I really love the fact that people have given us their trust and want to replace every other service with Better Auth plugins, it is important for you to realize that we are MOSTLY going to be focusing on building basic support around most requested plugins to get you started building instead of providing an entire replacement. There’s more to be built around auth itself, so [infrastructure](https://www.better-auth.build/) is going to be our priority.
 
 ### Finally
 
-Perosnally I've noticed that I am quick to implement than sit and get all the requirements rights. As good as it could be at times, I've learnt it's better to sit get requirements and scope accurately and then go into building. As a result of this I would say I have the most rejected PRs in BA in the span of just a few weeks. A benchmark I now will improve up on.
+Personally I've noticed that I am quick to implement than sit and get all the requirements right. As good as it could be at times, I've learnt it's better to sit get requirements and scope accurately and then go into building. As a result of this I would say I have the most rejected PRs in BA in the span of just a few weeks. A benchmark I now will improve up on.
 
-These are just a few of the many things I’ve learnt in Better Auth. So much is happening, and so much to explore and build. I’m super grateful I get to work on this and it’s been a very amazing month so far. The freedom to brainstorm, own the features from start to finish, and work with incredibly talented and helpful people is a rare thing. I’m super happy and grateful about this. Thank God!
+These are just a few of the many things I’ve learnt in Better Auth. So much is happening, and so much to explore and build. I’m super grateful I get to work on this and it’s been an amazing month so far. The freedom to brainstorm, own the features from start to finish, and work with incredibly talented and helpful people is a rare thing. I’m super happy and grateful about this. Thank God!
