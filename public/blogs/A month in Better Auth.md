@@ -116,7 +116,7 @@ This week was a blast, I got to meet everyone of the team that was located in Ad
 
 ### Week 4
 
-It was flu and cold season in Addis Ababa and sadly I cought it too and I wasn’t able to get up from bed and do as much work as I had planned to but I did assist in a few issues, made a few contribution and tried finilizing a few polishes.
+It was flu and cold season in Addis Ababa and sadly I cought it too and I wasn’t able to get up from bed and do as much work as I had planned to but I did assist in a few issues, made a few contribution and tried finalizing a few polishes.
 
 1. Slack
 
